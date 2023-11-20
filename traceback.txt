@@ -1,0 +1,48 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 3, in script
+    init python:
+  File "game/script.rpy", line 4, in <module>
+    import requests
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 3, in script
+    init python:
+  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 4, in <module>
+    import requests
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 664, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 627, in _load_backward_compatible
+  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\loader.py", line 1037, in load_module
+    exec(code, mod.__dict__) # type: ignore
+  File "python-packages/requests/__init__.py", line 120, in <module>
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 664, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 627, in _load_backward_compatible
+  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\loader.py", line 1037, in load_module
+    exec(code, mod.__dict__) # type: ignore
+  File "python-packages/requests/utils.py", line 40, in <module>
+  File "python-packages/certifi/core.py", line 36, in where
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/importlib/resources.py", line 165, in path
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/importlib/resources.py", line 147, in files
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/importlib/_common.py", line 14, in from_package
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/importlib/_common.py", line 18, in fallback_resources
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/pathlib.py", line 1082, in __new__
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/pathlib.py", line 707, in _from_parts
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/pathlib.py", line 691, in _parse_args
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.1.3.23091805
+School idol diary Vol.1 - Honoka Kousaka 0.1
+Sat Nov 18 16:08:16 2023
