@@ -159,6 +159,36 @@
                 "settings": {
                     "foreground": "#cfc"
                 }
+            },
+            {
+                "scope": "renpy.meta.color.#1a94b8",
+                "settings": {
+                    "foreground": "#1a94b8"
+                }
+            },
+            {
+                "scope": "renpy.meta.color.#cc0000",
+                "settings": {
+                    "foreground": "#cc0000"
+                }
+            },
+            {
+                "scope": "renpy.meta.color.#b6d7a8",
+                "settings": {
+                    "foreground": "#b6d7a8"
+                }
+            },
+            {
+                "scope": "renpy.meta.color.#ffd966",
+                "settings": {
+                    "foreground": "#ffd966"
+                }
+            },
+            {
+                "scope": "renpy.meta.color.#e4007f",
+                "settings": {
+                    "foreground": "#e4007f"
+                }
             }
         ]
     }

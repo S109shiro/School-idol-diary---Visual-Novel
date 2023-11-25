@@ -26,28 +26,28 @@ define config.check_conflicting_properties = True
 ## Los colores del texto de la interfaz
 
 ## El color enfatizado usado en la interfaz para subrayar texto.
-define gui.accent_color = '#cc6600'
+define gui.accent_color = '#E4007F'
 
 ## El color del botón de texto cuando no está seleccionado ni enfocado.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#000000'
 
 ## El color 'small' se usa para el texto pequeño, que necesita destacar más.
 define gui.idle_small_color = '#aaaaaa'
 
 ## El color usado en botones y barras que ganan foco.
-define gui.hover_color = '#e0a366'
+define gui.hover_color = '#f8038a'
 
 ## El color del botón de texto seleccionado pero no enfocado. Un botón está
 ## seleccionado si indica el valor actual de la pantalla o preferencia.
-define gui.selected_color = '#ffffff'
+define gui.selected_color = '#ff98d1'
 
 ## El color de los botones de texto que no pueden ser seleccionados.
 define gui.insensitive_color = '#8888887f'
 
 ## Colores de la parte vacía de las barras. No se usan directamente, sino en la
 ## regeneración de las imágenes de barra.
-define gui.muted_color = '#512800'
-define gui.hover_muted_color = '#7a3d00'
+define gui.muted_color = '#740341'
+define gui.hover_muted_color = '#2a0017'
 
 ## Colores del texto del diálogo y menú.
 define gui.text_color = '#ffffff'
@@ -57,22 +57,22 @@ define gui.interface_text_color = '#ffffff'
 ## Tipos y tamaños de letra ####################################################
 
 ## El tipo de letra del texto del juego
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "fonts/AlegreyaSans-Regular.ttf"
 
 ## El tipo de letra de los nombres de personajes
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "fonts/GROBOLD.ttf"
 
 ## El tipo de letra del texto externo al juego.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "fonts/PassionOne-Regular.ttf"
 
 ## El tamaño normal del texto del diálogo.
-define gui.text_size = 33
+define gui.text_size = 40
 
 ## El tamaño de los nombres de los personajes
-define gui.name_text_size = 45
+define gui.name_text_size = 50
 
 ## El tamaño del texto en la interfaz.
-define gui.interface_text_size = 33
+define gui.interface_text_size = 40
 
 ## El tamaño de etiquetas en la interfaz.
 define gui.label_text_size = 36
@@ -87,8 +87,9 @@ define gui.title_text_size = 75
 ## Menú principal y menús del juego ############################################
 
 ## Imágenes del menú principal y menús del juego.
-define gui.main_menu_background = "gui/main_menu.png"
-define gui.game_menu_background = "gui/game_menu.png"
+define n = renpy.random.randint(1, 9)
+define gui.main_menu_background = "gui/MenuMain/main_menu_"+str(n)+".png"
+define gui.game_menu_background = "gui/MenuMain/main_menu_"+str(n)+".png"
 
 
 ## Diálogo #####################################################################

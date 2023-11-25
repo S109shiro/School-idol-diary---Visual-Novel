@@ -3,3 +3,4 @@ transform UmiOtoki:
 
 transform KotOtoki:
     xpos 0.3, ypos 0.19
+

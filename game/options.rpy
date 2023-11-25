@@ -1,4 +1,5 @@
-﻿## Este archivo contiene opciones que pueden cambiarse para personalizar el
+﻿
+## Este archivo contiene opciones que pueden cambiarse para personalizar el
 ## juego.
 ##
 ## Las líneas que empiezan con doble '#' son comentarios, no deben ser
@@ -13,7 +14,7 @@
 ##
 ## El _() que rodea la cadena de texto la señala como traducible.
 
-define config.name = _("School idol diary Vol.1 - Honoka Kousaka")
+define config.name = _("School idol diary Visual Novel")
 
 
 ## Determina si el título dado más arriba se muestra en el menú principal.
@@ -24,21 +25,29 @@ define gui.show_name = False
 
 ## Versión del juego.
 
-define config.version = "0.1"
+define config.version = "0.2"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
 ## comillas triples y deja una línea en blanco entre párrafos.
 
 define gui.about = _p("""
-    Hola
+    Buenas, primero que nada GRACIAS por descargar esta novela visual, enserio gracias, un abrazo para todos ustedes quien me han apoyado, para mis seguidores en Twitter y en especial a mi editor/supervisor que lo amo un montón y me ha motivado bastante para seguir adelante con este proyecto. Te amo mencito.\n
+    Ahora si, como ya sabras esta visual novel adapta todas las novelas ligeras de School idol diary 
+    de la franquicia de Love Live ╰(▔∀▔)╯, todo esto con la intencion de llegar a mas fanaticos que se les hace difícil centrarse en leer un pdf,
+    por lo que la idea que en vez de imaginar todo lo que las novelas nos proporcionan ya se tenga todo a la mano (soundtrack, escenarios, sprites, voces, etc.). \n
+    Sin más te dejo algunos links, gracias y ¡¡¡disfruta de la novela!!!!
+
+    {a=https://schoolidoldiaryvn.blogspot.com/}WEB OFICIAL{/a} \n
+    {a=https://twitter.com/AkSebas109}MI TWITTER (X){/a} \n
+    {a=}¿QUE TRAE DE NUEVO ESTA VERSION? (BETA Version 0.2){/a} \n
 """)
 
 
 ## Nombre breve del juego para ejecutables y directorios en la distribución.
 ## Debe contener solo carácteres ASCII, sin espacios, comas o puntos y coma.
 
-define build.name = "SIDHK_Beta"
+define build.name = "SIDVN_Beta2"
 
 
 ## Sonidos y música ############################################################
@@ -51,19 +60,25 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
+#Cursor
+define n = renpy.random.randint(1, 9)
+define direccion = "gui/cursors/00"+str(n)+".png"
+define config.mouse = {"default": [(direccion, 0, 0)]}
+
 
 ## Para permitir al usuario probar el volumen de los canales de sonido o voz,
 ## descomenta la línea más abajo y ajústala a un sonido de ejemplo.
 
 define config.sample_sound = "audio/sound_test.mp3"
-define config.sample_voice = "audio/faitoDayo.mp3"
+define config.sample_voice = "audio/soundTest/musicstart0"+str(n)+".mp3"
 
 
 ## Descomenta la línea siguiente para ajustar un archivo de audio que sonará en
 ## el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-define config.main_menu_music = "audio/MenuMain.mp3"
+define musicElect = renpy.random.randint(0, 3)
+define config.main_menu_music = "audio/MenuMain/MenuMain0"+str(musicElect)+".mp3"
 
 
 ## Transiciones ################################################################
@@ -145,7 +160,7 @@ default preferences.afm_time = 10
 ## Normalmente, este valor no debe ser modificado. Si lo es, debe ser siempre
 ## una cadena literal y no una expresión.
 
-define config.save_directory = "School_idol_diary_Honoka_Kousaka-1699805720"
+define config.save_directory = "School_idol_diary_visual_novel-1699805720"
 
 
 ## Icono #######################################################################

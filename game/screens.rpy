@@ -361,7 +361,26 @@ screen main_menu():
 
     ## La sentencia 'use' incluye otra pantalla dentro de esta. El contenido
     ## real del menú principal está en la pantalla de navegación.
-    use navigation
+
+    #use navigation
+    
+    # MODIFICACION DEL MENU DE INICIO
+    hbox:
+        xalign 0.5
+        yalign 0.97
+        spacing 50
+        textbutton _("Comenzar") action Start()
+        textbutton _("Cargar") action ShowMenu("load")
+        textbutton _("Opciones") action ShowMenu("preferences")
+        textbutton _("Acerca de") action ShowMenu("about")
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+            ## La ayuda no es necesaria ni relevante en dispositivos móviles.
+            textbutton _("Ayuda") action ShowMenu("help")
+        if renpy.variant("pc"):
+            ## El botón de salida está prohibido en iOS y no es necesario en
+            ## Android y Web.
+            textbutton _("Salir") action Quit(confirm=not main_menu)
+
 
     if gui.show_name:
 
@@ -385,7 +404,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    #background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
