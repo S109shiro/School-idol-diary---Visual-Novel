@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images/Elements/scarry.png') at 0x0000000005429e20>:
-  File "game/script.rpy", line 339, in script
-    "Al principio, pusieron cara de \"¡Ni de broma!\" y no les emocionaba la idea, pero terminaron aceptando y nos metimos en todo tipo de líos... pero esa es otra historia."
-OSError: Couldn't find file 'images/Elements/scarry.png'.
+While loading <renpy.display.im.Image object ('images/Elements/arisePoster.webp') at 0x0000000004da94f0>:
+  File "game/script.rpy", line 433, in script
+    "Se dice que el Departamento de Artes Escénicas es el mayor atractivo de la escuela UTX, pero sólo los que logren pasar las audiciones pueden unirse a A-RISE."
+OSError: Couldn't find file 'images/Elements/arisePoster.webp'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 339, in script
-    "Al principio, pusieron cara de \"¡Ni de broma!\" y no les emocionaba la idea, pero terminaron aceptando y nos metimos en todo tipo de líos... pero esa es otra historia."
+  File "game/script.rpy", line 433, in script
+    "Se dice que el Departamento de Artes Escénicas es el mayor atractivo de la escuela UTX, pero sólo los que logren pasar las audiciones pueden unirse a A-RISE."
   File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 930, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\exports.py", line 1474, in say
@@ -34,12 +34,12 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\display\transition.py", line 188, in render
-    renpy.display.render.render(self.transitions[-1], width, height, 0, 0)
+  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\display\transition.py", line 190, in render
+    surf = renpy.display.render.render(trans, width, height, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\display\transition.py", line 378, in render
-    top = render(self.new_widget, width, height, st, at)
+  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\display\transition.py", line 370, in render
+    return render(self.new_widget, width, height, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
   File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\display\layout.py", line 888, in render
@@ -71,9 +71,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename, directory="images")
   File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\loader.py", line 833, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'images/Elements/scarry.png'.
+OSError: Couldn't find file 'images/Elements/arisePoster.webp'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 School idol diary Visual Novel 0.2
-Sat Nov 25 15:20:46 2023
+Mon Nov 27 12:12:21 2023

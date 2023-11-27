@@ -3,8 +3,6 @@
 ################################################################################
 
 init offset = -1
-
-
 ################################################################################
 ## Estilos
 ################################################################################
@@ -249,14 +247,14 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Atrás") action Rollback()
-            textbutton _("Historial") action ShowMenu('history')
-            textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Guardar") action ShowMenu('save')
-            textbutton _("Guardar R.") action QuickSave()
-            textbutton _("Cargar R.") action QuickLoad()
-            textbutton _("Ajustes.") action ShowMenu('preferences')
+            textbutton _("Atrás") action Rollback() 
+            textbutton _("Historial") action ShowMenu('history') activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True) activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Auto") action Preference("auto-forward", "toggle") activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Guardar") action ShowMenu('save') activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Guardar R.") action QuickSave() activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Cargar R.") action QuickLoad() activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Ajustes.") action ShowMenu('preferences') activate_sound "audio/sfx/enter.mp3"
 
 
 ## Este código asegura que la pantalla 'quick_menu' se muestra en el juego,
@@ -297,38 +295,38 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Comenzar") action Start()
+            textbutton _("Comenzar") action Start() activate_sound "audio/sfx/enter.mp3"
 
         else:
 
-            textbutton _("Historial") action ShowMenu("history")
+            textbutton _("Historial") action ShowMenu("history") activate_sound "audio/sfx/enter.mp3"
 
-            textbutton _("Guardar") action ShowMenu("save")
+            textbutton _("Guardar") action ShowMenu("save") activate_sound "audio/sfx/enter.mp3"
 
-        textbutton _("Cargar") action ShowMenu("load")
+        textbutton _("Cargar") action ShowMenu("load") activate_sound "audio/sfx/enter.mp3"
 
-        textbutton _("Opciones") action ShowMenu("preferences")
+        textbutton _("Opciones") action ShowMenu("preferences") activate_sound "audio/sfx/enter.mp3"
 
         if _in_replay:
 
-            textbutton _("Finaliza repetición") action EndReplay(confirm=True)
+            textbutton _("Finaliza repetición") action EndReplay(confirm=True) activate_sound "audio/sfx/enter.mp3"
 
         elif not main_menu:
 
-            textbutton _("Menú principal") action MainMenu()
+            textbutton _("Menú principal") action MainMenu() activate_sound "audio/sfx/enter.mp3"
 
-        textbutton _("Acerca de") action ShowMenu("about")
+        textbutton _("Acerca de") action ShowMenu("about") activate_sound "audio/sfx/enter.mp3"
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## La ayuda no es necesaria ni relevante en dispositivos móviles.
-            textbutton _("Ayuda") action ShowMenu("help")
+            textbutton _("Ayuda") action ShowMenu("help") activate_sound "audio/sfx/enter.mp3"
 
         if renpy.variant("pc"):
 
             ## El botón de salida está prohibido en iOS y no es necesario en
             ## Android y Web.
-            textbutton _("Salir") action Quit(confirm=not main_menu)
+            textbutton _("Salir") action Quit(confirm=not main_menu) activate_sound "audio/sfx/enter.mp3"
 
 
 style navigation_button is gui_button
@@ -365,22 +363,25 @@ screen main_menu():
     #use navigation
     
     # MODIFICACION DEL MENU DE INICIO
-    hbox:
+    
+    frame:
         xalign 0.5
         yalign 0.97
-        spacing 50
-        textbutton _("Comenzar") action Start()
-        textbutton _("Cargar") action ShowMenu("load")
-        textbutton _("Opciones") action ShowMenu("preferences")
-        textbutton _("Acerca de") action ShowMenu("about")
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-            ## La ayuda no es necesaria ni relevante en dispositivos móviles.
-            textbutton _("Ayuda") action ShowMenu("help")
-        if renpy.variant("pc"):
-            ## El botón de salida está prohibido en iOS y no es necesario en
-            ## Android y Web.
-            textbutton _("Salir") action Quit(confirm=not main_menu)
+        hbox:
+            spacing 50
+            textbutton _("Comenzar") action Start() text_size 40 activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Cargar") action ShowMenu("load") text_size 40 activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Opciones") action ShowMenu("preferences") text_size 40 activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Acerca de") action ShowMenu("about") text_size 40 activate_sound "audio/sfx/enter.mp3"
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")): 
+                ## La ayuda no es necesaria ni relevante en dispositivos móviles.
+                textbutton _("Ayuda") action ShowMenu("help") text_size 40 activate_sound "audio/sfx/enter.mp3"
+            if renpy.variant("pc"):
+                ## El botón de salida está prohibido en iOS y no es necesario en
+                ## Android y Web.
+                textbutton _("Salir") action Quit(confirm=not main_menu) text_size 40 activate_sound "audio/sfx/enter.mp3"
 
+        
 
     if gui.show_name:
 

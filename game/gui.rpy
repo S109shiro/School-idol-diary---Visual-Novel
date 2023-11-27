@@ -29,7 +29,7 @@ define config.check_conflicting_properties = True
 define gui.accent_color = '#E4007F'
 
 ## El color del botón de texto cuando no está seleccionado ni enfocado.
-define gui.idle_color = '#000000'
+define gui.idle_color = '#FFFFFF'
 
 ## El color 'small' se usa para el texto pequeño, que necesita destacar más.
 define gui.idle_small_color = '#aaaaaa'
@@ -72,16 +72,16 @@ define gui.text_size = 40
 define gui.name_text_size = 50
 
 ## El tamaño del texto en la interfaz.
-define gui.interface_text_size = 40
+define gui.interface_text_size = 35
 
 ## El tamaño de etiquetas en la interfaz.
-define gui.label_text_size = 36
+define gui.label_text_size = 40
 
 ## El tamaño del texto en las notificaciones.
 define gui.notify_text_size = 24
 
 ## El tamaño del título del juego.
-define gui.title_text_size = 75
+define gui.title_text_size = 50
 
 
 ## Menú principal y menús del juego ############################################

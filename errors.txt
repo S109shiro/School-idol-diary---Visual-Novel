@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/sound.rpy", line 8: expected statement.
-    sfx
-       ^
+File "game/script.rpy", line 26: expected menuitem
+    $ quick_menu = False
+    ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Sat Nov 25 15:37:44 2023
+Sun Nov 26 21:52:33 2023

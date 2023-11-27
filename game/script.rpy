@@ -1,5 +1,4 @@
 ﻿# El juego comienza aquí.
-
 label splashscreen:
     $ op = renpy.random.randint(1, 2)
     if op == 1:
@@ -20,17 +19,20 @@ label splashscreen:
 
 label start:
     #ELECCION DE RUTAS
+    $ quick_menu = False
     stop music fadeout 0.8
     play music SongMenuSelect fadein 0.5 fadeout 0.5
     scene MenuElec with dissolve
+    $ quick_menu = False
     menu:
+        
         "QUE RUTA DESEAS LEER?"
         "Ruta de Honoka Kousaka":
             menu: 
                 "QUE CAPITULO DESEAS"
-                "CAPITULO 1 - HONOKA NO SE RENDIRÁ":
+                "CAPITULO 1 - HONOKA NO SE RENDIRÁ" : 
                     jump cap1Honoka
-                "CAPITULO 2 - CONVIRTÁMONOS EN SCHOOL IDOLS":
+                "CAPITULO 2 - CONVIRTÁMONOS EN SCHOOL IDOLS" :
                     jump cap2Honoka
                 "CAPITULO3":
                     jump cap3Honoka
@@ -38,12 +40,12 @@ label start:
 
         
         "Ruta de Umi Sonoda":
-            
             jump UmiSono
     return
 
 #COMIENZO DEL CAPITULO 1
 label cap1Honoka:
+    $ quick_menu = True
     stop music fadeout 0.8
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo1 with fade
@@ -273,6 +275,7 @@ label cap1Honoka:
 
 #COMIENZO DEL CAPITULO 2  
 label cap2Honoka: 
+    $ quick_menu = True
     stop music fadeout 0.8
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo2 with fade
@@ -378,6 +381,7 @@ label cap2Honoka:
     "Al toparme con una situación en la que nunca había pensado, entré en pánico y comencé a pensar."
     " “Mm, esto de las idols, sigo creyendo que es una buena idea. Digo, soy una chica. Tengo fe de que mientras siga intentándolo, puedo convertirme en idol ♡”."
     "Pero sí... no había pensado bien en todo eso de la escritura de canciones."
+    voice "audio/VoiceHonoka/004.mp3"
     K_Honoka "Haaa."
     "Suspiré sin pensar. ¡Oh no!"
     "Cada que suspiras se escapa una parte de tu felicidad. ¿Lo sabían?"
@@ -388,15 +392,21 @@ label cap2Honoka:
     "Puede que haya subestimado todo esto."
     "Mientras pensaba, tomé un manjuu para sacudir mi mente. El manjuu preferido de la tienda Homura, manjuu frito."
     "Lo metí en mi boca y comencé a masticar. Y entonces…"
+    play sound idea noloop
     "¡Tiiin~♪!"
     "¡Ya sé! ¡Tengo una idea!"
     "En momentos como este, debes de aprender de gente con más experiencia, ¿no es verdad?"
+    scene black with dissolve
+    $ renpy.pause(1.5, hard = True)
 
-    #CAMBIO DE DIA
+    #CAMBIO DE LUGAR
+    
     "Era un día festivo, por eso había una laaaaaarga fila en el teatro."
+    scene homura with dissolve
     "En cuanto se me ocurrió la idea, me alisté y salí de casa."
     "Luego, caminé por 20 minutos."
-    "Llegué a... el teatro de UTX en Akihabara."
+    scene utx with dissolve
+    "Llegué a el teatro de {b}UTX{/b} en Akihabara."
     "Ya todos conocen el lugar, ¿no?"
     "Ya he hablado bastante sobre las idols escolares, pero las idols que se presentan aquí, en este teatro, son las verdaderas, únicas y originales idols escolares."
     "La escuela UTX, en Akihabara, es un nuevo y gigante rascacielos construido mero en frente de la estación Akihabara, al mismo tiempo que la remodelaban."
@@ -406,15 +416,18 @@ label cap2Honoka:
     "Con tan sólo verlo, uno puede notar el contraste con Otonoki. Todas las chicas en Otonoki son... pues... tranquilas y amables."
     "¿Y cuál es la diferencia? Ah, hay muchas chicas con lentes. ¿Quizás sea eso? ¿O quizás sean esos elegantes uniformes que las hacen lucir tan bien?"
     "Traté de olvidarme de esas cosas y seguí caminando."
+    scene utxCerca with dissolve
     "Ahí vi a un montón de gente reunida en la entrada del segundo piso del enorme edificio."
     "Ahí se encuentra la entrada al teatro."
     "Sobre la entrada, pintada de negro como en las discos, hay un letrero, igual al de los cines. Alumbrado con muchas luces."
+    voice "audio/VoiceHonoka/007.mp3"
     K_Honoka "Guau..."
     "Un sonido salió de mi boca. Ay, abuelita, ese fue un sonido de admiración, no un suspiro, ¿okey? No voy a rendirme tan fácilmente…"
+    voice "audio/VoiceHonoka/006.mp3"
     K_Honoka "Sí que es bastante increíble... "
-    "Fue lo único que pude susurrar."
     "El tamaño de aquel letrero era imponente."
     "Justo frente a mí, vi a tres chicas."
+    scene arisePoster with dissolve
     "Se trataba del brillante grupo de idol escolares, {color=#1a94b8}A-RISE{/color}, se dice que son las #1 tanto en talento como en popularidad."
     "Las tres integrantes: {color=#cc0000}Tsubasa Kira{/color}, {color=#b6d7a8}Erena Toudou{/color} y {color=#ffd966}Anju Yuuki{/color}."
     "Se dice que el Departamento de Artes Escénicas es el mayor atractivo de la escuela UTX, pero sólo los que logren pasar las audiciones pueden unirse a A-RISE."
@@ -424,12 +437,14 @@ label cap2Honoka:
     "Dicen que son más populares y talentosas que muchas idols profesionales."
     "Y bueno, mientras que las integrantes de este grupo idol tienen que lidiar con horarios pesados de ensayos y prácticas todos los días, tampoco hay duda de que una vez que se gradúen podrían triunfar como verdaderas artistas de inmediato."
     "Ya había escuchado de ellas, pero esa era la primera vez que iba a verlas en persona, lo que veía frente a mí me tenía sorprendida, estaba impactada."
+    scene utxCerca with dissolve
     "Un teatro bien equipado y carísimo, lleno de fans haciendo fila."
     "Logré moverme hacia el frente para llegar a la taquilla."
     "En el anuncio, vi que tenían dos presentaciones a diario."
     "Ambas tenían un letrero que decía \"SOLD OUT\""
     "\"Sold out\"... significa que ya no hay boletos, ¿verdad? ¿Este bonito teatro se llena de gente todos los días...?"
     "Ah, pero ya que todavía hay mucha gente, quizá ya no alcanzaron boleto, así que puede que esperen la devolución, o sólo desean poder ver a A-RISE cuando entren o salgan."
+    #PENDIENTE
     K_Honoka "Haaa."
     "Traté de contenerlo, pero… Al final, no pude evitar suspirar."
     "Ellas son idols escolares. ¿De verdad?"
@@ -439,16 +454,20 @@ label cap2Honoka:
     "Cuando lo veo de esa forma, ser idol escolar parece un sueño tan lejano como evitar que Otonoki cierre."
     "Me siento un poco mareada."
     "Por un segundo, me di la vuelta y comencé a alejarme. Aunque no suelo ser así."
+    scene mediodelCamino with dissolve
     "Y aunque siempre trato de evitar alejarme, siempre voy hacia adelante, de seguir avanzando."
     "¡¡¡Aaaah, esta vez, mi rival es muy poderoso!!!" with vpunch
     "El enorme rascacielos de UTX imponía demasiado."
     "Y es tan diferente del viejo, aburrido y poco colorido edificio de Otonoki."
+    scene arisePoster with dissolve
     "Las chicas de A-RISE de aquella foto eran tan diferentes a nosotras."
     "La gente de este lado de Akihabara es muy diferente a la gente del lado de Otonoki."
     "Me dolía el pecho, estaba triste."
     "¿Es eso lo que todos quieren?"
+    scene mediodelCamino with dissolve
     "Aunque todavía quiero a Otonoki."
     "Paso a paso. Sumergida en mis pensamientos, comencé a caminar a casa."
+    scene homura with dissolve
     "Debí haber apretado los dientes en algún punto, empecé a sentir que me dolía la boca un poco."
     K_Honoka "¿Qué estoy haciendo?"
     S_Umi "¿Así que aquí andabas, Honoka?"
