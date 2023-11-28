@@ -15,6 +15,7 @@ image utx = "images/utx.png"
 image utxCerca = "images/utxCerca.png"
 image homura = "images/homura.png"
 image mediodelCamino = "images/MedioCamino.png"
+image estacion = "images/estacion.png"
 
 #Sprites
 image HonokaPan = "images/personajes/Honokapan.png"
