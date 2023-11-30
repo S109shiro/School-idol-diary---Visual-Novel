@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 520: expected simple expression (string)
-    voice 
-          ^
+File "game/script.rpy", line 39: choice menuitem expects a non-empty block.
+    "CAPITULO 4 - ":
+                    ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Mon Nov 27 21:26:04 2023
+Wed Nov 29 16:59:27 2023

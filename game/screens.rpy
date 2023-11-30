@@ -208,7 +208,7 @@ screen choice(items):
 
     vbox:
         for i in items:
-            textbutton i.caption action i.action
+            textbutton i.caption action i.action activate_sound "audio/sfx/enter.mp3"
 
 
 style choice_vbox is vbox
@@ -326,7 +326,7 @@ screen navigation():
 
             ## El botón de salida está prohibido en iOS y no es necesario en
             ## Android y Web.
-            textbutton _("Salir") action Quit(confirm=not main_menu) activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Salir") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -567,7 +567,7 @@ screen about():
     ## Esta sentencia 'use' incluye la pantalla 'game_menu' dentro de esta. El
     ## elemento 'vbox' se incluye entonces dentro del 'viewport' al interno de
     ## la pantalla 'game_menu'.
-    use game_menu(_("Acerca de"), scroll="viewport"):
+    use game_menu(_("Acerca del proyecto"), scroll="viewport"):
 
         style_prefix "about"
 
@@ -679,28 +679,28 @@ screen file_slots(title):
 
                     spacing gui.page_spacing
 
-                    textbutton _("<") action FilePagePrevious()
+                    textbutton _("<") action FilePagePrevious() activate_sound "audio/sfx/enter.mp3"
 
                     if config.has_autosave:
-                        textbutton _("{#auto_page}A") action FilePage("auto")
+                        textbutton _("{#auto_page}A") action FilePage("auto") activate_sound "audio/sfx/enter.mp3"
 
                     if config.has_quicksave:
-                        textbutton _("{#quick_page}R") action FilePage("quick")
+                        textbutton _("{#quick_page}R") action FilePage("quick") activate_sound "audio/sfx/enter.mp3"
 
                     ## range(1, 10) da los números del 1 al 9.
                     for page in range(1, 10):
-                        textbutton "[page]" action FilePage(page)
+                        textbutton "[page]" action FilePage(page) activate_sound "audio/sfx/enter.mp3"
 
-                    textbutton _(">") action FilePageNext()
+                    textbutton _(">") action FilePageNext() activate_sound "audio/sfx/enter.mp3"
 
                 if config.has_sync:
                     if CurrentScreenName() == "save":
                         textbutton _("Subir Sync"):
-                            action UploadSync()
+                            action UploadSync() activate_sound "audio/sfx/enter.mp3"
                             xalign 0.5
                     else:
                         textbutton _("Descargar Sync"):
-                            action DownloadSync()
+                            action DownloadSync() activate_sound "audio/sfx/enter.mp3"
                             xalign 0.5
 
 
@@ -759,15 +759,15 @@ screen preferences():
                     vbox:
                         style_prefix "radio"
                         label _("Pantalla")
-                        textbutton _("Ventana") action Preference("display", "window")
-                        textbutton _("Pantalla completa") action Preference("display", "fullscreen")
+                        textbutton _("Ventana") action Preference("display", "window") activate_sound "audio/sfx/enter.mp3"
+                        textbutton _("Pantalla completa") action Preference("display", "fullscreen") activate_sound "audio/sfx/enter.mp3"
 
                 vbox:
                     style_prefix "check"
                     label _("Saltar")
-                    textbutton _("Texto no visto") action Preference("skip", "toggle")
-                    textbutton _("Tras elecciones") action Preference("after choices", "toggle")
-                    textbutton _("Transiciones") action InvertSelected(Preference("transitions", "toggle"))
+                    textbutton _("Texto no visto") action Preference("skip", "toggle") activate_sound "audio/sfx/enter.mp3"
+                    textbutton _("Tras elecciones") action Preference("after choices", "toggle") activate_sound "audio/sfx/enter.mp3"
+                    textbutton _("Transiciones") action InvertSelected(Preference("transitions", "toggle")) activate_sound "audio/sfx/enter.mp3"
 
                 ## Aquí se pueden añadir 'vboxes' adicionales del tipo
                 ## "radio_pref" o "check_pref" para nuevas preferencias.
@@ -804,7 +804,7 @@ screen preferences():
                             bar value Preference("sound volume")
 
                             if config.sample_sound:
-                                textbutton _("Prueba") action Play("sound", config.sample_sound)
+                                textbutton _("Prueba") action Play("sound", config.sample_sound) 
 
 
                     if config.has_voice:
@@ -821,7 +821,7 @@ screen preferences():
 
                         textbutton _("Silenciar todo"):
                             action Preference("all mute", "toggle")
-                            style "mute_all_button"
+                            style "mute_all_button" activate_sound "audio/sfx/enter.mp3"
 
 
 style pref_label is gui_label
@@ -938,7 +938,7 @@ screen history():
                     substitute False
 
         if not _history_list:
-            label _("El historial está vacío.")
+            label _("El historial está vacío porque no has jugado nada.")
 
 
 ## Esto determina qué etiquetas se permiten en la pantalla de historial.
@@ -1187,8 +1187,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Sí") action yes_action
-                textbutton _("No") action no_action
+                textbutton _("Sí") action yes_action activate_sound "audio/sfx/enter.mp3"
+                textbutton _("No") action no_action activate_sound "audio/sfx/enter.mp3"
 
     ## Clic derecho o escape responden "no".
     key "game_menu" action no_action
