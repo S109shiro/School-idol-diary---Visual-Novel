@@ -23,8 +23,7 @@ label start:
     stop music fadeout 0.8
     play music SongMenuSelect fadein 0.5 fadeout 0.5
     scene MenuElec with Dissolve(1.5)
-    menu:
-        
+    menu:  
         "QUE RUTA DESEAS LEER?"
         "Ruta de Honoka Kousaka":
             menu: 
@@ -36,12 +35,12 @@ label start:
                 "CAPITULO 3 - ¡BAILEMOS!":
                     jump cap3Honoka
                 #"CAPITULO 4 - ":
-                    
-
-        
+                
         #"Ruta de Umi Sonoda":
             #jump UmiSono
     return
+
+#NOVELA DE HONOKA
 
 #COMIENZO DEL CAPITULO 1
 label cap1Honoka:
@@ -271,7 +270,6 @@ label cap1Honoka:
     scene black with fade
     stop music fadeout 1.0
     jump cap2Honoka
-
 
 #COMIENZO DEL CAPITULO 2  
 label cap2Honoka: 
@@ -569,7 +567,6 @@ label cap2Honoka:
     scene comentarioUmi1 with dissolve
     $ renpy.pause(9.0, hard = False) 
     jump cap3Honoka
-
 
 #COMIENZO DEL CAPITULO 3
 label cap3Honoka:
