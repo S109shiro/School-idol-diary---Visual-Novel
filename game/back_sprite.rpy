@@ -3,6 +3,15 @@ image capitulo1 = "images/Capitulos/Honoka/TCapitulo1.png"
 image capitulo2 = "images/Capitulos/Honoka/TCapitulo2.png"
 image capitulo3 = "images/Capitulos/Honoka/TCapitulo3.png"
 
+#Comentarios
+image TKotori = "images/Comentarios/Titulos/TKotori.png"
+image TUmi = "images/Comentarios/Titulos/TUmi.png"
+image TMaki = "images/Comentarios/Titulos/TMaki.png"
+
+image comentarioKotori1 = "images/Comentarios/001.png"
+image comentarioUmi1 = "images/Comentarios/002.png"
+image comentarioMaki1 = "images/Comentarios/003.png"
+
 
 #Scene
 image cuarto_Honoka = "images/Cuarto_Honoka.png"
@@ -22,6 +31,18 @@ image utxCerca = "images/utxCerca.png"
 image homura = "images/homura.png"
 image mediodelCamino = "images/MedioCamino.png"
 image estacion = "images/estacion.png"
+image HomuraCocina = "images/HomuraCocina.png"
+image HomuraInside = "images/HomuraInside.png"
+image presentacionHono = "images/Elements/presentacionHono.png"
+image presentacionUmi = "images/Elements/presentacionUmi.png"
+image presentacionKotori = "images/Elements/presentacionKotori.png"
+image presentacionHana = "images/Elements/presentacionHana.png"
+image presentacionNico = "images/Elements/presentacionNico.png"
+image presentacionRin = "images/Elements/presentacionRin.png"
+image presentacionMaki = "images/Elements/presentacionMaki.png"
+image miembros2 = "images/Elements/Miembros2.png"
+image miembros5 = "images/Elements/Miembros5.png"
+image miembros6 = "images/Elements/Miembros6.png"
 
 
 #Sprites
@@ -29,6 +50,7 @@ image HonokaPan = "images/personajes/Honokapan.png"
 image KousakaHonoka = "images/personajes/HonokaBase.png"
 image UmiS = "images/personajes/UmiSonoda.png"
 image KotoriM = "images/personajes/KotoriMinami.png"
+image KousakaYukiho = "images/personajes/KousakaYukiho.png"
 
 
 #Elements
@@ -43,9 +65,3 @@ image insatisfaccion = "images/Elements/scary.png"
 image arisePoster = "images/Elements/arisePoster.png"
 
 
-#Comentarios
-image TKotori = "images/Comentarios/Titulos/TKotori.png"
-image TUmi = "images/Comentarios/Titulos/TUmi.png"
-
-image comentarioKotori1 = "images/Comentarios/001.png"
-image comentarioUmi1 = "images/Comentarios/002.png"

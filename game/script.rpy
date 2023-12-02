@@ -48,8 +48,8 @@ label cap1Honoka:
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo1 with fade
     $ renpy.pause(3.0, hard= True)
-    $ quick_menu = True
     scene cuarto_Honoka with fade
+    $ quick_menu = True
     play music Main1 fadein 1.5
     show HonokaPan at top with dissolve 
     "Soy Honoka Kousaka, tengo 16 años. Voy en segundo año de la preparatoria Otonokizaka." with dissolve 
@@ -260,9 +260,10 @@ label cap1Honoka:
     voice "audio/VoiceHonoka/sleep.mp3"
     "Y con ese deseo, me iré a dormir esta noche." with dissolve 
     "¡Mañana practicaremos duro!" with dissolve 
-    
+    $ quick_menu = False 
+    scene black with fade
+
     #COMENTARIOS FINALES DE KOTORI
-    $ quick_menu = False
     scene TKotori with dissolve
     $ renpy.pause(2.0, hard = False) 
     scene comentarioKotori1 with dissolve
@@ -277,9 +278,9 @@ label cap2Honoka:
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo2 with fade
     $ renpy.pause(3.0, hard= True)
-    $ quick_menu = True
 
     scene cielo with fade
+    $ quick_menu = True
     "Todavía puedo recordar la emoción que sentí cuando leí las palabras \"idol escolar\" por primera vez." with dissolve
     "Se sentía tan emocionante como el primer amor." with dissolve 
     "Bueno, yo todavía no me he enamorado, pero supongo que así se siente. Ejejeje♡" with dissolve
@@ -558,14 +559,15 @@ label cap2Honoka:
     "Supongo que debemos empezar con una canción o el salón del club, ¿no?" with dissolve
     "Hablaremos al respecto." with dissolve
     "¡Voy a dar lo mejor!" with dissolve
-    scene black with dissolve
+    $ quick_menu = False 
+    scene black with fade
 
     #COMENTARIOS FINALES DE UMI
-    $ quick_menu = False
     scene TUmi with dissolve
     $ renpy.pause(2.0, hard = False) 
     scene comentarioUmi1 with dissolve
     $ renpy.pause(9.0, hard = False) 
+    scene black with fade
     jump cap3Honoka
 
 #COMIENZO DEL CAPITULO 3
@@ -574,37 +576,182 @@ label cap3Honoka:
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo3 with fade
     $ renpy.pause(3.0, hard= True)
+    
+
+    scene black with dissolve
     $ quick_menu = True
+    "¡Auch, auch, auch!" with dissolve 
+    "¡Ay, ya no puedo seguir!" with dissolve 
+    scene HomuraCocina with dissolve
+    voice "audio/VoiceHonoka/015.mp3"
+    K_Honoka "¡¿Dónde están las compresas frías?!" with dissolve 
+    "Saqué una compresa del refrigerador, la puse en mi pantorrilla, y…" with dissolve 
+    "¡Aah! ¡Arde! ¡Qué dolor! ¡Arde mucho!" with dissolve 
+    show KousakaYukiho at top with dissolve
+    K_Yukiho "¡¿Podrías callarte, hermana?!" with dissolve 
+    "Mi hermana Yukiho se asomó por el pasillo al oírme gritar." with dissolve  
+    K_Yukiho "¡Si vas a hacer eso, hazlo en tu habitación! Y además, si te duelen los músculos por copiar esos bailes, ¿no significa que te hace falta hacer ejercicio?" with dissolve 
+    K_Yukiho "Si no tienes cuidado puede que termines subiendo de peso. Tenemos una tienda de manjuu, eh, ¡así que siempre hay que comer en esta casa!" with dissolve 
+    "Yukiho miró la mesa, notando el plato lleno de rebanadas de castella." with dissolve 
+    "¡Agh, eran sobras que tomé del mostrador para comerlas después!" with dissolve 
+    "Se burló cuando traté de esconderlas y luego regresó a su habitación." with dissolve 
+    hide KousakaYukiho with dissolve
+    "¡Qué grosera!" with vpunch
+    "Dios, y pensar que hace poco era una niñita, siempre me andaba siguiendo, \"hermana, hermana, hermana\"." with dissolve 
+    "¿A dónde se fue esa linda Yukiho?" with dissolve 
+    "Sin pensarlo volví a presionar la compresa y... ¡Ay! ¡Todavía arde!" with dissolve 
+    "Jaa. Esto va mal, ¿verdad? ¿Será que pueda participar mañana en la práctica? A pesar de lo que piense Yukiho, no estoy sólo copiando los bailes. La práctica de hoy fue bastante difícil." with dissolve 
+    #scene exercise with dissolve
+    "Siguiendo la sugerencia de Umi-chan, una atlética chica que forma parte del club de kendo y arquería, ayer comenzamos con el ejercicio." with dissolve 
+    "4 repeticiones de 20 sentadillas, 4 repeticiones de 10 lagartijas, 50 vueltas corriendo en las escaleras del templo, 100 levantamientos de rodilla y mucho más." with dissolve
+    "¡Honestamente, pareciera que somos más bien un club deportivo que uno de idols! Estoy segura de que si no hicimos saltos fue porque a Umi-chan se le olvidó." with dissolve 
+    "Cielos, tendré que ingeniármelas para que a Umi-chan no se le ocurra hacerlo mañana." with dissolve 
+    scene HomuraCocina with dissolve
+    "Y así, hoy me di cuenta de que los ensayos de las idols son más difíciles de lo que habíamos imaginado." with dissolve 
+    scene miembros2 with dissolve
+    "Primero, sólo éramos mis amigas y compañeras, Kotori-chan y Umi-chan; luego se unieron las chicas de primer año." with dissolve 
+    scene miembros5 with dissolve
+    "Hanayo-chan, Maki-chan y Rin-chan (con habilidades para componer música); y después" with dissolve 
+    scene miembros6 with dissolve
+    "Nico-chan también se unió; ¡y muchas cosas más pasaron!" with dissolve 
+    "Pero ahora, siento que µ's comienza a lucir como un verdadero grupo idol." with dissolve 
+    "Después de todo, es mejor que haber empezado ya con un grupo de amigas, si lo hacemos así, obtendremos nuevas y emocionantes experiencias, también aprenderemos de los talentos de Maki en la composición." with dissolve 
+    "Y cuando se trata de grupos de idols, es mucho mejor tener diferentes tipos de chicas que puedan brillar de varias formas, ¿no?" with dissolve 
+    scene HomuraCocina with dissolve
+    "¡En lo personal, cuando se trata de pasteles, preferiría comer 10 piezas de 10 pasteles diferentes que un pastel entero de un solo sabor!" with dissolve 
+    "De hecho, cuando veo por el aparador de la pastelería, me emociono tanto que no puedo escoger uno." with dissolve 
+    "Pastel de fresa es la opción típica, y claro, a todos le gustan los pay de queso y pastel de chocolate, así que también debemos comer de esos, y el mousse de frambuesa, si es temporada, también hay pastel de mango." with dissolve 
+    "Y aunque es simple, el dulce sabor de la tarta de almendra es difícil de resistir, me gustaría un petisú relleno de natilla, y un crujiente milhojas, cielos, babeo sólo de pensarlo." with dissolve 
+    "Nom♡" with dissolve 
+    "Por eso quiero que μ's sea un grupo colorido, que esté lleno de tonos y sabores, como una brillante caja de pasteles." with dissolve 
+    scene presentacionUmi with dissolve
+    "Ahora, el grupo está compuesto por: Umi-chan, con su gran conocimiento en arquería y poesía en la secundaria, se encarga de las letras y el ejercicio." with dissolve 
+    scene presentacionKotori with dissolve
+    "Y, nuestra otra chica de segundo, la amante del cosplay, Kotori-chan, a cargo del diseño de ropa y accesorios." with dissolve 
+    scene presentacionHana with dissolve
+    $ renpy.pause(1.0, hard=True)
+    scene presentacionNico with dissolve
+    "Luego, como Hanayo-chan, de primer año y Nico-chan, de tercero, siempre han amado y sabido mucho sobre idols, ellas están a cargo de las coreografías y la propaganda (aunque toda sea vía internet)." with dissolve 
+    scene presentacionRin with dissolve
+    "Rin-chan, de primer año, por ser parte del club de atletismo y tener buena condición, es la instructora." with dissolve 
+    scene presentacionMaki with dissolve
+    "Y Maki-chan, de primero, una chica rica que sabe tocar el piano desde pequeña, se encarga de componer." with dissolve  
+    scene HomuraCocina with dissolve
+    "Mm, ya que lo pienso, debí de haber invertido tiempo en aprender algo en lugar de andar jugando cuando salía de la primaria." with dissolve 
+    "Todas estas chicas normales tienen talentos, y yo sólo dependo de ellas en todo." with dissolve 
+    scene presentacionHono with dissolve
+    "Siento que soy una inútil... Así que, la deprimida Honoka está a cargo de armar el horario." with dissolve 
+    "Me siento mal porque técnicamente cualquier persona podría hacerlo, pero yo soy la que creó a μ's, así que de momento yo soy la líder y el centro." with dissolve 
+    "De hecho, las demás son mucho mejor en esto, y esto no lo es mío." with dissolve 
+    "Oh, bueno ♡" with dissolve 
+    "Quizás cuando me pongo en el medio, las otras resaltan más ♪" with dissolve 
+    scene HomuraCocina with dissolve
+    "Después de todo, Maki una vez dijo, \"yo nunca pensé en volverme idol, pero ya que empezaron ustedes, por alguna razón, sentí que también podría hacerlo.\"" with dissolve 
+    "¿No es verdad? ♪ La típica imagen de una idol no es la de una belleza extravagante, como una modelo, sino más bien una chica linda que siempre sonríe e irradia energía, ¿no?" with dissolve 
+    "¡Así que hasta una chica normal como yo, podría tratar de lograrlo!" with dissolve 
+    "Mm, sí, ¡muy bien! ¡En eso me convertiré, en una idol al alcance de todos! ¡O más bien, una idol que quieras apoyar, como tu compañera de clase!" with dissolve 
+    "Ah, ese fue un lema que pensó Hanayo-chan." with dissolve 
+    "Pero Nico-chan lo rechazó de inmediato, porque era \"¡Muy simple!\"" with dissolve  
+    "A mí me había gustado." with dissolve 
+    "Por supuesto, queremos convertirnos en idols famosas, pero a decir verdad, siento que \"ser la chica que se sienta junto a ti en clase\" nos queda mejor." with dissolve 
+    "A veces, viene un simple pudin dentro de esas coloridas cajas de pasteles, ¿no?" with dissolve 
+    "Y ese pudin puede volverse muy popular, ¿no?" with dissolve 
+    "Cuando papá traía regalos, siempre compraba dos pudines. Mi hermana y yo nos regocijábamos \"¡Hurra, pudin! Y nos compraste para las dos ♪\"" with dissolve 
+    "Y mi papá respondía, \"¡Claro que sí, el pudin es barato!\"" with dissolve 
+    "Sin embargo, la \“compañera de clase\" Honoka, de la tienda de dulces Homura, tiene calambres ahora." with dissolve 
+    "Agh, qué mal, si me sentaba, ya no podría pararme." with dissolve 
+    "Mañana volveremos a ensayar, ¿podré hacerlo?" with dissolve 
+    "¿Qué pasa si no puedo bailar y alguien toma mi lugar en el centro?" with dissolve 
+    "No me importa ser o no el centro, pero cambiar de lugar significa más trabajo para las demás." with dissolve 
+    "Todas tienen sus responsabilidades además del ensayo." with dissolve 
+    "Ya soy bastante inútil, no puedo causar más problemas y faltar al ensayo por unos simples calambres." with dissolve 
+    "¡Claro que no!" with dissolve 
+    "¡Bien, debo esforzarme más!" with dissolve 
+    "Sólo un poquito más y luego descansaré. Y mañana practicaré más. De esa forma, si alguien tiene dudas sobre la coreografía, seré una buena líder y les mostraré cómo se hace." with dissolve 
+    "Sí, esa es la tarea de la que va en el centro, ¿no?" with dissolve 
+    "Aunque sea temporal, soy el tipo de persona que tiene que esforzarse siempre. ¡Me gusta dar lo mejor!" with dissolve 
+    "Ese era mi talento desde pequeña. Mi alegría y energía son mis más grandes virtudes, no importa qué pase, nunca me rindo, nunca me detengo." with dissolve 
+    "La gente dirá que en verdad me gusta esforzarme. Practicaré." with dissolve 
+    "Me aprenderé de memoria la coreografía. Tal como ahora, ¿no?" with dissolve  
+    "Muy bien, ahí voy. Un, dos, tres y cuatro…" with dissolve 
+    scene black with fade
+    "Después de eso, estaba flotando." with dissolve 
+    "Bailaba en un sueño." with dissolve 
+    "Mis adoloridos pies se sentían ligeros, como si tuviera alas y, en mi sueño, mis movimientos eran mucho mejores ♡." with dissolve 
+    "¡Mis giros y saltos eran perfectos!" with dissolve 
+    "Guau, ¿todas me dirán que hice un buen trabajo?" with dissolve 
+    "¡Oigan, chicas! ¡Yo también me estoy esforzando!" with dissolve 
+    $ quick_menu = False
+    scene black with fade 
+    $ renpy.pause(5.0, hard=True)
+    
+    # SIGUIENTE DIA
+    scene cuarto_Honoka with dissolve
+    $ quick_menu = True
+    "Cuando desperté, mi futón olía a pura compresa fría." with dissolve 
+    "Por la ventana entraba la luz de la maña..." with dissolve 
+    voice "audio/VoiceHonoka/016.mp3"
+    K_Honoka "¡Ay no!" with dissolve 
+    "¿Me quedé dormida?" with dissolve 
+    "¡No tenía tiempo de ordenar la tienda como cada mañana!" with dissolve 
+    "Esperen un segundo." with dissolve 
+    scene HomuraInside with dissolve
+    "Bajé las escaleras y grité" with dissolve 
+    voice "audio/VoiceHonoka/017.mp3"
+    K_Honoka "¡Mamaaaa! ¡¿Por qué estaba durmiendo en mi habitación?! Recuerdo que llegué de la escuela ayer y me puse una compresa fría pero..." with dissolve 
+    K_Yukiho "Ah, ya despertaste. ¿No te acuerdas?" with dissolve 
+    "Yukiho, que ya estaba desayunando, me respondió." with dissolve 
+    show KousakaYukiho at top with dissolve
+    K_Yukiho "Te quedaste dormida ahí mismo en la sala, sin siquiera acabarte la castella, así que me desperté y te llevé a tu habitación. Hasta dijiste que no querías cenar." with dissolve 
+    K_Yukiho "Debías estar muy cansada, creo. Tenías la expresión de un bebé somnoliento." with dissolve 
+    K_Yukiho "¿Sirvió la compresa? Escuché que te dieron calambres, lo más adecuado es esperar a que pase. Dormir fue la mejor opción." with dissolve 
+    "¡Oh, tenía razón! ¡Ya me sentía mucho mejor!" with dissolve 
+    voice "audio/VoiceHonoka/018.mp3"
+    K_Honoka "Muy bien, ya estoy lista para el ensayo de hoy ♪" with dissolve 
+    "Entonces mi estómago gruñó." with dissolve 
+    K_Yukiho "Pfff. Tenía mucho que no actuabas así. Cuando eras más chica, jugabas hasta cansarte y te quedabas dormida en la noche. Cuando te despertabas al día siguiente, hacías un escándalo y te comías un tazón de arroz." with dissolve 
+    voice "audio/VoiceHonoka/008.mp3"
+    K_Honoka "¿Eh? ¿En serio? Es un poco vergonzoso, ah... jajajaja" with dissolve 
+    hide KousakaYukiho with dissolve
+    "Haciendo memoria, tenía razón." with dissolve 
+    "Apenas y recuerdo." with dissolve 
+    "De niña, me sumergía completamente en los juegos." with dissolve 
+    "Corría por ahí hasta que anochecía, sin pararme a comer algo. Me daba hambre hasta que regresaba a casa, pero entonces, estaba tan cansada, que sólo me recostaba en los cojines de los sillones de la sala y ahí me dormía." with dissolve 
+    "La diferencia es que en aquel entonces, papá me llevaba a mi habitación." with dissolve 
+    show KousakaYukiho at top with dissolve
+    K_Yukiho "En verdad estás sumergida en esto de las idols, ¿no?" with dissolve
+    voice "audio/VoiceHonoka/011.mp3" 
+    K_Honoka "S-sí, supongo" with dissolve 
+    "Yukiho me miró con seriedad, como si estuviera sorprendida." with dissolve 
+    "Me daba pena. Ah... jajajajaja." with dissolve 
+    "¡Ah, rayos, la gente va a empezar a decir otra vez que no saben quién es la hermana mayor!" with dissolve 
+    "Bueno, da igual." with dissolve 
+    hide KousakaYukiho with dissolve 
+    "¡Aaah! ¡En verdad me voy a esforzar en la práctica de hoy!" with dissolve  
+    "Soy la líder después de todo ♡" with dissolve 
+    "Siento que hoy estoy llena de energía ♪" with dissolve 
+    "¡Voy a bailar, bailar y bailar para demostrarles a todas como se hace!" with dissolve 
+    voice "audio/VoiceHonoka/musicstart.mp3"
+    "μ's, music... start!" with dissolve
+    $ quick_menu = False 
+    scene black with fade
+
+    #COMENTARIOS FINALES DE MAKI
+    scene TMaki with dissolve
+    $ renpy.pause(2.0, hard = False) 
+    scene comentarioMaki1 with dissolve
+    $ renpy.pause(9.0, hard = False)
+    scene black with fade 
+    jump cap4Honoka
+
+
+label cap4Honoka:
+    
+        
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-label UmiSono:
-    voice "audio/VoiceUmi/001.mp3"
+# label UmiSono:
+    # voice "audio/VoiceUmi/001.mp3"
    

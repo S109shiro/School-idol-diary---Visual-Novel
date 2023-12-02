@@ -1,19 +1,19 @@
-Wed Nov 29 21:23:16 2023
+Fri Dec  1 21:41:20 2023
 Windows-10-10.0.22631
 Ren'Py 8.1.3.23091805
  
 
-Bootstrap to the start of init.init. took 0.07s
+Bootstrap to the start of init.init. took 0.05s
 Early init. took 0.00s
 Loader init. took 0.08s
 Loading error handling. took 0.04s
-Loading script. took 0.36s
-Loading save slot metadata. took 0.06s
+Loading script. took 0.51s
+Loading save slot metadata. took 0.05s
 Loading persistent. took 0.00s
-Running init code. took 0.06s
+Running init code. took 0.08s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.05s
+Reloading save slot metadata. took 0.04s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\sebgo\\AppData\\Roaming/RenPy/backups\\School_idol_diary_Visual_novel':
 Dump and make backups. took 0.07s
@@ -23,19 +23,19 @@ Initial gc. took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.01s
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
+Analyze screens took 0.02s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.05s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.20s
+Interface start. took 0.24s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -45,70 +45,18 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) UHD Graphics'
 Version: b'4.6.0 - Build 30.0.100.9864'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Screen sizes: virtual=(1920, 1080) physical=(1067, 600) drawable=(1067, 600)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
+Build styles took 0.01s
 Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
-Resetting cache.
-Bootstrap to the start of init.init. took 222.35s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.03s
-Loading script. took 0.27s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\sebgo\\AppData\\Roaming/RenPy/backups\\School_idol_diary_Visual_novel':
-Dump and make backups. took 0.06s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) UHD Graphics'
-Version: b'4.6.0 - Build 30.0.100.9864'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
-Build styles took 0.00s
+Build styles took 0.01s
 Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
