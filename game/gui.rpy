@@ -88,6 +88,7 @@ define gui.title_text_size = 50
 
 ## Imágenes del menú principal y menús del juego.
 define n = renpy.random.randint(1, 9)
+#define gui.main_menu_background = "gui/MenuMain/main_menu_2.png"
 define gui.main_menu_background = "gui/MenuMain/main_menu_"+str(n)+".png"
 define gui.game_menu_background = "gui/MenuMain/main_menu_"+str(n)+".png"
 

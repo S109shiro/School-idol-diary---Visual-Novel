@@ -281,6 +281,7 @@ label cap2Honoka:
 
     scene cielo with fade
     $ quick_menu = True
+    play music motivationalFree fadein 3.0 fadeout 2.5 loop
     "Todavía puedo recordar la emoción que sentí cuando leí las palabras \"idol escolar\" por primera vez." with dissolve
     "Se sentía tan emocionante como el primer amor." with dissolve 
     "Bueno, yo todavía no me he enamorado, pero supongo que así se siente. Ejejeje♡" with dissolve
@@ -351,8 +352,10 @@ label cap2Honoka:
     "Y mientras pensaba eso…" with dissolve
     scene black with dissolve
     "Una pregunta invadió mi mente." with dissolve
+    stop music fadeout 1.3
     "A todo esto... ¿¿¿qué tipo de actividades realizan las idols escolares???" with vpunch
     "Mejor ire a casa a investigar un poco más." with dissolve
+    play music home fadein 3.0 fadeout 2.5 loop
     scene cuarto_Honoka with dissolve
     play sound Mecanografia noloop
     "Al buscar en internet, hablan sobre hacer ropa, ensayar, componer canciones y todo ese tipo de cosas." with dissolve
@@ -399,8 +402,9 @@ label cap2Honoka:
     $ renpy.pause(1.5, hard = True)
 
     #CAMBIO DE LUGAR
+    stop music fadeout 1.3
     scene homura with dissolve
-    "Era un día festivo, por eso había una laaaaaarga fila en el teatro." with dissolve
+    play sound street_ambient fadein 3.0 fadeout 2.5 loop
     "En cuanto se me ocurrió la idea, me alisté y salí de casa." with dissolve
     "Luego, caminé por 20 minutos." with dissolve
     scene utx with dissolve
@@ -415,6 +419,7 @@ label cap2Honoka:
     "¿Y cuál es la diferencia? Ah, hay muchas chicas con lentes. ¿Quizás sea eso? ¿O quizás sean esos elegantes uniformes que las hacen lucir tan bien?" with dissolve
     "Traté de olvidarme de esas cosas y seguí caminando." with dissolve
     scene utxCerca with dissolve
+    play music A_RISETheme fadein 2.0 fadeout 2.5 loop
     "Ahí vi a un montón de gente reunida en la entrada del segundo piso del enorme edificio." with dissolve
     "Ahí se encuentra la entrada al teatro." with dissolve
     "Sobre la entrada, pintada de negro como en las discos, hay un letrero, igual al de los cines. Alumbrado con muchas luces." with dissolve
@@ -427,7 +432,7 @@ label cap2Honoka:
     "Justo frente a mí, vi a tres chicas." with dissolve
     scene arisePoster with dissolve
     "Se trataba del brillante grupo de idol escolares, {color=#1a94b8}A-RISE{/color}, se dice que son las #1 tanto en talento como en popularidad." with dissolve
-    "Las tres integrantes: {color=#cc0000}Tsubasa Kira{/color}, {color=#b6d7a8}Erena Toudou{/color} y {color=#ffd966}Anju Yuuki{/color}." with dissolve
+    "Las tres integrantes: {color=#ffd966}Anju Yuuki{/color}, {color=#cc0000}Tsubasa Kira{/color} y {color=#b6d7a8}Erena Toudou{/color}." with dissolve
     "Se dice que el Departamento de Artes Escénicas es el mayor atractivo de la escuela UTX, pero sólo los que logren pasar las audiciones pueden unirse a A-RISE." with dissolve
     "Este grupo ha ganado dos veces el torneo anual de idol escolares, {color=#E4007F}Love Live!{/color}" with dissolve
     "Apenas y salen en la tele (no sé bien, pero me parece que es parte de una \"estrategia\"...)" with dissolve
@@ -451,7 +456,8 @@ label cap2Honoka:
     "¿Quizas estaba soñando muy a lo grande?" with dissolve
     "Cuando lo veo de esa forma, ser idol escolar parece un sueño tan lejano como evitar que Otonoki cierre." with dissolve
     "Me siento un poco mareada." with dissolve
-    "Por un segundo, me di la vuelta y comencé a alejarme. Aunque no suelo ser así." with dissolve
+    "Por un segundo, me di la vuelta y comencé a alejarme. Aunque no suelo ser así." with dissolve  
+    stop music fadeout 1.3
     scene mediodelCamino with dissolve
     "Y aunque siempre trato de evitar alejarme, siempre voy hacia adelante, de seguir avanzando." with dissolve
     "¡¡¡Aaaah, esta vez, mi rival es muy poderoso!!!" with vpunch
@@ -488,6 +494,7 @@ label cap2Honoka:
     "No quería que vieran mi rostro, así que hundí de prisa la cabeza en la revista." with dissolve
     "Pude sentir la mirada de Umi-chan, mis mejillas empezaron a sonrojarse." with dissolve
     "Había una foto en la revista de Kotori-chan." with dissolve
+    scene revistaIdols with dissolve
     "Era una montaña, rodeada de áreas verdes." with dissolve 
     "Paradas cerca del agua de un arrozal, había 4 chicas con minifalda y debajo de ella llevaban pants y botas." with dissolve
     "¡¿E-estas son idols escolares?!" with dissolve
@@ -512,6 +519,9 @@ label cap2Honoka:
     "Era la voz de Umi-chan, tranquila y refinada." with dissolve
     play audio cerrarRevista noloop
     "Umi-chan tomó la revista de las manos de Kotori-chan y la cerró." with dissolve
+    scene estacion with dissolve
+    show KotoriM at KotOtoki with dissolve
+    show UmiS at UmiOtoki with dissolve
     voice "audio/VoiceKotori/010.mp3"
     M_Kotori "¡Oye, todavía no marcaba la página!" with dissolve
     "Umi-chan me miró a los ojos, ignorando el grito de Kotori-chan." with dissolve
@@ -523,6 +533,7 @@ label cap2Honoka:
     "Mientras hablaba, sentí que algo se acumulaba dentro de mí." with dissolve
     voice "audio/VoiceHonoka/013.mp3"
     K_Honoka "Es eso... sí. Me rehúso a que este sea nuestro último recuerdo de Otonoki." with dissolve
+    play music motivationalLL fadein 3.0 fadeout 2.5 loop
     scene utx with dissolve
     "La imagen de UTX cruzó mi mente, pero ya no tenía miedo." with dissolve
     voice "audio/VoiceHonoka/014.mp3"
@@ -559,6 +570,8 @@ label cap2Honoka:
     "Supongo que debemos empezar con una canción o el salón del club, ¿no?" with dissolve
     "Hablaremos al respecto." with dissolve
     "¡Voy a dar lo mejor!" with dissolve
+    stop music fadeout 1.3
+    stop sound fadeout 1.3
     $ quick_menu = False 
     scene black with fade
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 635: expected statement.
-    presentacionMaki with dissolve
-                     ^
+File "game/sound.rpy", line 11: expected '=' not found.
+    define audio.A-RISETheme = "audio/A-RISETheme.mp3"
+                  ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Fri Dec  1 20:55:29 2023
+Sun Dec  3 21:18:16 2023

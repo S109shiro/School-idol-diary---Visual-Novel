@@ -43,6 +43,7 @@ image presentacionMaki = "images/Elements/presentacionMaki.png"
 image miembros2 = "images/Elements/Miembros2.png"
 image miembros5 = "images/Elements/Miembros5.png"
 image miembros6 = "images/Elements/Miembros6.png"
+image revistaIdols = "images/Elements/revistaIdols.png"
 
 
 #Sprites
