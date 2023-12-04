@@ -2,6 +2,7 @@
 image capitulo1 = "images/Capitulos/Honoka/TCapitulo1.png"
 image capitulo2 = "images/Capitulos/Honoka/TCapitulo2.png"
 image capitulo3 = "images/Capitulos/Honoka/TCapitulo3.png"
+image capitulo4 = "images/Capitulos/Honoka/TCapitulo4.png"
 
 #Comentarios
 image TKotori = "images/Comentarios/Titulos/TKotori.png"

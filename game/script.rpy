@@ -2,18 +2,18 @@
 label splashscreen:
     $ op = renpy.random.randint(1, 2)
     if op == 1:
-        image movie1 = Movie(channel="movie_dp", loop = False, play = "movie/Intro1.avi")
-        show movie1 with dissolve
+        image movie1 = Movie(channel="movie_dp", loop = False, play = "movie/Intro1.avi") 
+        show movie1 with Dissolve(1.0)
         #$ renpy.movie_cutscene("movie/Intro1.avi", loops=0, stop_music=True)
         $ renpy.pause(90.0, hard= False)
-        hide movie1 with dissolve
+        hide movie1 with Dissolve(1.0)
         return
     else:
         image movie2 = Movie(channel="movie_dp", loop = False, play = "movie/Intro2.avi")
-        show movie2 with dissolve
+        show movie2 with Dissolve(1.0)
         # $ renpy.movie_cutscene("movie/Intro2.avi", loops=0, stop_music=True)
         $ renpy.pause(90.0, hard= False)
-        hide movie2 with dissolve
+        hide movie2 with Dissolve(1.0)
         return
 
 
@@ -41,7 +41,6 @@ label start:
     return
 
 #NOVELA DE HONOKA
-
 #COMIENZO DEL CAPITULO 1
 label cap1Honoka:
     stop music fadeout 0.8
@@ -51,7 +50,7 @@ label cap1Honoka:
     scene cuarto_Honoka with fade
     $ quick_menu = True
     play music Main1 fadein 1.5
-    show HonokaPan at top with dissolve 
+    #show HonokaPan at top with dissolve 
     "Soy Honoka Kousaka, tengo 16 años. Voy en segundo año de la preparatoria Otonokizaka." with dissolve 
     "¡Y formo parte del superexitoso grupo de idols escolares μ's! Bueno, eso me gustaría decir, pero honestamente, ¿será que es cierto?" with dissolve 
     "Ah, ajajajaja, aah." with dissolve 
@@ -65,7 +64,7 @@ label cap1Honoka:
     $ renpy.pause(1.0, hard = True)
     scene cuarto_Honoka with fade
     play music Main1 loop fadein 1.5 fadeout 1.0
-    show KousakaHonoka at top with dissolve
+    #show KousakaHonoka at top with dissolve
     "Soy {color=#FFAE00}Honoka Kousaka{/color}, tengo 16 años." with dissolve 
     "Este abril, decidí debutar como idol escolar junto a mis amigas. Aunque a decir verdad, creo que somos muy… normales… como para llamarnos \"idols\"." with dissolve 
     "Quiero decir, nos vemos normales, no somos buenas cantando, tampoco tenemos talento en la actuación, y si ves nuestras fotos..." with dissolve 
@@ -84,7 +83,7 @@ label cap1Honoka:
     "Ah, pero aunque diga \"pública\", en realidad es una escuela \"nacional\", pero está lejos de todas las estaciones de tren, y quizás por eso todas las que asisten son chicas locales," with dissolve 
     "tampoco tiene algún club sobresaliente ni un nivel alto en educación, es completamente lo opuesto a la elegante y refinada imagen que te viene a la mente cuando escuchas \"escuela nacional\"." with dissolve 
 
-    show UmiS at UmiOtoki with dissolve
+    show UmiS at top with dissolve
     "{color=#6D56FF}Umi-chan{/color}, mi amiga de toda la vida, dice que el gobierno no tiene presupuesto para mantener la escuela, pero sería inconcebible que la cerrasen, dejando una región de la capital sin preparatoria, por eso deberían nombrar la escuela nacional en vez de cerrarla." with dissolve 
     "Sí que es la descendiente de una larga generación de artistas marciales. Sabe de todas esas cosas complicadas, ¿no?" with dissolve 
     hide UmiS with dissolve
@@ -153,7 +152,7 @@ label cap1Honoka:
     "Cuando llegas a segundo, significa que ya sobreviviste el primer año en la nueva escuela y todavía no tienes que preocuparte por los exámenes de la universidad, así que es el mejor momento para divertirte, ¿no es así?" with dissolve 
     "Y el clima estaba perfecto aquella mañana, parecía que los Dioses festejaban conmigo, estaba tan emocionada de comenzar mi nueva vida en la preparatoria." with dissolve 
     "Cuando me encontré con Kotori-chan y Umi-chan, las saludé con una gran sonrisa." with dissolve 
-    show KousakaHonoka at top with dissolve
+    #show KousakaHonoka at top with dissolve
     voice "audio/VoiceHonoka/goodday.mp3"
     K_Honoka "¡Hoy es un gran día!" with dissolve 
     "Y luego…" with dissolve 
@@ -254,8 +253,13 @@ label cap1Honoka:
     "Un día, cuando en verdad me vuelva una idol famosa, espero que pueda expresar estos sentimientos al público" with dissolve 
     "y que sepan de estos sentimientos que no se pueden transmitir en los conciertos." with dissolve 
     scene black with Dissolve(1.3)
-    $ renpy.movie_cutscene("movie/video1.avi", loops=0, stop_music=True)
+    image mv1 = Movie(channel="movie_dp",loop = False, play = "movie/video1.avi", size= (1980, 1080) )
+    $ quick_menu = False
     stop music
+    show mv1 with Dissolve(1.0) 
+    $ renpy.pause(123.0, hard= False)
+    $ quick_menu = True
+    hide mv1 with Dissolve(1.0)
     "¡Espero que ese día llegue pronto!" with dissolve 
     voice "audio/VoiceHonoka/sleep.mp3"
     "Y con ese deseo, me iré a dormir esta noche." with dissolve 
@@ -264,6 +268,7 @@ label cap1Honoka:
     scene black with fade
 
     #COMENTARIOS FINALES DE KOTORI
+    play music coments fadein 0.8 fadeout 0.5
     scene TKotori with dissolve
     $ renpy.pause(2.0, hard = False) 
     scene comentarioKotori1 with dissolve
@@ -494,7 +499,9 @@ label cap2Honoka:
     "No quería que vieran mi rostro, así que hundí de prisa la cabeza en la revista." with dissolve
     "Pude sentir la mirada de Umi-chan, mis mejillas empezaron a sonrojarse." with dissolve
     "Había una foto en la revista de Kotori-chan." with dissolve
+    play sound hoja noloop
     scene revistaIdols with dissolve
+    play sound street_ambient fadein 3.0 fadeout 2.5 loop
     "Era una montaña, rodeada de áreas verdes." with dissolve 
     "Paradas cerca del agua de un arrozal, había 4 chicas con minifalda y debajo de ella llevaban pants y botas." with dissolve
     "¡¿E-estas son idols escolares?!" with dissolve
@@ -532,8 +539,8 @@ label cap2Honoka:
     K_Honoka "S-sí, tienes razón. Es eso..." with dissolve
     "Mientras hablaba, sentí que algo se acumulaba dentro de mí." with dissolve
     voice "audio/VoiceHonoka/013.mp3"
-    K_Honoka "Es eso... sí. Me rehúso a que este sea nuestro último recuerdo de Otonoki." with dissolve
     play music motivationalLL fadein 3.0 fadeout 2.5 loop
+    K_Honoka "Es eso... sí. Me rehúso a que este sea nuestro último recuerdo de Otonoki." with dissolve
     scene utx with dissolve
     "La imagen de UTX cruzó mi mente, pero ya no tenía miedo." with dissolve
     voice "audio/VoiceHonoka/014.mp3"
@@ -576,11 +583,13 @@ label cap2Honoka:
     scene black with fade
 
     #COMENTARIOS FINALES DE UMI
+    play music coments fadein 0.8 fadeout 0.5
     scene TUmi with dissolve
     $ renpy.pause(2.0, hard = False) 
     scene comentarioUmi1 with dissolve
     $ renpy.pause(9.0, hard = False) 
     scene black with fade
+    stop music fadeout 1.0
     jump cap3Honoka
 
 #COMIENZO DEL CAPITULO 3
@@ -595,6 +604,7 @@ label cap3Honoka:
     $ quick_menu = True
     "¡Auch, auch, auch!" with dissolve 
     "¡Ay, ya no puedo seguir!" with dissolve 
+    play music home fadein 3.0 fadeout 2.5 loop
     scene HomuraCocina with dissolve
     voice "audio/VoiceHonoka/015.mp3"
     K_Honoka "¡¿Dónde están las compresas frías?!" with dissolve 
@@ -614,12 +624,10 @@ label cap3Honoka:
     "¿A dónde se fue esa linda Yukiho?" with dissolve 
     "Sin pensarlo volví a presionar la compresa y... ¡Ay! ¡Todavía arde!" with dissolve 
     "Jaa. Esto va mal, ¿verdad? ¿Será que pueda participar mañana en la práctica? A pesar de lo que piense Yukiho, no estoy sólo copiando los bailes. La práctica de hoy fue bastante difícil." with dissolve 
-    #scene exercise with dissolve
     "Siguiendo la sugerencia de Umi-chan, una atlética chica que forma parte del club de kendo y arquería, ayer comenzamos con el ejercicio." with dissolve 
     "4 repeticiones de 20 sentadillas, 4 repeticiones de 10 lagartijas, 50 vueltas corriendo en las escaleras del templo, 100 levantamientos de rodilla y mucho más." with dissolve
     "¡Honestamente, pareciera que somos más bien un club deportivo que uno de idols! Estoy segura de que si no hicimos saltos fue porque a Umi-chan se le olvidó." with dissolve 
     "Cielos, tendré que ingeniármelas para que a Umi-chan no se le ocurra hacerlo mañana." with dissolve 
-    scene HomuraCocina with dissolve
     "Y así, hoy me di cuenta de que los ensayos de las idols son más difíciles de lo que habíamos imaginado." with dissolve 
     scene miembros2 with dissolve
     "Primero, sólo éramos mis amigas y compañeras, Kotori-chan y Umi-chan; luego se unieron las chicas de primer año." with dissolve 
@@ -687,6 +695,7 @@ label cap3Honoka:
     "La gente dirá que en verdad me gusta esforzarme. Practicaré." with dissolve 
     "Me aprenderé de memoria la coreografía. Tal como ahora, ¿no?" with dissolve  
     "Muy bien, ahí voy. Un, dos, tres y cuatro…" with dissolve 
+    stop music fadeout 0.8
     scene black with fade
     "Después de eso, estaba flotando." with dissolve 
     "Bailaba en un sueño." with dissolve 
@@ -709,6 +718,7 @@ label cap3Honoka:
     "¡No tenía tiempo de ordenar la tienda como cada mañana!" with dissolve 
     "Esperen un segundo." with dissolve 
     scene HomuraInside with dissolve
+    play music home fadein 3.0 fadeout 2.5 loop
     "Bajé las escaleras y grité" with dissolve 
     voice "audio/VoiceHonoka/017.mp3"
     K_Honoka "¡Mamaaaa! ¡¿Por qué estaba durmiendo en mi habitación?! Recuerdo que llegué de la escuela ayer y me puse una compresa fría pero..." with dissolve 
@@ -746,21 +756,26 @@ label cap3Honoka:
     "¡Voy a bailar, bailar y bailar para demostrarles a todas como se hace!" with dissolve 
     voice "audio/VoiceHonoka/musicstart.mp3"
     "μ's, music... start!" with dissolve
+    stop music fadeout 1.3
     $ quick_menu = False 
     scene black with fade
 
     #COMENTARIOS FINALES DE MAKI
+    play music coments fadein 0.8 fadeout 0.5
     scene TMaki with dissolve
     $ renpy.pause(2.0, hard = False) 
     scene comentarioMaki1 with dissolve
     $ renpy.pause(9.0, hard = False)
-    scene black with fade 
+    scene black with fade
+    stop music fadeout 1.0 
     jump cap4Honoka
 
-
+#COMIENZO DEL CAPITULO 4
 label cap4Honoka:
-    
-        
+    stop music fadeout 0.8
+    scene capitulo4 with fade
+    $ renpy.pause(3.0, hard= True)
+    return
 
 
 

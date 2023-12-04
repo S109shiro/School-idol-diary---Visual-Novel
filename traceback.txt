@@ -1,27 +1,31 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 692, in script
-    K_Honoka "¡Ay no!" with dissolve
-OSError: Couldn't find file 'audio/VoiceHonoka/016.mp3'.
+  File "game/script.rpy", line 504, in script
+    "Era una montaña, rodeada de áreas verdes." with dissolve
+  File "renpy/common/000window.rpy", line 111, in _window_auto_callback
+    _window_hide(auto=True)
+  File "renpy/common/000window.rpy", line 101, in _window_hide
+    renpy.with_statement(trans)
+OSError: Couldn't find file 'audio/hoja.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 692, in script
-    K_Honoka "¡Ay no!" with dissolve
-  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\exports.py", line 1474, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\character.py", line 1352, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\character.py", line 1003, in do_display
-    display_say(who,
-  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\character.py", line 693, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "game/script.rpy", line 504, in script
+    "Era una montaña, rodeada de áreas verdes." with dissolve
+  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1557, in execute
+    statement_name("scene")
+  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 47, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 111, in _window_auto_callback
+    _window_hide(auto=True)
+  File "renpy/common/000window.rpy", line 101, in _window_hide
+    renpy.with_statement(trans)
+  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\exports.py", line 1758, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 2978, in do_with
+    return self.interact(trans_pause=True,
   File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
   File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 4379, in interact_core
@@ -39,9 +43,9 @@ Full traceback:
     rv = renpy.loader.load(fn, directory="audio")
   File "C:\Users\sebgo\Desktop\renpy-8.1.3-sdk\renpy\loader.py", line 833, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/VoiceHonoka/016.mp3'.
+OSError: Couldn't find file 'audio/hoja.mp3'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 School idol diary Visual Novel 0.2
-Fri Dec  1 21:12:11 2023
+Mon Dec  4 15:54:08 2023
