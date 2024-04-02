@@ -13,7 +13,7 @@
 ##
 ## El _() que rodea la cadena de texto la señala como traducible.
 
-define config.name = _("School idol diary Visual Novel")
+define config.name = _("School idol diary Kinetic Novel")
 
 
 ## Determina si el título dado más arriba se muestra en el menú principal.
@@ -24,30 +24,29 @@ define gui.show_name = False
 
 ## Versión del juego.
 
-define config.version = "0.2"
+define config.version = "0.3"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
 ## comillas triples y deja una línea en blanco entre párrafos.
 
 define gui.about = _p("""
-    Buenas, primero que nada GRACIAS por descargar esta novela visual, enserio gracias, un abrazo para todos ustedes quien me han apoyado, para mis seguidores en Twitter y en especial a mi editor/supervisor que lo amo un montón y me ha motivado bastante para seguir adelante con este proyecto. Te amo mencito.\n
-    Ahora si, como ya sabras esta visual novel adapta todas las novelas ligeras de School idol diary 
+    Buenas, primero que nada GRACIAS por descargar esta novela cinetica, un abrazo para todos ustedes quien me han apoyado.\n
+    Ahora si, como ya sabras esta kinetic novel adapta todas las novelas ligeras de School idol diary 
     de la franquicia de Love Live, todo esto con la intencion de llegar a mas fanaticos que se les hace difícil centrarse en leer un pdf,
     por lo que la idea que en vez de imaginar todo lo que las novelas nos proporcionan ya se tenga todo a la mano (soundtrack, escenarios, sprites, voces, etc.). \n
     Sin más te dejo algunos links, gracias y ¡¡¡disfruta de la novela!!!!
 
     {a=https://schoolidoldiaryvn.blogspot.com/}WEB OFICIAL{/a} \n
-    {a=https://patreon.com/SchoolidoldiaryVisualNovel?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link}MI PATREON{/a}\n
+    {a=https://shiro109.itch.io/love-live-school-idol-diary-visual-novel}ITCH.IO{/a}\n
     {a=https://twitter.com/AkSebas109}MI TWITTER (X){/a} \n
-    {a=}¿QUE TRAE DE NUEVO ESTA VERSION? (BETA Version 0.2){/a}
 """)
 
 
 ## Nombre breve del juego para ejecutables y directorios en la distribución.
 ## Debe contener solo carácteres ASCII, sin espacios, comas o puntos y coma.
 
-define build.name = "SIDVN_Beta2"
+define build.name = "SIDKN_Beta3"
 
 
 ## Sonidos y música ############################################################
@@ -77,7 +76,7 @@ define config.sample_voice = "audio/soundTest/musicstart0"+str(n)+".mp3"
 ## el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-define musicElect = renpy.random.randint(0, 3)
+define musicElect = renpy.random.randint(0, 9)
 define config.main_menu_music = "audio/MenuMain/MenuMain0"+str(musicElect)+".mp3"
 
 
@@ -160,7 +159,7 @@ default preferences.afm_time = 10
 ## Normalmente, este valor no debe ser modificado. Si lo es, debe ser siempre
 ## una cadena literal y no una expresión.
 
-define config.save_directory = "School_idol_diary_visual_novel-1699805720"
+define config.save_directory = "School_idol_diary_kinetic_novel-1699805720"
 
 
 ## Icono #######################################################################

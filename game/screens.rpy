@@ -284,7 +284,6 @@ style quick_button_text:
 ## ofrece navegación a los otros menús y al inicio del juego.
 
 screen navigation():
-
     vbox:
         style_prefix "navigation"
 
@@ -307,6 +306,8 @@ screen navigation():
 
         textbutton _("Opciones") action ShowMenu("preferences") activate_sound "audio/sfx/enter.mp3"
 
+        textbutton _("Galeria") action ShowMenu("gallery") activate_sound "audio/sfx/enter.mp3"
+
         if _in_replay:
 
             textbutton _("Finaliza repetición") action EndReplay(confirm=True) activate_sound "audio/sfx/enter.mp3"
@@ -315,7 +316,7 @@ screen navigation():
 
             textbutton _("Menú principal") action MainMenu() activate_sound "audio/sfx/enter.mp3"
 
-        textbutton _("Acerca de") action ShowMenu("about") activate_sound "audio/sfx/enter.mp3"
+        textbutton _("Acerca") action ShowMenu("about") activate_sound "audio/sfx/enter.mp3"
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -364,15 +365,16 @@ screen main_menu():
     
     # MODIFICACION DEL MENU DE INICIO
     
-    frame:
-        xalign 0.5
-        yalign 0.97
+
         hbox:
+            xpos 0.9
+            ypos 0.9
             spacing 50
             textbutton _("Comenzar") action Start() text_size 40 activate_sound "audio/sfx/enter.mp3"
             textbutton _("Cargar") action ShowMenu("load") text_size 40 activate_sound "audio/sfx/enter.mp3"
             textbutton _("Opciones") action ShowMenu("preferences") text_size 40 activate_sound "audio/sfx/enter.mp3"
-            textbutton _("Acerca de") action ShowMenu("about") text_size 40 activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Galeria") action ShowMenu("gallery") text_size 40 activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Acerca") action ShowMenu("about") text_size 40 activate_sound "audio/sfx/enter.mp3"
             if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")): 
                 ## La ayuda no es necesaria ni relevante en dispositivos móviles.
                 textbutton _("Ayuda") action ShowMenu("help") text_size 40 activate_sound "audio/sfx/enter.mp3"

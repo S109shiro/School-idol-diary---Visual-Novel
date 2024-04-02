@@ -67,3 +67,25 @@ image insatisfaccion = "images/Elements/scary.png"
 image arisePoster = "images/Elements/arisePoster.png"
 
 
+
+
+
+#Imagenes Galeria
+
+#Background
+image backgroundG = "images/Gallery/Background.png"
+
+
+#Imagen blocked Honoka
+image blockH = "images/Gallery/Miniaturas/Bloqueadas/Honoka/BHono.png"
+
+
+#Imagenes 1080p - Honoka Capitulo 1
+image H11 = "images/Gallery/Image/Honoka/Capitulo1/1.png"
+image H12 = "images/Gallery/Image/Honoka/Capitulo1/2.png"
+image H13 = "images/Gallery/Image/Honoka/Capitulo1/3.png"
+image H14 = "images/Gallery/Image/Honoka/Capitulo1/4.png"
+image H15 = "images/Gallery/Image/Honoka/Capitulo1/5.png"
+image H16 = "images/Gallery/Image/Honoka/Capitulo1/6.png"
+image H17 = "images/Gallery/Image/Honoka/Capitulo1/7.png"
+image H18 = "images/Gallery/Image/Honoka/Capitulo1/8.png"

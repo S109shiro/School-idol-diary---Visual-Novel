@@ -73,6 +73,7 @@ define gui.name_text_size = 50
 
 ## El tamaño del texto en la interfaz.
 define gui.interface_text_size = 35
+define gui.interface_text_outlines = [(2, "#000000")]
 
 ## El tamaño de etiquetas en la interfaz.
 define gui.label_text_size = 40
@@ -88,7 +89,6 @@ define gui.title_text_size = 50
 
 ## Imágenes del menú principal y menús del juego.
 define n = renpy.random.randint(1, 9)
-#define gui.main_menu_background = "gui/MenuMain/main_menu_2.png"
 define gui.main_menu_background = "gui/MenuMain/main_menu_"+str(n)+".png"
 define gui.game_menu_background = "gui/MenuMain/main_menu_"+str(n)+".png"
 

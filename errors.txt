@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 271: expected end of line
-    play music coments fade
-                       ^
+File "game/screens.rpy", line 292: keyword argument 'xalign' is incompatible with 'xpos'.
+    xalign 1
+          ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Mon Dec  4 15:42:22 2023
+Wed Feb 28 18:44:17 2024

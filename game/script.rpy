@@ -34,8 +34,11 @@ label start:
                     jump cap2Honoka
                 "CAPITULO 3 - ¡BAILEMOS!":
                     jump cap3Honoka
-                #"CAPITULO 4 - ":
-                
+                "CAPITULO 4 - QUIERO UN SALÓN PROPIO":
+                    jump cap4Honoka
+                "CAPITULO 5 - ¡¿TANTOS PROBLEMAS PARA UN CONCIERTO?!":
+                    jump cap5Honoka
+
         #"Ruta de Umi Sonoda":
             #jump UmiSono
     return
@@ -773,9 +776,90 @@ label cap3Honoka:
 #COMIENZO DEL CAPITULO 4
 label cap4Honoka:
     stop music fadeout 0.8
+    voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo4 with fade
     $ renpy.pause(3.0, hard= True)
-    return
+    
+    S_Umi "¿Honoka, tu hombro no se moja?"
+    K_Honoka "No, estoy bien... Además, lo más importante es que nuestras cosas no se mojen."
+    "Caminaba bajo el paraguas color aguamarina que Umi-chan sostenía."
+    "ĺbamos hombro a hombro, sosteniendo la maleta justo frente a mí y asegurándome de que no se empapara."
+    "Gota, gota."
+    "Caían una gran cantidad de gotas."
+    "La mochila era tan grande que no podía sostenerla entre mis brazos, debido a eso se me resbalaba."
+    "Escuchaba que su contenido se agitaba."
+    K_Honoka "¿Segura que esto va a funcionar? La ropa y los pompones no deben mojarse."
+    S_Umi "¿Deberíamos correr?"
+    K_Honoka "Muy bien"
+    "Le respondí, y comenzamos a correr."
+    "Sólo un poco más y llegamos a la entrada de mi casa, la tienda de dulces Homura."
+    S_Umi "Ja... ja... fiu, parece que lo logramos."
+    K_Honoka "Sí. Gracias, Umi-chan. La próxima vez, si está nublado, ¡me aseguraré de llevar mi paraguas!"
+    S_Umi "Ninguna de nosotras espera que preveas tantas cosas. Estoy segura de que llevas el paraguas un día que no llueve, y luego se te olvida y entonces lo pierdes. Además, ni siquiera ves el estado del tiempo, ¿o sí?"
+    "Ay... Tenía razón."
+    "Antes de que pudiera contestarle, Umi-chan añadió:"
+    S_Umi "Tu especialidad es tener la fuerza suficiente para llevar esa maleta enorme tú sola. Con esa ayuda tenemos suficiente. Y luego de eso, se fue a casa."
+    "Auch, eso no fue un cumplido, Umi-chan."
+    K_Honoka "Ya llegué."
+    "Entré a mi casa y suspiré. Una vez en mi cuarto, me eché un vistazo"
+    "Rayos, mi uniforme estaba empapado. De prisa, busqué una toalla y sequé mi uniforme y cabello."
+    "Me quité la ropa rápidamente, que sólo estaba mojada del lado derecho, y la colgué."
+    K_Honoka "Ay no, debía asegurarme de que la maleta... ¡fiu!"
+    "¡Los trajes, las cintas brillantes para el decorado del escenario, los pompones y todo lo demás estaban secos!"
+    "¡Y todo gracias a mí ♡! Ajá. ¿Ya ves, Umi-chan?"
+    "Tengo algo más que súper fuerza ♪"
+    "Pero, ¿quizá pueda secarlos con algo? No están mojados, pero sí se sienten algo húmedos, y no quiero que vayan a oler feo al secarse solos, pensé al momento de sacarlos de la maleta."
+    K_Honoka "¡Cielos, hay tantas cosas aquí!"
+    "No pude evitar gritar al ver que mi habitación desaparecía con tanta ropa y accesorios."
+    K_Honoka "En serio, ¿por qué debemos llevar y traer todas estas cosas de la escuela todo el tiempo? ¡¡Ojala tuviéramos un salón propio!!"
+    "Nuestras actividades de hoy duraron sólo como 30 minutos, así que no hay mucho que decir."
+    "Hoy, nuestro plan era preparar todo para el concierto que tenemos planeado para justo antes de las vacaciones de verano; revisar los trajes y discutir sobre el escenario y efectos, pero justo cuando teníamos todo nuestro equipo listo, comenzó a llover y todo se fastidió."
+    K_Honoka "¡Aah, de prisa! ¡Alcen todo antes de que se moje!"
+    "Cuando le pregunté a Umi-chan quién traía un paraguas, me dijo que el estado del tiempo decía que a lo mejor Ilovía en la tarde, pero yo estaba muy ocupada desayunando y ayudando en la tienda como para enterarme."
+    "Me sorprendió ver esas gototas caer del cielo tan repentinamente."
+    "Es cierto que el cielo estaba gris justo cuando terminaba el receso, y que el viento frío insinuaba que se avecinaba una tormenta, pero no pensé que en verdad Ilovería."
+    "De hecho, ni siquiera me puse a pensar en eso."
+    "Después de todo, era el tan esperado día en el que íbamos a decidir todo para nuestra presentación."
+    "Kotori-chan llevó los trajes, Rin-chan y Hanayo-chan llevaron la decoración, Umi-chan trajo las bocinas para probar el sonido, ya saben."
+    "Durante varias de las reuniones, poco a poco llevábamos nuestras cosas."
+    "Antes de darnos cuenta, ya teníamos muchas cosas listas, pero hoy, decidimos juntar todo lo necesario y terminar con nuestra práctica de baile."
+    "Toda la mañana estuve emocionada ya que hoy era el gran día que por fin íbamos a ensayar para el gran concierto, pero todo se echó a perder debido a la lluvia."
+    "Digo, nuestro espacio es el techo de la escuela, la parte más expuesta del lugar."
+    "Si llueve, no podemos realizar nuestras actividades, y sin permiso no podemos usar los salones (hace poco, Rin-chandijo que no habría problema, así que ocupamos un salón vacío, pero la maestra se enojó mucho cuando nos descubrió, jejeje)."
+    "Sip. Ahora mismo, u's es un grupo idol cualquiera, así que notenemos horarios ni establecimiento, y tampoco tenemos supervisor ni presupuesto."
+    "¡Aaaaaah, me gustaría que por lo menos tuviéramos un lugar donde poner nuestras cosas!"
+    "Ahora, les pregunto:¿Qué creen que deberíamos hacer para conseguir un salón propio?"
+    "¡Usaré este diario para pedirles su opinión!"
+    "¡Lo primero que pienso es que debemos hacer que u's sea un club oficial!"
+    "Aunque siento que eso será muy complicado."
+    "¡Lo siguiente es conseguir a una supervisora para el club! Muy buena idea, ¿no?"
+    "Si conseguimos una supervisora, será más fácilpedir permiso para usar un salón, y podríamos usar su espacio para guardar nuestras cosas."
+    "¿Verdad? ¿Verdad que sí es una buena idea?"
+    "¿Alguien conoce a alguna buena maestra?"
+    "Por cierto, los salones de música o ciencias parecen lugares perfectos para guardar nuestras cosas, así que estaría bien una profesora de ciencias o de música…"
+    "Aunque Nakajima, la maestra de música, no sería una buena idea. Ya es supervisora del club de música, así que no tendría tiempo."
+    "Honjou, la maestra de ciencias, me da un poco de miedo y no le hablo mucho. ¿Alguno de ustedes, sí?"
+    "El otro día quemé un mechero de alcohol, así que no creo que pueda ir yo... Ejeje, lamento no ser de mucha ayuda ♡"
+    "Waaaah, en ese caso, lo mejor sería que juntáramos más integrantes y nos volviéramos un club oficial, ¿no?"
+    "Eso también suena complicado, de todas formas, debemos triunfar como grupo, para que cuando la gente nos vea, piensen \"¡Yo también quiero participar!\"."
+    "¡Si no logramos eso, entonces no podemos llamarnos idols!"
+    "Y nunca podremos mostrarle al mundo lo maravilloso que es u's y atraer más estudiantes."
+    "¡Muy bien, está decidido!"
+    "¡A partir de mañana, voy a reclutar más integrantes para poder conseguir un salón!"
+    "Y para eso, tendremos que brillar y volvernos grandes idols para que la gente nos admire, ¡así que practicaré mucho más!"
+    "Dios, aún así…"
+    "Mientras escribía esto, la lluvia arreció afuera. Puede que no podamos practicar mañana."
+    "¡Aaah, de verdad quiero tener un salón propio!"
+    
+    # COMENTARIOS FINALES DE UMI
+
+#COMIENZO DEL CAPITULO 5
+label cap5Honoka:
+
+
+
+
+
 
 
 
