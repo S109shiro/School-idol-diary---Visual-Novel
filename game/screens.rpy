@@ -318,11 +318,6 @@ screen navigation():
 
         textbutton _("Acerca") action ShowMenu("about") activate_sound "audio/sfx/enter.mp3"
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## La ayuda no es necesaria ni relevante en dispositivos móviles.
-            textbutton _("Ayuda") action ShowMenu("help") activate_sound "audio/sfx/enter.mp3"
-
         if renpy.variant("pc"):
 
             ## El botón de salida está prohibido en iOS y no es necesario en
@@ -364,20 +359,15 @@ screen main_menu():
     #use navigation
     
     # MODIFICACION DEL MENU DE INICIO
-    
-
         hbox:
             xpos 0.9
             ypos 0.9
-            spacing 50
+            spacing 60
             textbutton _("Comenzar") action Start() text_size 40 activate_sound "audio/sfx/enter.mp3"
             textbutton _("Cargar") action ShowMenu("load") text_size 40 activate_sound "audio/sfx/enter.mp3"
-            textbutton _("Opciones") action ShowMenu("preferences") text_size 40 activate_sound "audio/sfx/enter.mp3"
             textbutton _("Galeria") action ShowMenu("gallery") text_size 40 activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Opciones") action ShowMenu("preferences") text_size 40 activate_sound "audio/sfx/enter.mp3"
             textbutton _("Acerca") action ShowMenu("about") text_size 40 activate_sound "audio/sfx/enter.mp3"
-            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")): 
-                ## La ayuda no es necesaria ni relevante en dispositivos móviles.
-                textbutton _("Ayuda") action ShowMenu("help") text_size 40 activate_sound "audio/sfx/enter.mp3"
             if renpy.variant("pc"):
                 ## El botón de salida está prohibido en iOS y no es necesario en
                 ## Android y Web.
@@ -661,7 +651,7 @@ screen file_slots(title):
 
                         add FileScreenshot(slot) xalign 0.5
 
-                        text FileTime(slot, format=_("{#file_time}%A, %d de %B %Y, %H:%M"), empty=_("vacío")):
+                        text FileTime(slot, format=_("{#file_time}%A, %d de %B %Y, %H:%M"), empty=_("Vacío")):
                             style "slot_time_text"
 
                         text FileSaveName(slot):
@@ -684,11 +674,9 @@ screen file_slots(title):
                     textbutton _("<") action FilePagePrevious() activate_sound "audio/sfx/enter.mp3"
 
                     if config.has_autosave:
-                        textbutton _("{#auto_page}A") action FilePage("auto") activate_sound "audio/sfx/enter.mp3"
+                        textbutton _("{#auto_page}Auto Save") action FilePage("auto") activate_sound "audio/sfx/enter.mp3"
 
-                    if config.has_quicksave:
-                        textbutton _("{#quick_page}R") action FilePage("quick") activate_sound "audio/sfx/enter.mp3"
-
+                    
                     ## range(1, 10) da los números del 1 al 9.
                     for page in range(1, 10):
                         textbutton "[page]" action FilePage(page) activate_sound "audio/sfx/enter.mp3"
@@ -992,162 +980,6 @@ style history_label_text:
 ## Una pantalla que da información sobre el uso del teclado y el ratón. Usa
 ## otras pantallas con el contenido de la ayuda ('keyboard_help', 'mouse_help',
 ## y 'gamepad_help').
-
-screen help():
-
-    tag menu
-
-    default device = "keyboard"
-
-    use game_menu(_("Ayuda"), scroll="viewport"):
-
-        style_prefix "help"
-
-        vbox:
-            spacing 23
-
-            hbox:
-
-                textbutton _("Teclado") action SetScreenVariable("device", "keyboard")
-                textbutton _("Ratón") action SetScreenVariable("device", "mouse")
-
-                if GamepadExists():
-                    textbutton _("Mando") action SetScreenVariable("device", "gamepad")
-
-            if device == "keyboard":
-                use keyboard_help
-            elif device == "mouse":
-                use mouse_help
-            elif device == "gamepad":
-                use gamepad_help
-
-
-screen keyboard_help():
-
-    hbox:
-        label _("Intro")
-        text _("Avanza el diálogo y activa la interfaz.")
-
-    hbox:
-        label _("Espacio")
-        text _("Avanza el diálogo sin seleccionar opciones.")
-
-    hbox:
-        label _("Teclas de flecha")
-        text _("Navega la interfaz.")
-
-    hbox:
-        label _("Escape")
-        text _("Accede al menú del juego.")
-
-    hbox:
-        label _("Ctrl")
-        text _("Salta el diálogo mientras se presiona.")
-
-    hbox:
-        label _("Tabulador")
-        text _("Activa/desactiva el salto de diálogo.")
-
-    hbox:
-        label _("Av. pág.")
-        text _("Retrocede al diálogo anterior.")
-
-    hbox:
-        label _("Re. pág.")
-        text _("Avanza hacia el diálogo siguiente.")
-
-    hbox:
-        label "H"
-        text _("Oculta la interfaz.")
-
-    hbox:
-        label "S"
-        text _("Captura la pantalla.")
-
-    hbox:
-        label "V"
-        text _("Activa/desactiva la asistencia por {a=https://www.renpy.org/l/voicing}voz-automática{/a}.")
-
-    hbox:
-        label "Shift+A"
-        text _("Abre el menú de accesibilidad.")
-
-
-screen mouse_help():
-
-    hbox:
-        label _("Clic izquierdo")
-        text _("Avanza el diálogo y activa la interfaz.")
-
-    hbox:
-        label _("Clic medio")
-        text _("Oculta la interfaz.")
-
-    hbox:
-        label _("Clic derecho")
-        text _("Accede al menú del juego.")
-
-    hbox:
-        label _("Rueda del ratón arriba\nClic en lado de retroceso")
-        text _("Retrocede al diálogo anterior.")
-
-    hbox:
-        label _("Rueda del ratón abajo")
-        text _("Avanza hacia el diálogo siguiente.")
-
-
-screen gamepad_help():
-
-    hbox:
-        label _("Gatillo derecho\nA/Botón inferior")
-        text _("Avanza el diálogo y activa la interfaz.")
-
-    hbox:
-        label _("Gatillo izquierdo\nBotón sup. frontal izq.")
-        text _("Retrocede al diálogo anterior.")
-
-    hbox:
-        label _("Botón sup. frontal der.")
-        text _("Avanza hacia el diálogo siguiente.")
-
-
-    hbox:
-        label _("D-Pad, Sticks")
-        text _("Navega la interfaz.")
-
-    hbox:
-        label _("Comenzar, Guía")
-        text _("Accede al menú del juego.")
-
-    hbox:
-        label _("Y/Botón superior")
-        text _("Oculta la interfaz.")
-
-    textbutton _("Calibrar") action GamepadCalibrate()
-
-
-style help_button is gui_button
-style help_button_text is gui_button_text
-style help_label is gui_label
-style help_label_text is gui_label_text
-style help_text is gui_text
-
-style help_button:
-    properties gui.button_properties("help_button")
-    xmargin 12
-
-style help_button_text:
-    properties gui.button_text_properties("help_button")
-
-style help_label:
-    xsize 375
-    right_padding 30
-
-style help_label_text:
-    size gui.text_size
-    xalign 1.0
-    textalign 1.0
-
 
 
 ################################################################################

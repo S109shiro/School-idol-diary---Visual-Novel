@@ -60,24 +60,51 @@ define config.has_music = True
 define config.has_voice = True
 
 #Cursor
-define n = renpy.random.randint(1, 9)
-define direccion = "gui/cursors/00"+str(n)+".png"
+define personajes = renpy.random.randint(1, 9)
+    
+define direccion = "gui/cursors/00"+str(personajes)+".png"
 define config.mouse = {"default": [(direccion, 0, 0)]}
+
+init python:
+    from datetime import date
+    from datetime import datetime
+    now = datetime.now()
+    if(now.month == 12):
+        background = "gui/MenuMain/Christmas/main_menu_N_"+str(personajes)+".png"
+    elif(now.month == 10):
+        background = "gui/MenuMain/Halloween/main_menu_H_"+str(personajes)+".png"
+    else:
+        background = "gui/MenuMain/main_menu_"+str(personajes)+".png"
+
+define gui.main_menu_background = background
+define gui.game_menu_background = background
 
 
 ## Para permitir al usuario probar el volumen de los canales de sonido o voz,
 ## descomenta la línea más abajo y ajústala a un sonido de ejemplo.
 
 define config.sample_sound = "audio/sound_test.mp3"
-define config.sample_voice = "audio/soundTest/musicstart0"+str(n)+".mp3"
+define config.sample_voice = "audio/soundTest/musicstart0"+str(personajes)+".mp3"
 
 
 ## Descomenta la línea siguiente para ajustar un archivo de audio que sonará en
 ## el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-define musicElect = renpy.random.randint(0, 9)
-define config.main_menu_music = "audio/MenuMain/MenuMain0"+str(musicElect)+".mp3"
+init python:
+    if(now.month == 12):
+        menu_music = "audio/MenuMain/MenuMainN.mp3"
+    elif(now.month == 10):
+        menu_music = "audio/MenuMain/MenuMainH.mp3"
+    else:
+        if personajes in [1, 2, 3]:  # Primptems
+            menu_music = "audio/MenuMain/MenuMain01.mp3"
+        elif personajes in [4, 7, 8]:  # BiBi
+            menu_music = "audio/MenuMain/MenuMain02.mp3"
+        elif personajes in [5,6,9]:
+            menu_music = "audio/MenuMain/MenuMain03.mp3"
+
+define config.main_menu_music = menu_music
 
 
 ## Transiciones ################################################################
@@ -126,8 +153,8 @@ define config.window = "auto"
 
 ## Transiciones usadas para mostrar o esconder la ventana de diálogo
 
-define config.window_show_transition = Dissolve(.3)
-define config.window_hide_transition = Dissolve(.3)
+define config.window_show_transition = Dissolve(.2)
+define config.window_hide_transition = Dissolve(.2)
 
 
 ## Preferencias por defecto ####################################################
