@@ -24,7 +24,7 @@ label start:
     play music SongMenuSelect fadein 0.5 fadeout 0.5
     scene MenuElec with Dissolve(1.5)
     menu:  
-        "QUE RUTA DESEAS LEER?"
+        "¿QUE RUTA DESEAS LEER?"
         "Ruta de Honoka Kousaka":
             menu: 
                 "QUE CAPITULO DESEAS"
