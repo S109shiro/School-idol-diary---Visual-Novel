@@ -1,20 +1,40 @@
 ﻿# El juego comienza aquí.
 label splashscreen:
-    $ op = renpy.random.randint(1, 2)
-    if op == 1:
-        image movie1 = Movie(channel="movie_dp", loop = False, play = "movie/Intro1.avi") 
-        show movie1 with Dissolve(1.0)
-        #$ renpy.movie_cutscene("movie/Intro1.avi", loops=0, stop_music=True)
-        $ renpy.pause(90.0, hard= False)
-        hide movie1 with Dissolve(1.0)
-        return
+    init python:
+        from datetime import date
+        from datetime import datetime
+        now = datetime.now()
+
+    if(now.month == 10 and now.day == 31):  #Halloween
+            image movieH = Movie(channel="movie_dp", loop = False, play = "movie/Halloween/IntroH.avi") 
+            show movieH with Dissolve(1.0)
+            #$ renpy.movie_cutscene("movie/Intro1.avi", loops=0, stop_music=True)
+            $ renpy.pause(90.0, hard= False)
+            hide movieH with Dissolve(1.0)
+            return
+    elif(now.month == 12 and now.day == 24):    #Navidad
+            image movieN = Movie(channel="movie_dp", loop = False, play = "movie/Christmas/IntroN.avi") 
+            show movieN with Dissolve(1.0)
+            #$ renpy.movie_cutscene("movie/Intro1.avi", loops=0, stop_music=True)
+            $ renpy.pause(90.0, hard= False)
+            hide movieN with Dissolve(1.0)
+            return
     else:
-        image movie2 = Movie(channel="movie_dp", loop = False, play = "movie/Intro2.avi")
-        show movie2 with Dissolve(1.0)
-        # $ renpy.movie_cutscene("movie/Intro2.avi", loops=0, stop_music=True)
-        $ renpy.pause(90.0, hard= False)
-        hide movie2 with Dissolve(1.0)
-        return
+        $ op = renpy.random.randint(1, 2)
+        if op == 1:
+            image movie1 = Movie(channel="movie_dp", loop = False, play = "movie/Op/Intro1.avi") 
+            show movie1 with Dissolve(1.0)
+            #$ renpy.movie_cutscene("movie/Intro1.avi", loops=0, stop_music=True)
+            $ renpy.pause(90.0, hard= False)
+            hide movie1 with Dissolve(1.0)
+            return
+        else:
+            image movie2 = Movie(channel="movie_dp", loop = False, play = "movie/Op/Intro2.avi")
+            show movie2 with Dissolve(1.0)
+            # $ renpy.movie_cutscene("movie/Intro2.avi", loops=0, stop_music=True)
+            $ renpy.pause(90.0, hard= False)
+            hide movie2 with Dissolve(1.0)
+            return    
 
 
 label start:
@@ -256,7 +276,7 @@ label cap1Honoka:
     "Un día, cuando en verdad me vuelva una idol famosa, espero que pueda expresar estos sentimientos al público" with dissolve 
     "y que sepan de estos sentimientos que no se pueden transmitir en los conciertos." with dissolve 
     scene black with Dissolve(1.3)
-    image mv1 = Movie(channel="movie_dp",loop = False, play = "movie/video1.avi", size= (1980, 1080) )
+    image mv1 = Movie(channel="movie_dp",loop = False, play = "movie/Escenas/video1.avi", size= (1980, 1080) )
     $ quick_menu = False
     stop music
     show mv1 with Dissolve(1.0) 

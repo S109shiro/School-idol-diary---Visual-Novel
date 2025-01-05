@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 89: invalid syntax
-    else if (musicElect == 4 or musicElect == 7 or musicElect == 8): 
-          ^
+File "game/script.rpy", line 15: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sat Dec 28 11:06:44 2024
+Thu Oct 31 15:12:45 2024
