@@ -93,16 +93,16 @@ define config.sample_voice = "audio/soundTest/musicstart0"+str(personajes)+".mp3
 
 init python:
     if(now.month == 12):
-        menu_music = "audio/MenuMain/MenuMainN.mp3"
+        menu_music = "audio/MenuMain/MenuMainN.ogg"
     elif(now.month == 10):
-        menu_music = "audio/MenuMain/MenuMainH.mp3"
+        menu_music = "audio/MenuMain/MenuMainH.ogg"
     else:
         if personajes in [1, 2, 3]:  # Primptems
-            menu_music = "audio/MenuMain/MenuMain01.mp3"
+            menu_music = "audio/MenuMain/MenuMain01.ogg"
         elif personajes in [4, 7, 8]:  # BiBi
-            menu_music = "audio/MenuMain/MenuMain02.mp3"
+            menu_music = "audio/MenuMain/MenuMain02.ogg"
         elif personajes in [5,6,9]:
-            menu_music = "audio/MenuMain/MenuMain03.mp3"
+            menu_music = "audio/MenuMain/MenuMain03.ogg"
 
 define config.main_menu_music = menu_music
 
