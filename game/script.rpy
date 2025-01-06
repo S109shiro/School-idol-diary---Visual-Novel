@@ -45,7 +45,7 @@ label start:
     scene MenuElec with Dissolve(1.5)
     menu:  
         "QUE RUTA DESEAS LEER?"
-        "Ruta de Honoka Kousaka":
+        "School Idol Diary - Honoka Kousaka":
             menu: 
                 "QUE CAPITULO DESEAS"
                 "CAPITULO 1 - HONOKA NO SE RENDIRÁ" : 
@@ -799,82 +799,137 @@ label cap4Honoka:
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo4 with fade
     $ renpy.pause(3.0, hard= True)
-    
-    S_Umi "¿Honoka, tu hombro no se moja?"
-    K_Honoka "No, estoy bien... Además, lo más importante es que nuestras cosas no se mojen."
-    "Caminaba bajo el paraguas color aguamarina que Umi-chan sostenía."
-    "ĺbamos hombro a hombro, sosteniendo la maleta justo frente a mí y asegurándome de que no se empapara."
-    "Gota, gota."
-    "Caían una gran cantidad de gotas."
-    "La mochila era tan grande que no podía sostenerla entre mis brazos, debido a eso se me resbalaba."
-    "Escuchaba que su contenido se agitaba."
-    K_Honoka "¿Segura que esto va a funcionar? La ropa y los pompones no deben mojarse."
-    S_Umi "¿Deberíamos correr?"
-    K_Honoka "Muy bien"
-    "Le respondí, y comenzamos a correr."
-    "Sólo un poco más y llegamos a la entrada de mi casa, la tienda de dulces Homura."
-    S_Umi "Ja... ja... fiu, parece que lo logramos."
-    K_Honoka "Sí. Gracias, Umi-chan. La próxima vez, si está nublado, ¡me aseguraré de llevar mi paraguas!"
-    S_Umi "Ninguna de nosotras espera que preveas tantas cosas. Estoy segura de que llevas el paraguas un día que no llueve, y luego se te olvida y entonces lo pierdes. Además, ni siquiera ves el estado del tiempo, ¿o sí?"
-    "Ay... Tenía razón."
-    "Antes de que pudiera contestarle, Umi-chan añadió:"
-    S_Umi "Tu especialidad es tener la fuerza suficiente para llevar esa maleta enorme tú sola. Con esa ayuda tenemos suficiente. Y luego de eso, se fue a casa."
-    "Auch, eso no fue un cumplido, Umi-chan."
-    K_Honoka "Ya llegué."
-    "Entré a mi casa y suspiré. Una vez en mi cuarto, me eché un vistazo"
-    "Rayos, mi uniforme estaba empapado. De prisa, busqué una toalla y sequé mi uniforme y cabello."
-    "Me quité la ropa rápidamente, que sólo estaba mojada del lado derecho, y la colgué."
-    K_Honoka "Ay no, debía asegurarme de que la maleta... ¡fiu!"
-    "¡Los trajes, las cintas brillantes para el decorado del escenario, los pompones y todo lo demás estaban secos!"
-    "¡Y todo gracias a mí ♡! Ajá. ¿Ya ves, Umi-chan?"
-    "Tengo algo más que súper fuerza ♪"
-    "Pero, ¿quizá pueda secarlos con algo? No están mojados, pero sí se sienten algo húmedos, y no quiero que vayan a oler feo al secarse solos, pensé al momento de sacarlos de la maleta."
-    K_Honoka "¡Cielos, hay tantas cosas aquí!"
-    "No pude evitar gritar al ver que mi habitación desaparecía con tanta ropa y accesorios."
-    K_Honoka "En serio, ¿por qué debemos llevar y traer todas estas cosas de la escuela todo el tiempo? ¡¡Ojala tuviéramos un salón propio!!"
-    "Nuestras actividades de hoy duraron sólo como 30 minutos, así que no hay mucho que decir."
-    "Hoy, nuestro plan era preparar todo para el concierto que tenemos planeado para justo antes de las vacaciones de verano; revisar los trajes y discutir sobre el escenario y efectos, pero justo cuando teníamos todo nuestro equipo listo, comenzó a llover y todo se fastidió."
-    K_Honoka "¡Aah, de prisa! ¡Alcen todo antes de que se moje!"
-    "Cuando le pregunté a Umi-chan quién traía un paraguas, me dijo que el estado del tiempo decía que a lo mejor Ilovía en la tarde, pero yo estaba muy ocupada desayunando y ayudando en la tienda como para enterarme."
-    "Me sorprendió ver esas gototas caer del cielo tan repentinamente."
-    "Es cierto que el cielo estaba gris justo cuando terminaba el receso, y que el viento frío insinuaba que se avecinaba una tormenta, pero no pensé que en verdad Ilovería."
-    "De hecho, ni siquiera me puse a pensar en eso."
-    "Después de todo, era el tan esperado día en el que íbamos a decidir todo para nuestra presentación."
-    "Kotori-chan llevó los trajes, Rin-chan y Hanayo-chan llevaron la decoración, Umi-chan trajo las bocinas para probar el sonido, ya saben."
-    "Durante varias de las reuniones, poco a poco llevábamos nuestras cosas."
-    "Antes de darnos cuenta, ya teníamos muchas cosas listas, pero hoy, decidimos juntar todo lo necesario y terminar con nuestra práctica de baile."
-    "Toda la mañana estuve emocionada ya que hoy era el gran día que por fin íbamos a ensayar para el gran concierto, pero todo se echó a perder debido a la lluvia."
-    "Digo, nuestro espacio es el techo de la escuela, la parte más expuesta del lugar."
-    "Si llueve, no podemos realizar nuestras actividades, y sin permiso no podemos usar los salones (hace poco, Rin-chandijo que no habría problema, así que ocupamos un salón vacío, pero la maestra se enojó mucho cuando nos descubrió, jejeje)."
-    "Sip. Ahora mismo, u's es un grupo idol cualquiera, así que notenemos horarios ni establecimiento, y tampoco tenemos supervisor ni presupuesto."
-    "¡Aaaaaah, me gustaría que por lo menos tuviéramos un lugar donde poner nuestras cosas!"
-    "Ahora, les pregunto:¿Qué creen que deberíamos hacer para conseguir un salón propio?"
-    "¡Usaré este diario para pedirles su opinión!"
-    "¡Lo primero que pienso es que debemos hacer que u's sea un club oficial!"
-    "Aunque siento que eso será muy complicado."
-    "¡Lo siguiente es conseguir a una supervisora para el club! Muy buena idea, ¿no?"
-    "Si conseguimos una supervisora, será más fácilpedir permiso para usar un salón, y podríamos usar su espacio para guardar nuestras cosas."
-    "¿Verdad? ¿Verdad que sí es una buena idea?"
-    "¿Alguien conoce a alguna buena maestra?"
-    "Por cierto, los salones de música o ciencias parecen lugares perfectos para guardar nuestras cosas, así que estaría bien una profesora de ciencias o de música…"
-    "Aunque Nakajima, la maestra de música, no sería una buena idea. Ya es supervisora del club de música, así que no tendría tiempo."
-    "Honjou, la maestra de ciencias, me da un poco de miedo y no le hablo mucho. ¿Alguno de ustedes, sí?"
-    "El otro día quemé un mechero de alcohol, así que no creo que pueda ir yo... Ejeje, lamento no ser de mucha ayuda ♡"
-    "Waaaah, en ese caso, lo mejor sería que juntáramos más integrantes y nos volviéramos un club oficial, ¿no?"
-    "Eso también suena complicado, de todas formas, debemos triunfar como grupo, para que cuando la gente nos vea, piensen \"¡Yo también quiero participar!\"."
-    "¡Si no logramos eso, entonces no podemos llamarnos idols!"
-    "Y nunca podremos mostrarle al mundo lo maravilloso que es u's y atraer más estudiantes."
-    "¡Muy bien, está decidido!"
-    "¡A partir de mañana, voy a reclutar más integrantes para poder conseguir un salón!"
-    "Y para eso, tendremos que brillar y volvernos grandes idols para que la gente nos admire, ¡así que practicaré mucho más!"
-    "Dios, aún así…"
-    "Mientras escribía esto, la lluvia arreció afuera. Puede que no podamos practicar mañana."
-    "¡Aaah, de verdad quiero tener un salón propio!"
+
+    $ quick_menu = True
+
+    S_Umi "¿Honoka, tu hombro no se moja?" with dissolve
+    K_Honoka "No, estoy bien... Además, lo más importante es que nuestras cosas no se mojen." with dissolve
+    "Caminaba bajo el paraguas color aguamarina que Umi-chan sostenía." with dissolve
+    "ĺbamos hombro a hombro, sosteniendo la maleta justo frente a mí y asegurándome de que no se empapara." with dissolve
+    "Gota, gota." with dissolve
+    "Caían una gran cantidad de gotas." with dissolve
+    "La mochila era tan grande que no podía sostenerla entre mis brazos, debido a eso se me resbalaba." with dissolve
+    "Escuchaba que su contenido se agitaba." with dissolve
+    K_Honoka "¿Segura que esto va a funcionar? La ropa y los pompones no deben mojarse." with dissolve
+    S_Umi "¿Deberíamos correr?" with dissolve
+    K_Honoka "Muy bien" with dissolve
+    "Le respondí, y comenzamos a correr." with dissolve
+    "Sólo un poco más y llegamos a la entrada de mi casa, la tienda de dulces Homura." with dissolve
+    S_Umi "Ja... ja... fiu, parece que lo logramos." with dissolve
+    K_Honoka "Sí. Gracias, Umi-chan. La próxima vez, si está nublado, ¡me aseguraré de llevar mi paraguas!" with dissolve
+    S_Umi "Ninguna de nosotras espera que preveas tantas cosas. Estoy segura de que llevas el paraguas un día que no llueve, y luego se te olvida y entonces lo pierdes. Además, ni siquiera ves el estado del tiempo, ¿o sí?" with dissolve
+    "Ay... Tenía razón." with dissolve
+    "Antes de que pudiera contestarle, Umi-chan añadió:" with dissolve 
+    S_Umi "Tu especialidad es tener la fuerza suficiente para llevar esa maleta enorme tú sola. Con esa ayuda tenemos suficiente. Y luego de eso, se fue a casa." with dissolve
+    "Auch, eso no fue un cumplido, Umi-chan." with dissolve
+    K_Honoka "Ya llegué." with dissolve
+    "Entré a mi casa y suspiré. Una vez en mi cuarto, me eché un vistazo" with dissolve
+    "Rayos, mi uniforme estaba empapado. De prisa, busqué una toalla y sequé mi uniforme y cabello." with dissolve
+    "Me quité la ropa rápidamente, que sólo estaba mojada del lado derecho, y la colgué." with dissolve
+    K_Honoka "Ay no, debía asegurarme de que la maleta... ¡fiu!" with dissolve
+    "¡Los trajes, las cintas brillantes para el decorado del escenario, los pompones y todo lo demás estaban secos!" with dissolve
+    "¡Y todo gracias a mí ♡! Ajá. ¿Ya ves, Umi-chan?" with dissolve
+    "Tengo algo más que súper fuerza ♪" with dissolve
+    "Pero, ¿quizá pueda secarlos con algo? No están mojados, pero sí se sienten algo húmedos, y no quiero que vayan a oler feo al secarse solos, pensé al momento de sacarlos de la maleta." with dissolve
+    K_Honoka "¡Cielos, hay tantas cosas aquí!" with dissolve
+    "No pude evitar gritar al ver que mi habitación desaparecía con tanta ropa y accesorios." with dissolve
+    K_Honoka "En serio, ¿por qué debemos llevar y traer todas estas cosas de la escuela todo el tiempo? ¡¡Ojala tuviéramos un salón propio!!" with dissolve
+    "Nuestras actividades de hoy duraron sólo como 30 minutos, así que no hay mucho que decir." with dissolve
+    "Hoy, nuestro plan era preparar todo para el concierto que tenemos planeado para justo antes de las vacaciones de verano; revisar los trajes y discutir sobre el escenario y efectos, pero justo cuando teníamos todo nuestro equipo listo, comenzó a llover y todo se fastidió." with dissolve
+    K_Honoka "¡Aah, de prisa! ¡Alcen todo antes de que se moje!" with dissolve
+    "Cuando le pregunté a Umi-chan quién traía un paraguas, me dijo que el estado del tiempo decía que a lo mejor Ilovía en la tarde, pero yo estaba muy ocupada desayunando y ayudando en la tienda como para enterarme." with dissolve
+    "Me sorprendió ver esas gototas caer del cielo tan repentinamente." with dissolve
+    "Es cierto que el cielo estaba gris justo cuando terminaba el receso, y que el viento frío insinuaba que se avecinaba una tormenta, pero no pensé que en verdad Ilovería." with dissolve
+    "De hecho, ni siquiera me puse a pensar en eso." with dissolve
+    "Después de todo, era el tan esperado día en el que íbamos a decidir todo para nuestra presentación." with dissolve
+    "Kotori-chan llevó los trajes, Rin-chan y Hanayo-chan llevaron la decoración, Umi-chan trajo las bocinas para probar el sonido, ya saben." with dissolve
+    "Durante varias de las reuniones, poco a poco llevábamos nuestras cosas." with dissolve
+    "Antes de darnos cuenta, ya teníamos muchas cosas listas, pero hoy, decidimos juntar todo lo necesario y terminar con nuestra práctica de baile." with dissolve
+    "Toda la mañana estuve emocionada ya que hoy era el gran día que por fin íbamos a ensayar para el gran concierto, pero todo se echó a perder debido a la lluvia." with dissolve
+    "Digo, nuestro espacio es el techo de la escuela, la parte más expuesta del lugar." with dissolve
+    "Si llueve, no podemos realizar nuestras actividades, y sin permiso no podemos usar los salones (hace poco, Rin-chandijo que no habría problema, así que ocupamos un salón vacío, pero la maestra se enojó mucho cuando nos descubrió, jejeje)." with dissolve
+    "Sip. Ahora mismo, u's es un grupo idol cualquiera, así que notenemos horarios ni establecimiento, y tampoco tenemos supervisor ni presupuesto." with dissolve
+    "¡Aaaaaah, me gustaría que por lo menos tuviéramos un lugar donde poner nuestras cosas!" with dissolve
+    "Ahora, les pregunto:¿Qué creen que deberíamos hacer para conseguir un salón propio?" with dissolve
+    "¡Usaré este diario para pedirles su opinión!" with dissolve
+    "¡Lo primero que pienso es que debemos hacer que u's sea un club oficial!" with dissolve
+    "Aunque siento que eso será muy complicado." with dissolve
+    "¡Lo siguiente es conseguir a una supervisora para el club! Muy buena idea, ¿no?" with dissolve
+    "Si conseguimos una supervisora, será más fácilpedir permiso para usar un salón, y podríamos usar su espacio para guardar nuestras cosas." with dissolve
+    "¿Verdad? ¿Verdad que sí es una buena idea?" with dissolve
+    "¿Alguien conoce a alguna buena maestra?" with dissolve
+    "Por cierto, los salones de música o ciencias parecen lugares perfectos para guardar nuestras cosas, así que estaría bien una profesora de ciencias o de música…" with dissolve
+    "Aunque Nakajima, la maestra de música, no sería una buena idea. Ya es supervisora del club de música, así que no tendría tiempo." with dissolve
+    "Honjou, la maestra de ciencias, me da un poco de miedo y no le hablo mucho. ¿Alguno de ustedes, sí?" with dissolve
+    "El otro día quemé un mechero de alcohol, así que no creo que pueda ir yo... Ejeje, lamento no ser de mucha ayuda ♡" with dissolve
+    "Waaaah, en ese caso, lo mejor sería que juntáramos más integrantes y nos volviéramos un club oficial, ¿no?" with dissolve
+    "Eso también suena complicado, de todas formas, debemos triunfar como grupo, para que cuando la gente nos vea, piensen \"¡Yo también quiero participar!\"." with dissolve
+    "¡Si no logramos eso, entonces no podemos llamarnos idols!" with dissolve
+    "Y nunca podremos mostrarle al mundo lo maravilloso que es u's y atraer más estudiantes." with dissolve
+    "¡Muy bien, está decidido!" with dissolve
+    "¡A partir de mañana, voy a reclutar más integrantes para poder conseguir un salón!" with dissolve
+    "Y para eso, tendremos que brillar y volvernos grandes idols para que la gente nos admire, ¡así que practicaré mucho más!" with dissolve
+    "Dios, aún así…" with dissolve
+    "Mientras escribía esto, la lluvia arreció afuera. Puede que no podamos practicar mañana." with dissolve
+    "¡Aaah, de verdad quiero tener un salón propio!" with dissolve
     
     # COMENTARIOS FINALES DE UMI
 
 #COMIENZO DEL CAPITULO 5
 label cap5Honoka:
+    stop music fadeout 0.8
+    voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
+    scene capitulo5 with fade
+    $ renpy.pause(3.0, hard= True)
+
+    $ quick_menu = True
+
+    "Mañana tendremos nuestro primer concierto." with dissolve
+    "Ah, siendo honesta, cuando digo \"primer\", en realidad no me refiero al verdadero, verdadero, primer concierto." with dissolve
+    "Bueno, desde que hicimos µ's en abril, hemos realizado bastantes actividades escolares" with dissolve
+    "Pero ahora tenemos a Eli y a Nozomi, de tercer año, con nosotras, y pronto tendremos nuestro primer evento escolar con las nueve integrantes de µ's." with dissolve
+    "Y, de hecho, nos invitaron a hacerlo." with dissolve
+    "Ejeje, cielos, estoy tan feliz, ¡muero de la emoción!" with dissolve
+    "Cuando me acuerdo de nuestro primer concierto, incluso ahora, hace que mi corazón lata con fuerza, aunque fue un concierto trágico al que no fue nadie..." with dissolve
+    "Pero ya hemos crecido desde entonces. Ahora somos nueve en total y ya tenemos algunas canciones originales." with dissolve
+    "Sip, eso demuestra que mientras sigas peleando y nunca te rindas, entonces tus sueños se pueden volver realidad, ¿no es así?" with dissolve 
+    "Ahora, por fin, ¡el consejo estudiantil nos pidió que diéramos un concierto! ¡Ejem!" with dissolve
+    "Ah... aunque la petición viene de parte del consejo, y la presidente es una de nuestras integrantes, así que es como si nos estuviéramos invitando nosotras mismas." with dissolve
+    "De todas formas, durante la Golden Week, cuando mi abuela me dijo que quería que me encargara del evento del Día del Niño frente a nuestra tienda Homura (en donde vendemos nuestros productos), eso fue... de hecho, no tienen nada que ver con esto, ¿verdad?" with dissolve
+    "Cuando mi abuela me comentó eso mientras comía golosinas con Umi-chan, estábamos tan sorprendidas que casi no atragantamos. Ejeje ♪" with dissolve
+    "¡Así que estoy súper emocionada por esto!" with dissolve
+    "Espero que este evento sea un gran éxito y nos inviten a participar en otros." with dissolve
+    "Asi subiriamos más videos y nos conocería más gente." with dissolve
+    "¡Todas en u's nos llenaríamos de motivación!" with dissolve
+    "Así que, aunque sólo estamos usando nuestras \"conexiones\"(como Maki lo llama), ¡estamos felices de que Eli nos esté apoyando! Aunque ya hayamos tenido nuestro debut como idols escolares, todavía nos falta mucho." with dissolve
+    "¡Debemos aprovechar todas las oportunidades que tengamos!" with dissolve
+    "¡Dios, sabía que reclutar a la presidente del consejo estudiantil era una grandiosa idea! ¡Tener preferencia es increíble! ♪" with dissolve
+    "Sólo bromeo, ejejeje ✰" with dissolve
+
+
+    "Eh, pues... hoy nos estamos encargando de los preparativos para mañana." with dissolve
+    "Y el evento es... ¡La apertura de la piscina!" with dissolve
+    "Cielos, es algo \"muy de idol\", ¿no? " with dissolve
+    "Normalmente, el consejo estudiantil junta a un grupo de voluntarios para abrir la piscina después de la escuela, así que no tenemos invitados de fuera y tampoco vienen muchos estudiantes... " with dissolve
+    "Por supuesto, esto está lejos de ser el Festival cultural o la feria deportiva o alguno de esos eventos." with dissolve
+    "Pero así podemos mostrarnos un poco más ante el público, y considero que tener la oportunidad de grabar un video en frente de la piscina nos dará buena publicidad durante el verano ✰" with dissolve
+    "También voy a la piscina del parque de diversiones durante las vacaciones, pero los fines de semana, siempre hay algún espectáculo de superhéroes o idols." with dissolve
+    "¡Idols bailando en trajes de baño con un escenario especial cerca de la piscina y música estruendosa!" with dissolve
+    "Y siempre veo todo eso mientras disfruto un rico raspado." with dissolve
+    "Sip. Era lo que algunas de nosotras quería usar para este evento. Y cuando digo \"algunas\", me refiero en realidad a Nico-chan ♪" with dissolve
+    "Pero tuvimos un problema con eso, como ¿estaría bien que usáramos trajes de baño en la escuela?" with dissolve
+    "¿El consejo no se enojaría con nosotras?" with dissolve
+    "Además, Umi-chan se rehusó fervientemente." with dissolve
+    "Al final, Kotori-chan dijo que no había mucho tiempo y que no podría hacer los trajes para todas, así que descartamos la idea." with dissolve
+    "Una pena, pero así son las cosas." with dissolve
+    "Los trajes de baño serán para la próxima. Digo, no es como que no me averguenza la idea de usar traje de baño... pero aún así..." with dissolve
+    "Soy una idol ♪" with dissolve
+    "Cuando es verano, tienes que lucir un lindo traje de baño, ¿no? Espero poder hacerlo una vez que empiecen las vacaciones ♡" with dissolve
+    "Pero si, antes de darme de cuenta, ya era junio. Una hoja más en el calendario y ya son vacaciones de verano." with dissolve
+
+    #Pagina 5
+
+
 
 
 

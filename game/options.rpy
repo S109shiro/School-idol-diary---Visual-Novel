@@ -13,7 +13,7 @@
 ##
 ## El _() que rodea la cadena de texto la señala como traducible.
 
-define config.name = _("School idol diary Kinetic Novel")
+define config.name = _("School idol diary Visual Novel")
 
 
 ## Determina si el título dado más arriba se muestra en el menú principal.
@@ -24,14 +24,14 @@ define gui.show_name = False
 
 ## Versión del juego.
 
-define config.version = "0.3"
+define config.version = "0.4"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
 ## comillas triples y deja una línea en blanco entre párrafos.
 
 define gui.about = _p("""
-    Buenas, primero que nada GRACIAS por descargar esta novela cinetica, un abrazo para todos ustedes quien me han apoyado.\n
+    Buenas, primero que nada GRACIAS por descargar esta novela visual, un abrazo para todos ustedes quien me han apoyado.\n
     Ahora si, como ya sabras esta kinetic novel adapta todas las novelas ligeras de School idol diary 
     de la franquicia de Love Live, todo esto con la intencion de llegar a mas fanaticos que se les hace difícil centrarse en leer un pdf,
     por lo que la idea que en vez de imaginar todo lo que las novelas nos proporcionan ya se tenga todo a la mano (soundtrack, escenarios, sprites, voces, etc.). \n
@@ -46,7 +46,7 @@ define gui.about = _p("""
 ## Nombre breve del juego para ejecutables y directorios en la distribución.
 ## Debe contener solo carácteres ASCII, sin espacios, comas o puntos y coma.
 
-define build.name = "SIDKN_Beta3"
+define build.name = "SIDVN_Beta4"
 
 
 ## Sonidos y música ############################################################
@@ -186,7 +186,7 @@ default preferences.afm_time = 10
 ## Normalmente, este valor no debe ser modificado. Si lo es, debe ser siempre
 ## una cadena literal y no una expresión.
 
-define config.save_directory = "School_idol_diary_kinetic_novel-1699805720"
+define config.save_directory = "School_idol_diary_visual_novel-1699805720"
 
 
 ## Icono #######################################################################
