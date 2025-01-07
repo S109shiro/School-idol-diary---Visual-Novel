@@ -906,6 +906,7 @@ label cap5Honoka:
     "¡Dios, sabía que reclutar a la presidente del consejo estudiantil era una grandiosa idea! ¡Tener preferencia es increíble! ♪" with dissolve
     "Sólo bromeo, ejejeje ✰" with dissolve
 
+    #Paso de dia
 
     "Eh, pues... hoy nos estamos encargando de los preparativos para mañana." with dissolve
     "Y el evento es... ¡La apertura de la piscina!" with dissolve
@@ -926,8 +927,36 @@ label cap5Honoka:
     "Soy una idol ♪" with dissolve
     "Cuando es verano, tienes que lucir un lindo traje de baño, ¿no? Espero poder hacerlo una vez que empiecen las vacaciones ♡" with dissolve
     "Pero si, antes de darme de cuenta, ya era junio. Una hoja más en el calendario y ya son vacaciones de verano." with dissolve
+    "¿A dónde se fue el tiempo? Si que vuela, ¿no? Ups, ¿estoy hablando con viejita otra vez?" with dissolve
+    "¡Rayos, Umi-chan se va a enojar conmigo por no actuar como una idol! ¡No dije eso!" with dissolve
+    "¡Para nada! Finjamos que no ha pasado nada, ¿de acuerdo? ♡" with dissolve
+    "Como decía, eh... nuestra piscina en Otonokizaka es, por supuesto, una piscina al aire libre abierta a todo público." with dissolve
+    "¡Me encaaaaaanta nadar! Tomé clases de natación cuando era niña, así que se me da muy bien ♪" with dissolve
+    "Las piscinas techadas son bonitas y las puedes usar cuando sea, pero la verdadera magia de la piscina es poder jugar con tus amigos y chapotear por todos lados bajo los rayos del sol y el vasto cielo veraniego, y ¡ese momento en el que puedes zambullirte sin preocupaciones!" with dissolve
+    "¿Saben de lo que hablo?" with dissolve
+    "Es un poco gracioso como usamos todos esos trajes de baño infantiles." with dissolve
+    "¡Así es como empieza mi época favorita del año!" with dissolve
+    "Al parecer, cada año, por estas fechas, Otonoki hace una ceremonia de apertura para antes de que empiecen las clases de natación." with dissolve
+    "Hasta ahora, el consejo estudiantil había reunido voluntarios, pero para ser honesta, yo nunca he sabido que hacen... esta será mi primera vez." with dissolve
+    "Parece ser que rezan para que todo salga bien, dejan que la gente use la piscina un rato, juegan bingo y otras cosas parecidas." with dissolve
+    "Me siento mal por enterarme de todo esto hasta ahora que la escuela está a punto de cerrar." with dissolve
+    "Creo que si la gente se interesara más en nuestra escuela, no estaríamos en esta situación en primer lugar, así que nos esforzaremos mucho para este evento, y les mostraremos otra gran cosa que tiene Otonoki." with dissolve
+    "Es casi un sueño que la gente venga a vernos a la ceremonia de apertura. Más bien, debemos convertirnos en ese grupo que atrae a mucha gente." with dissolve
+    "¡Me voy a esforzar!" with dissolve
+    "Así que, fui a la piscina." with dissolve
 
-    #Pagina 5
+    #Cambio Escenario
+    "Guau, ¡¿pero qué?!" with dashed #revisar
+    "La transparente agua, brillante bajo el sol veraniego, no estaba." with dissolve
+    "En su lugar, había una repugnante sustancia verde. Parecía un contenedor de laboratorio." with dissolve
+    "Podía imaginar sapos viviendo ahí."
+    K_Honoka "¿Q-qué es esto, Eli? ¡Nuestra piscina se volvió un pantano!" with dissolve
+    "Eli se encontraba cerca de la orilla, estirando las piernas." with dissolve
+    A_Eli "Ah, llegaste. Justo ahora estamos drenando el agua. Ten cuidado, ¿de acuerdo?" with dissolve
+    "El sonido del agua se escuchaba cerca de los pies de Eli."
+    "Por ahí se estaba drenando. ¡lug, sería horrible si me tragara!"
+    K_Honoka "Lamento llegar antes. Supongo que me emocioné mucho. No me di cuenta de que aún la estaban limpiando. Vendré después de..."
+ 
 
 
 
