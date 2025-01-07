@@ -10,4 +10,6 @@ define A_Eli = Character("Ayase Eli", color = "#7AEEFF")
 define T_Nozomi = Character("Toujo Nozomi", color = "#c455f6")
 
 
+
+
 define K_Yukiho = Character("Kousaka Yukiho", color = "#842c00")

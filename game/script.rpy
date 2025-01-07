@@ -953,13 +953,38 @@ label cap5Honoka:
     K_Honoka "¿Q-qué es esto, Eli? ¡Nuestra piscina se volvió un pantano!" with dissolve
     "Eli se encontraba cerca de la orilla, estirando las piernas." with dissolve
     A_Eli "Ah, llegaste. Justo ahora estamos drenando el agua. Ten cuidado, ¿de acuerdo?" with dissolve
-    "El sonido del agua se escuchaba cerca de los pies de Eli."
-    "Por ahí se estaba drenando. ¡lug, sería horrible si me tragara!"
-    K_Honoka "Lamento llegar antes. Supongo que me emocioné mucho. No me di cuenta de que aún la estaban limpiando. Vendré después de..."
- 
+    "El sonido del agua se escuchaba cerca de los pies de Eli." with dissolve
+    "Por ahí se estaba drenando. ¡lug, sería horrible si me tragara!" with dissolve
+    K_Honoka "Lamento llegar antes. Supongo que me emocioné mucho. No me di cuenta de que aún la estaban limpiando. Vendré después de..." with dissolve
+    N_Maki "Espero no tardáramos mu- Vaya, ¡¿qué rayos?! ¡¿Es un estanque?!" with dissolve
+    H_Rin "Es como pescar en el hielo ✰" with dissolve
+    K_Hanayo "Ohh, quizás haya una carpa ♡" with dissolve
+    "Llegaron las tres de primer año, Maki-chan, Rin-chan y Hanayo-chan, respectivamente." with dissolve
+    "Por supuesto, también las sorprendió el estado de la piscina." with dissolve
+    "Yo tampoco sabía de esto, pero la piscina queda llena de agua y nadie la toca durante el invierno, y pronto, hay tanto musgo y algas que ya no puedes ni ver el fondo." with dissolve
+    "Admito que en verdad parecía que vivian peces ahí..." with dissolve
+    "Eli miró su reloj y comentó" with dissolve
+    A_Eli "no vinieron temprano. De hecho, apenas tenemos tiempo, así que sino empezamos ya no nos va a dar tiempo. ¿Dónde están las otras tre... " with dissolve
+    S_Umi "Lo siento, me tocaba arreglar el salón de clases hoy..." with dissolve
+    M_Kotori "Yo también tenía que limpiar." with dissolve
+    "Umi-chan y Kotori-chan llegaron, jadeaban por venir corriendo. Sus rostros sonrojados mostraban un poco pena." with dissolve
+    "Oh, no hay ningún problema. Se lo están tomando muy en serio. Supongo que estaban emocionadas por el gran evento..." with dissolve
+    Y_Nico " Nico nii, nico nii, nico nico nii ♪ ¡La hada de la piscina, Nico-nii, ha llegado! ¡Hola, chicas! ¿Me estaban esperando?" with dissolve
+    "Detras de nosotras llego Nicho-chan, su voz era más radiante que el sol. Saltó... y...oh, ¡ya llevaba puesto su traje! ¿Eh? ¿Acaso teniamos ensayo" with dissolve
+    "Cuando Nico-chan iba a posar, Eli la sujetó de los brazos y la mantuvo en su lugar, llamando su atención." with dissolve
+    A_Eli "Si, me preguntaba cuánto te ibas a tardar, Hadita. Ahora, primero lo primero, quítate esa ropa. ¿Pueden encargarse de esto rápido?" with dissolve
+    "¿Eh? ¿Eeeehh"
+    "Al darse la vuelta, Eli tenía una expresión seria y nosotras estábamos muy confundidas."
+    "Al mismo tiempo, la puerta del almacén se abrió de par en par."
+    all "Ah, Nozomi"
+    "Era Nozomi."
+    T_Nozomi "Ya todas están presentes, eh ¡Manos a la obra, chicas!"
+    "Llevaba un montón de palos con pelo verde. Y varios cepillos."
+    all "¡¿Queeeeé?!"
+    "Gritamos al unisono. Umi-chan suspiró."
+    "Un momento, ¡¿se suponía que limpiaríamos la piscina para el evento de mañana?!"
 
-
-
+    #Pagina 9
 
 
 
