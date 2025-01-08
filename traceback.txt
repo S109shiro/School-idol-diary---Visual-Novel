@@ -1,28 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/options.rpy", line 93, in script
-    define config.main_menu_music = menu_music
-  File "game/options.rpy", line 93, in <module>
-    define config.main_menu_music = menu_music
-NameError: name 'menu_music' is not defined
+  File "game/script.rpy", line 951, in script
+    "Guau, ¡¿pero qué?!" with dashed #revisar
+  File "game/script.rpy", line 951, in <module>
+    "Guau, ¡¿pero qué?!" with dashed #revisar
+NameError: name 'dashed' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/options.rpy", line 93, in script
-    define config.main_menu_music = menu_music
-  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 2241, in execute
-    self.set()
-  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 2255, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "game/script.rpy", line 951, in script
+    "Guau, ¡¿pero qué?!" with dashed #revisar
+  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 620, in execute
+    say_menu_with(self.with_, renpy.game.interface.set_transition)
+  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 435, in say_menu_with
+    what = renpy.python.py_eval(expression)
+  File "F:\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
   File "F:\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/options.rpy", line 93, in <module>
-    define config.main_menu_music = menu_music
-NameError: name 'menu_music' is not defined
+  File "game/script.rpy", line 951, in <module>
+    "Guau, ¡¿pero qué?!" with dashed #revisar
+NameError: name 'dashed' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
-School idol diary Kinetic Novel 0.5
-Sat Dec 28 11:11:36 2024
+School idol diary Visual Novel 0.4
+Tue Jan  7 13:06:35 2025

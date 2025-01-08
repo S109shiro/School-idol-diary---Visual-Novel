@@ -58,6 +58,10 @@ label start:
                     jump cap4Honoka
                 "CAPITULO 5 - ¡¿TANTOS PROBLEMAS PARA UN CONCIERTO?!":
                     jump cap5Honoka
+                "CAPITULO 6 - SESIÓN FOTOGRAFICA":
+                    jump cap6Honoka
+                "CAPITULO 7 - MIFUTURO Y EL DE YUKIHO":
+                    jump cap7Honoka
 
         #"Ruta de Umi Sonoda":
             #jump UmiSono
@@ -946,7 +950,7 @@ label cap5Honoka:
     "Así que, fui a la piscina." with dissolve
 
     #Cambio Escenario
-    "Guau, ¡¿pero qué?!" with dashed #revisar
+    "Guau, ¡¿pero qué?!"  #revisar
     "La transparente agua, brillante bajo el sol veraniego, no estaba." with dissolve
     "En su lugar, había una repugnante sustancia verde. Parecía un contenedor de laboratorio." with dissolve
     "Podía imaginar sapos viviendo ahí."
@@ -984,7 +988,212 @@ label cap5Honoka:
     "Gritamos al unisono. Umi-chan suspiró."
     "Un momento, ¡¿se suponía que limpiaríamos la piscina para el evento de mañana?!"
 
-    #Pagina 9
+
+    T_Nozomi "Es más rápido cuando trabajamos todas juntas, ¿no?"
+    "Comentó Nozomi mientras limpiaba su frente."
+    "Las chicas y yo, tras habernos puesto nuestro uniforme deportivo, restregábamos el suelo."
+    A_Eli "Lo siento. Al parecer no tuvimos dinero para contratar a quien limpiara, y cuando intentamos que las estudiantes ayudaran, nadie quiso. Y pues, ya que J's iba a dar su concierto aquí, pensé que podríamos encargarnos."
+    "Añadió Eli con una sonrisa incómoda mientras juntaba todo el musgo."
+    Y_Nico "iSi, claro! ¡Ya lo tenias planeado! Traté tantas veces de advertirles sobre Elichika y sus maléficas intenciones, pero..."
+    "Rin-chan sostuvo la escoba de Nico-chan y trató de calmarla."
+    H_Rin "Pues está bien, alguien tiene que hacerlo ♡ Yo me estoy divirtiendo. No todos los días puedes hacer esto, ¿verdad? Anda, mirame patinar en mi escoba por todo el piso de la pisci- "
+    K_Hanayo "¡Rin-chan, ten cuidado!"
+    "Rin-chan corrió, resbaló y cayó antes de que Hanayo-chan pudiera detenerla. Cayó al suelo de lleno, y siguió deslizandose hasta llegar al otro lado de la piscina."
+    H_Rin "Tejeje... ¡Rin-chan gana el primer lugar en Deslizamiento a gran velocidad!"
+    N_Maki "Agh, está bien, ¡ya no importa este desastre! ¡Puedes dejarlo todo y limpiarlo con tu cuerpo!"
+    "Cuando Maki-chan está con Rin-chan y Hanayo-chan, pareciera convertirse en su madre."
+    K_Honoka "Pfff"
+    "El pensarlo me hizo reir."
+    N_Maki "¿Qué te causa gracia, Honoka?"
+    K_Honoka "Perdón, no me estoy riendo de ustedes, ¿de acuerdo?"
+
+
+    "Es sólo que el que estemos limpiando así me hace sentir como si fuéramos idols de segunda, jeje."
+    "Con eso en mente, miré al cielo."
+    "Creo que esto no está tan mal. Si."
+    "El sudor recorrió desde mi oreja hasta mi cuello."
+    "Bajo este vasto cielo azul. El verano se acerca."
+    "Mañana vamos a cantar junto a esta piscina."
+    "No sé cuánta gente vendrá a vernos, pero quiero limpiar esta piscina como agradecimiento."
+    "Ya que esta será una presentación importante para u's."
+    "Daremos un paso más adelante."
+    "Así es. Deberíamos estar agradecidas de poder cantar aquí. Y, para nuestra escuela, nuestra Otonoki, lo siento, no sabía que la piscina necesitaba de todo este cuidado."
+    "Alguien más se dedicó a hacerlo, para que nosotraS pudiéramos disfrutarla."
+    "Al ver a la presidente del consejo estudiantil, Eli, fregando con toda su fuerza, pienso ser la presidente del consejo no se trata sólo de privilegios, sino también de esforzarse al máximo, ¿verdad?"
+    "¡Muy bien, yo también me esforzaré!"
+    "¡Quizá no pueda lograr lo que Eli, pero daré todo de mi parte en el evento de mañana!"
+    "Y para eso..."
+    "¡Hoy tengo que lavar el suelo de la piscina!"
+    "Le eché un vistazo, por lo menos la mitad ya estaba limpia."
+    "Me sentí abrumada, ¡pero no rendirme es mi estilo de vida!"
+    "De ahora en adelante, ¡me llenaré de energía y me esforzaré más!"
+    "Aaaah, ¿y qué pasará mañana si no terminamos de limpiar hoy?"
+    "Me rasqué la nariz, y me embarré de musgo la cara, dejandome un bigote verde."
+    "Nico-chan me tomó una foto, ¿quizá podamos enseñarla en el concierto de mañana?"
+    "¡Si quieren verla, deben ir al concierto de apertura de la piscina!"
+    "Debería usarla como publicidad."
+    "Ah, ojalá mañana sea un día soleado y despejado."
+    "Para que podamos pararnos bajo ese cielo, en la piscina que nosotras mismas limpiamos, y podamos dar nuestro primer concierto como un grupo de nueve."
+    "Ay no, pensar en eso hace que me emocione, ¡no voy a poder dormir!"
+    K_Honoka "Uuuaaahhh..."
+    "El trabajo físico te agota, ¡¿verdad?!"
+    "¡Manana voy a darlo todo!"
+
+    # COMENTARIOS FINALES DE ELI
+
+#COMIENZO DEL CAPITULO 6
+label cap6Honoka:
+    stop music fadeout 0.8
+    voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
+    scene capitulo6 with fade
+    $ renpy.pause(3.0, hard= True)
+
+    $ quick_menu = True
+    K_Honoka "Como que nadie viene, ¿no?"
+    M_Kotori "Como que no..."
+    "Estaba sentada junto a Kotori-chan, en un escritorio que tenía el letrero \"Inscripciones\"."
+    "Pude notar el espacio vacio frente a nuestra mesa en donde se suponía que debía de haber una fila."
+    "Era una tarde alegre de junio. El viento soplaba y meneaba los árboles."
+    M_Kotori "¿Quizás escogimos un mal lugar?"
+    K_Honoka "Quizas..."
+    "Estabamos detras del gimnasio."
+    "Hay un arbol enorme, una alfombra de flores y una hermosa vista de la ciudad, desde la cima de Otonokizaka."
+    "Escogí este lugar porque pensé que sería perfecto para la sesión fotográfica..."
+    "Ah, algo frío cayó sobre mi cabeza."
+    M_Kotori "¿Oh, va a empezar a llover?"
+    K_Honoka "Si, va a llover..."
+    "Mientras Kotori-chan sólo repetía lo que le decía, miré al cielo, había una ligera luz tras ese montón de nubes... pic pic."
+    "Cuando vi la lluvia caer desde aquellas nubes grises, me quedé boquiabierta."
+    M_Kotori "¿Ow, deberíamos dejarlo por hoy?"
+    "Decepcionada, miré a la libreta que estaba sobre el escritorio."
+    "Sip, todavía en blanco..."
+    "Era de esperarse, supongo... Llevamos esperando aquí desde que las clases terminaron, pero al final, nadie se apareció."
+    "En la libreta, estaba el ejemplo que escribi, fue un desperdicio:"
+    #CARTA
+    M_Kotori "Aquí nos vamos a mojar. ¿Nos quitamos?"
+    "La voz de Kotori-chan me hizo reaccionar, y comenzamos a mover el escritorio hacia la entrada del gimnasio."
+    "Kotori-chan dijo que todavía faltaba para que oscureciera y que la lluvia podría parar, así que decidimos esperar un poco más."
+    "A pesar de eso..."
+    M_Kotori "Nadie viene, ¿no?"
+    K_Honoka "Nop, nadie viene..."
+    "Tenemos un largo camino por recorrer."
+    "¿Así serán las sesiones fotográficas de las idols?"
+
+    #RECUERDO
+    Y_Nico "¡Toda idol de verdad debe tener sesiones fotográficas!"
+    "Fue lo que dijo Nico-chan un día durante nuestro descanso de la práctica."
+    K_Honoka "¿Sesión fotográfica? ¿Y eso qué es? ¿Que nos tomemos fotos grupales? Aunque yo sólo tengo la cámara de mi celular..."
+    "Le respondí y Nico-chan ladeó la cabeza."
+    Y_Nico "¡Ah, Honoka, tú nunca me decepcionas! Ni siquiera sabes que es una sesión fotografica, pequeñina"
+    "En ese momento comenzó a estrujar mi cabeza con sus nudillos."
+    "¡Aaaah, otra vez quedé como una tonta!"
+    "Y entonces, ¿qué es una \"sesión fotográfica\"? ¿Algún término técnico de la industria?"
+    "Según lo que Nico-chan explicó en las \"sesiones fotográficas de idols\" no tomamos fotos de nada, al parecer los fans se reúnen en un estudio y nos toman fotos."
+    "Ya veo. En ese caso, no importa si tengo o no cámara."
+    "Las idols son mucho más que sólo cantar y dar conciertos, ¿verdad?"
+    "Según Nico-chan, las idols rentan estudios y realizan este tipo de eventos muy a menudo."
+    "¡No por nada es la detective #1! ¡Nico-chan sabe lo suyo!"
+    "Pero, somos idols escolares. O más bien, todavía nos falta mucho, mucho, muchísimo para que nos convirtamos en idols escolares, ¡¿cCómo se supone que rentemos un estudio para tener una sesión de fotos?!"
+    "Ni siquiera sé donde podríamos encontrar esos estudios."
+    "Tampoco puedo imaginarme cómo se hacen esas sesiones."
+    "¿Cómo le hacemos?"
+    "¿Y saben lo que dijo Nico-chan?"
+    Y_Nico "¡Todavía tenemos mucho, mucho, mucho por aprender como idols, en cuanto a canto, baile, fama y popularidad! Básicamente, tenemos tantas, tantas, tantas cosas en las que trabajar..."
+    "No creo que fuera necesario que dijera \"mucho\” y \"tantas\" varias veces..."
+    Y_Nico "Ahora que Maki es parte del club, ya pudimos comenzar a trabajar en canciones originales, y hemos practicado en nuestra coreografía"
+    Y_Nico "También tuvimos una lluvia de ideas, y para ser honesta, tenemos suerte de que todas seamos atléticas, ¡así que tenemos buena destreza para ser un grupo recién nacido!"
+    Y_Nico "Lo único en lo que tenemos que trabajar es en ganar más fama y popularidad. ¡En especifico, debemos trabajar en la fotogenia!"
+    H_Rin "¿Fotogenia? ¿Es alguna especie de comida?"
+    "Nico-chan la señaló con el dedo, interrumpiéndola."
+    Y_Nico "¡Oye tú! ¿Ni siquiera sabes qué significa fotogenia? ¡Por gente como tú es que el mundo está lleno de chicas que sólo saben hacer el simbolo de la paz cuando les toman fotos!"
+    "¿E-está hablando de mi? Ah... jajajaja... ♡"
+    Y_Nico "La palabra \"fotogenia\" se refiere a lo bien que te ves cuando te toman fotos. Ya saben de lo que hablo, ¿no?"
+    Y_Nico "De esas chicas que en persona no tienen nada de especial, pero que salen súper lindas en las fotos, que se ven muy bien en selfies, o que su foto de perfil no se parece nada a ellas etc etc... "
+    "Mmmm... Todas voltearon a ver a Nico-chan."
+    Y_Nico "O-oigan, vamos, ¿qué están mirando? Ya sé que soy súper lista y linda, ¡pero es vergonzoso cuando me miran así!"
+    "No creo que eso fuera lo que queríamos insinuar... Da igual ♡"
+    K_Honoka "Tienes razón. Aún nos ponemos nerviosas cuando nos toman fotos, ¿no es así? "
+    K_Honoka "Por costumbre hago el simbolo de la paz, y ya lo he pensado desde el día que lo comentaste, pero no estoy segura de si mi cara se ve mejor del lado izquierdo o del derecho."
+    "Al parecer, al igual que tenemos un brazo y ojo dominante, también tenemos un lado dominante de la cara."
+    Y_Nico "Oh, no sólo se trata de eso, ¿sabes? Si quieres ser una idol, debes saber sobre técnicas gravure."
+    Y_Nico "En esas revistas que están llenas de fotos de idols lindas, con las mejillas sonrojadas."
+    "Aah, se refiere a las fotos en trajes de baño."
+    Y_Nico "No sólo se ponen los trajes de baño para lucir su pecho.Todas trabajan en detalles."
+    Y_Nico "Tienen que asegurarse que su cabello baile con el viento, que las cortinas les luzcan bien, y que abran la boca de tal forma que luzcan seductoras..."
+    "¡Oh, Nico-chan se acercó a mi con la boca entreabierta!"
+    "¡Aay, qué traviesa!"
+    Y_Nico "¿Vieron? ¡Las idols tienen que ser capaces de hacer eso todo el tiempo! Si siempre posan como si estuvieran tomando fotos de recuerdo, ju's no tendrá futuro!"
+    "Entiendo. ¡Tenemos que practicar de tal forma que nos salga natural en todo momento!"
+    "Y asi, recordamos y aprendimos de nuestros errores."
+    "Cuando alguien nos pide una foto, en automático hacemos el signo de la paz, y nos ponemos tan tiesas que nuestras expresiones no se ven naturales."
+    "Además, todo esto de posar, nunca lo habíamos considerado."
+    "¡Muy bien, en ese caso!"
+    K_Honoka "Oigan, ¿creen que podamos hacer, pues, nuestra versión de esa cosa de la sesión fotográfica o algo así?"
+    "Los ojos de Nico-chan brillaron en cuanto me escuchó decir eso, Kotori-chan y Umi-chan suspiraron y miraron al cielo."
+    "Pero si hay algo que nos intrigue, ¡tenemos que investigarlo!"
+    "Ese es nuestro estilo, ¿no?"
+
+    #FIN RECUERDO
+    M_Kotori "Creo... que no debimos organizar la sesión de fotos en una tarde de entre semana... "
+    K_Honoka "Si, y luego de entregar todos esos volantes..."
+    "Kotori-chan y yo seguíamos a cargo del escritorio (que se había mojado un poco)."
+    "Veiamos con desinterés cómo caia la lluvia."
+    "Decidimos esperar a que pasaran los últimos 30 minutos antes de que cerraran la escuela."
+    "¡Hello! ¿Ya terminó la sesión de fotos?"
+    "Pude escuchar una voz a la distancia."
+    "El rostro de Kotori-chan se iluminó y luego... se apagó."
+    M_Kotori "¡Bienvenidos! Nuestro cliente de hoy es... ¡¿Rin-chan?! ¡¿Y Hanayo-chan?!"
+    H_Rin "Nos preguntábamos como les iba, así que decidimos venir"
+    H_Rin "Y bueno, ¿cómo va el negocio? ¿Tuvieron muchos clientes? ¿Tomaron muchas fotos? ¡No puedo esperar a que llegue mi turno!"
+    "Kotori-chan sonrió de forma forzada."
+    K_Honoka "Nada. ¿Tal vez nos precipitamos un poco? No hemos logrado nada."
+    M_Kotori "Justo hablábamos de que quizás deberíamos dejarlo por ho-"
+    H_Rin "¿En serio? Qué mal, ¡pero no hay problema!"
+    H_Rin "Pensé que esto pasaría, ¡así que traje esto!"
+    "En esto, sacó una cámara réflex."
+    K_Honoka "¡Guau, se ve tan profesional! ¡¿De dónde la sacaste?!"
+    H_Rin " Es un cachivache de mi papá ♡ Una sesión de fotos no es nada si nadie toma fotos, ¿no? No sé si es hacer trampa, pero decidí que me aparecería si no venía ningún cliente."
+    K_Hanayo "Yo también. Posar y todo eso me da algo de vergúenza, pero puedo tomar fotos sin problemas. Como fan de las idols, creo que me será más fácil hacerla de fotógrafa."
+    "Hanayo-chan habló con timidez."
+    "Y luego, detrás de ellas... ¡Nico-chan apareció!"
+    Y_Nico "Y no lo olviden, yo vine a entrenarlas. Por lo menos, hasta que lleguen clientes. De lo contrario, sólo estarán sentadas allí sin hacer nada, ¿cierto?"
+    Y_Nico "¡Déjenme enseñarles lo básico sobre posar! ¡Así que, primero vayan a ponerse el traje porrista!"
+    H_Rin "¿Eh? Mejor me pongo mi ropa deportiva que ese traje de porrista ♪ Me gusta la ropa casual, sabes."
+    K_Hanayo "Este... creo que sólo deberíamos ponernos nuestro vestuario de conciertos. Creo que a nuestros fans les encantara vernos de cerca..."
+    Y_Nico "¿En serio? Siento que ya todos están acostumbrados a ver a Honoka y Kotori disfrazadas. Por lo que las porristas serian..."
+    "Las tres comenzaron una animada discusion."
+    H_Rin "Cielos, hoy sólo seremos fotógrafas, ¡así que no importa cómo nos vayan a ver!"
+    H_Rin "Ya sé, ¿qué te parece si nos vestimos y tomamos turnos para tomarnos fotos?"
+    Y_Nico "¡Oh, esa es una buen idea!"
+    Y_Nico "Me pondré el traje de porrista ♡ debo decir que me veo mucho mejor cuando me toman fotos que cuando las tomo ♡."
+    K_Hanayo "Y yo sólo voy a tomar fotos, como ya lo había planeado."
+    H_Rin "¡Y ustedes pueden tomarme fotos mientras tomo fotos en ropa deportiva!"
+    "¿Eh, cómo que \"ustedes\"? pensé y me asomé detrás de Rin-chan."
+    N_Maki "Bueno, no llego tarde, ¿verdad? Hasta traje mi cámara y todo ♪"
+    T_Nozomi "Y con mi cámara instantánea, puedo autografiar las fotos en el mismo momento"
+    "También llegó Nozomi-chan."
+    "Maki-chan y Nozomi-chan se veían muy emocionadas al respecto, y detrás de ellas llegaron Umi-chan y Eli-chan, ¡ambas se veían de mal humor!"
+    "Antes de darnos cuenta, ya había parado la lluvia."
+    "Kotori-chan tenía razón. Iba a dejar de llover."
+    "Después, tuvimos una gran sesión de fotos con y's, sin clientes ♡"
+    "Nozomi-chan había traído varios trajes: de sacerdotisa, trajes de baño, de sirvientas y uniformes de voleibol."
+    "No estoy segura de lo que tramaba, pero Kotori-chan, la amante del cosplay se emocionó y todas se divirtieron, así que no hay problema."
+    "Nico-chan hasta nos enseñó como posar correctamente."
+    "No tiene nada de malo que, de vez en cuando, nos tomemos el día libre y en vez de ensayar nos relajemos asi."
+    "Ah, y no se preocupen, Nico-chan va a subir todas las fotos a internet, ¡así que esto cuenta como actividades de p's!"
+    "Espero que mucha gente las vea."
+    "¡Vamos a ver quién gana teniendo más visitas!"
+    "Por favor, sigan apoyándonos ♡♡"
+
+    # COMENTARIOS FINALES DE NICO
+
+#COMIENZO DEL CAPITULO 7
+label cap7Honoka:
+
+
+
+
+
 
 
 
