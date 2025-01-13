@@ -1353,24 +1353,49 @@ label cap7Honoka:
     K_Honoka "No somos las únicas que deseamos salvarla. Todas son niñas bien portadas, simplemente se rinden muy rápido."
     K_Honoka "Estoy segura de que todos se pondrán contentos de saber que tú quieres matricularte ahí."
     "Asustada, fue lo único que se me ocurrió decir."
-    
+    K_Honoka "¡Todas vamos a seguir dando lo mejor, y así podremos salvar nuestra escuela! ¡Así que no quieras ir a UTX! ¡Ven a la preparatoria Otono-"
+    "Yukiho volteó a verme."
+    K_Yukiho "Me voy a esforzar..."
+    "Sus ojos..."
+    "Estaban llenos de lágrimas."
+    K_Yukiho "No pueden... no pueden hacerme esto."
+    K_Yukiho "Quería ir a Otonoki, ¡igual que tú! Quería vestir el mismo uniforme que mi abuela, que mamá y que tú, y tomar una foto familiar!!"
+    K_Yukiho "Pero... Pero voy a ser la única que no va a poder hacerlo. ¡¡Me molesta, me molesta, pero yo no puedo hacer nada!!"
+    "Yukkii..."
+    "Ella tenía razón."
+    "No hay nada que se pueda hacer."
+    "Lo único que pude hacer fue abrazar a Yukiho mientras lloraba."
+    "Sus lágrimas mojaron mi uniforme."
+    "Mi camisa blanca se empapó con sus lágrimas."
+    "Lo siento, Yukiho."
+    "Lamento sólo haber pensado en mi."
+    "Yukiho siempre se ve tan tranquila, así que pensé que hablaba en serio cuando decía lo genial y sofisticada que era UTX."
+    "Nunca pensé que estuviera mintiendo."
+    "Lo siento."
+    "De verdad lo siento."
+    "Pero..."
+    "Queda algo."
+    "Hay algo que quiero que sepas."
+    "Todavía no renuncio a la idea de que asistamos a Otonoki juntas, ¿de acuerdo?"
+    "Yo no soy nada buena ocultando mis sentimientos, como tú."
+    "Por eso siempre hablaba en serio cuando decía que quería que fueras a Otonoki"
+    "No, no sólo tú. Quiero que todas las niñas que vivan cerca vayan a Otonoki."
+    "Esa noche, por primera vez luego de mucho tiempo, Yukiho y yo dormimos en la misma cama."
+    "Cuando éramos niñas, siempre terminábamos así luego de andar jugando."
+    "Nos preguntábamos si teníamos el mismo sueño al compartir la cama, pero Yukiho siempre soñaba sobre princesas y yo soñaba con dragones o ni siquiera recordaba mis sueños, y nunca tuvimos el mismo sueño."
+    "Pero, esta vez"
+    "Espero podamos tener el mismo sueño."
+    "Un sueño en el que la preparatoria Otonokizaka no tenga que cerrar"
+    "Un sueño en el que Yukiho y yo vistamos el mismo uniforme y ambas digamos \"jYa me voy!\" al salir de casa."
+    "Y mañana, haré lo que pueda para que ese sueño se vuelva realidad."
+    "Puede que no sea mucho, pero haré lo que esté en mi poder."
+    "Me esforzaré como idol escolar junto a las chicas de p's."
+    "Por el bien de nuestra querida escuela, por esa gente a la que queremos."
+    "¡Que nuestros sueños se vuelvan realidad!"
+    "Espero tener dulces sueños hoy."
+    "No hay nada en el mundo que ame más que la preparatoria Otonokizaka ♡"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #Comentarios Hanayo
 
 
 
