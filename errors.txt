@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 15: Indentation mismatch.
+File "game/character.rpy", line 17: invalid syntax
+    Character("Maestra", color "#ffffff")
+                                ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Oct 31 15:12:45 2024
+Mon Jan 13 09:22:45 2025

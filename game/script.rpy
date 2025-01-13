@@ -878,6 +878,14 @@ label cap4Honoka:
     "¡Aaah, de verdad quiero tener un salón propio!" with dissolve
     
     # COMENTARIOS FINALES DE UMI
+    play music coments fadein 0.8 fadeout 0.5
+    scene TKotori with dissolve
+    $ renpy.pause(2.0, hard = False) 
+    scene comentarioUmi2 with dissolve
+    $ renpy.pause(9.0, hard = False) 
+    scene black with fade
+    stop music fadeout 1.0
+    jump cap5Honoka
 
 #COMIENZO DEL CAPITULO 5
 label cap5Honoka:
@@ -1040,6 +1048,14 @@ label cap5Honoka:
     "¡Manana voy a darlo todo!"
 
     # COMENTARIOS FINALES DE ELI
+    play music coments fadein 0.8 fadeout 0.5
+    scene TKotori with dissolve
+    $ renpy.pause(2.0, hard = False) 
+    scene comentarioEli1 with dissolve
+    $ renpy.pause(9.0, hard = False) 
+    scene black with fade
+    stop music fadeout 1.0
+    jump cap6Honoka
 
 #COMIENZO DEL CAPITULO 6
 label cap6Honoka:
@@ -1186,6 +1202,14 @@ label cap6Honoka:
     "Por favor, sigan apoyándonos ♡♡"
 
     # COMENTARIOS FINALES DE NICO
+    play music coments fadein 0.8 fadeout 0.5
+    scene TKotori with dissolve
+    $ renpy.pause(2.0, hard = False) 
+    scene comentarioNico1 with dissolve
+    $ renpy.pause(9.0, hard = False) 
+    scene black with fade
+    stop music fadeout 1.0
+    jump cap7Honoka
 
 #COMIENZO DEL CAPITULO 7
 label cap7Honoka:
@@ -1395,8 +1419,15 @@ label cap7Honoka:
     "Espero tener dulces sueños hoy."
     "No hay nada en el mundo que ame más que la preparatoria Otonokizaka ♡"
 
-    #Comentarios Hanayo
-
+    #COMENTARIOS HANAYO
+    play music coments fadein 0.8 fadeout 0.5
+    scene TKotori with dissolve
+    $ renpy.pause(2.0, hard = False) 
+    scene comentarioHanayo1 with dissolve
+    $ renpy.pause(9.0, hard = False) 
+    scene black with fade
+    stop music fadeout 1.0
+    jump cap7Honoka
 
 
 

@@ -1,4 +1,4 @@
-# Capitulos
+# Capitulos Honoka
 image capitulo1 = "images/Capitulos/Honoka/TCapitulo1.png"
 image capitulo2 = "images/Capitulos/Honoka/TCapitulo2.png"
 image capitulo3 = "images/Capitulos/Honoka/TCapitulo3.png"
@@ -7,15 +7,19 @@ image capitulo5 = "images/Capitulos/Honoka/TCapitulo5.png"
 image capitulo6 = "images/Capitulos/Honoka/TCapitulo6.png"
 image capitulo7 = "images/Capitulos/Honoka/TCapitulo7.png"
 
-#Comentarios
+#Titulos de Comentarios
 image TKotori = "images/Comentarios/Titulos/TKotori.png"
 image TUmi = "images/Comentarios/Titulos/TUmi.png"
 image TMaki = "images/Comentarios/Titulos/TMaki.png"
 
-image comentarioKotori1 = "images/Comentarios/001.png"
-image comentarioUmi1 = "images/Comentarios/002.png"
-image comentarioMaki1 = "images/Comentarios/003.png"
-
+#Comentarios para Honoka
+image comentarioKotori1 = "images/Comentarios/Honoka/001.png"
+image comentarioUmi1 = "images/Comentarios/Honoka/002.png"
+image comentarioMaki1 = "images/Comentarios/Honoka/003.png"
+image comentarioUmi2 = "images/Comentarios/Honoka/004.png"
+image comentarioEli1 = "images/Comentarios/Honoka/005.png"
+image comentarioNico1 = "images/Comentarios/Honoka/006.png"
+image comentarioHanayo1 = "images/Comentarios/Honoka/007.png"
 
 #Scene
 image cuarto_Honoka = "images/Cuarto_Honoka.png"

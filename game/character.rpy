@@ -14,4 +14,4 @@ define T_Nozomi = Character("Toujo Nozomi", color = "#c455f6")
 
 define K_Yukiho = Character("Kousaka Yukiho", color = "#842c00")
 
-define maestra = Character("Maestra", color "#ffffff")
+define maestra = Character("Maestra", color = "#ffffff")
