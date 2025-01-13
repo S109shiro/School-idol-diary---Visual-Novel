@@ -1,4 +1,4 @@
-2025-01-07 18:13:49 UTC
+2025-01-08 16:40:19 UTC
 Windows-10-10.0.26100
 Ren'Py 8.3.4.24120703
 
@@ -6,34 +6,34 @@ School idol diary Kinetic Novel
 0.3
 Built at 2024-12-29 03:44:46 UTC
 
-Early init took 0.14s
-Loading error handling took 0.09s
-Loading script took 2.05s
-Loading save slot metadata took 0.06s
+Early init took 0.18s
+Loading error handling took 0.08s
+Loading script took 0.58s
+Loading save slot metadata took 0.31s
 Loading persistent took 0.00s
 Set script version to: (8, 3, 4)
-Running init code took 0.24s
-Loading analysis data took 0.02s
+Running init code took 0.17s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
+Reloading save slot metadata took 0.19s
 Index archives took 0.00s
 Dump and make backups took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.08s
+Initial gc took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.05s
-Prepare screens took 0.13s
+Load screen analysis took 0.01s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Interface start took 0.16s
 
