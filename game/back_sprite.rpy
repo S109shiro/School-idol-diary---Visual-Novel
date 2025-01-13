@@ -7,10 +7,16 @@ image capitulo5 = "images/Capitulos/Honoka/TCapitulo5.png"
 image capitulo6 = "images/Capitulos/Honoka/TCapitulo6.png"
 image capitulo7 = "images/Capitulos/Honoka/TCapitulo7.png"
 
-#Titulos de Comentarios
+#Titulos de Comentarios para Todos
+image THonoka = "images/Comentarios/Titulos/THonoka.png"
 image TKotori = "images/Comentarios/Titulos/TKotori.png"
 image TUmi = "images/Comentarios/Titulos/TUmi.png"
 image TMaki = "images/Comentarios/Titulos/TMaki.png"
+image THanayo = "images/Comentarios/Titulos/THanayo.png"
+image TRin = "images/Comentarios/Titulos/TRin.png"
+image TNico = "images/Comentarios/Titulos/TNico.png"
+image TNozomi = "images/Comentarios/Titulos/TNozomi.png"
+image TEli = "images/Comentarios/Titulos/TEli.png"
 
 #Comentarios para Honoka
 image comentarioKotori1 = "images/Comentarios/Honoka/001.png"

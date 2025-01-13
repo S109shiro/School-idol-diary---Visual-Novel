@@ -879,7 +879,7 @@ label cap4Honoka:
     
     # COMENTARIOS FINALES DE UMI
     play music coments fadein 0.8 fadeout 0.5
-    scene TKotori with dissolve
+    scene TUmi with dissolve
     $ renpy.pause(2.0, hard = False) 
     scene comentarioUmi2 with dissolve
     $ renpy.pause(9.0, hard = False) 
@@ -1049,7 +1049,7 @@ label cap5Honoka:
 
     # COMENTARIOS FINALES DE ELI
     play music coments fadein 0.8 fadeout 0.5
-    scene TKotori with dissolve
+    scene TEli with dissolve
     $ renpy.pause(2.0, hard = False) 
     scene comentarioEli1 with dissolve
     $ renpy.pause(9.0, hard = False) 
@@ -1203,7 +1203,7 @@ label cap6Honoka:
 
     # COMENTARIOS FINALES DE NICO
     play music coments fadein 0.8 fadeout 0.5
-    scene TKotori with dissolve
+    scene TNico with dissolve
     $ renpy.pause(2.0, hard = False) 
     scene comentarioNico1 with dissolve
     $ renpy.pause(9.0, hard = False) 
@@ -1421,7 +1421,7 @@ label cap7Honoka:
 
     #COMENTARIOS HANAYO
     play music coments fadein 0.8 fadeout 0.5
-    scene TKotori with dissolve
+    scene THanayo with dissolve
     $ renpy.pause(2.0, hard = False) 
     scene comentarioHanayo1 with dissolve
     $ renpy.pause(9.0, hard = False) 
