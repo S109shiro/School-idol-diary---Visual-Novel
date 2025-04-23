@@ -1,10 +1,32 @@
+![Logo](https://github.com/user-attachments/assets/3784e1e3-78be-4746-bbd7-f69e35970ebc)
 
-![logo](https://github.com/user-attachments/assets/75874abf-d43b-41f4-b18f-ea7d151cfe78)
+# Love Live School Idol Diary - Visual Novel 
+El objetivo principal de este proyecto es ofrecer una experiencia más inmersiva y accesible para los fans de la franquicia Love Live!, permitiéndoles disfrutar las School Idol Diary, novelas ligeras que profundizan en el día a día de cada integrante del grupo μ’s, todo adaptado al formato de **novela visual**, muy popular en Japón.
 
-<h1>Love Live School Idol Diary - Visual Novel </h1>
+![cover_oficial](https://github.com/user-attachments/assets/a448ff98-dda0-407b-ad8c-25656bad08f5)
 
-<p>El objetivo principal de este proyecto es ofrecer una experiencia más inmersiva y accesible para las personas interesadas en la franquicia Love Live!, permitiéndoles disfrutar de las School Idol Diary, unas novelas ligeras que profundizan en el día a día de cada integrante del grupo μ’s (Muse) en formato de novela visual.
 
-Estas historias, si bien están disponibles en formato PDF, pueden resultar difíciles de leer para algunos fans, ya sea por falta de concentración, formato poco amigable o simplemente por preferir una experiencia más visual. Por eso, este proyecto busca transformar esas lecturas en una experiencia interactiva y envolvente, integrando elementos como la banda sonora oficial, escenarios representativos, sprites de los personajes y demás recursos visuales y auditivos. De esta manera, el lector no tendrá que imaginarlo todo, sino que podrá vivirlo como si estuviera dentro del propio universo de Love Live!.</p>
+## 💻 Tech Stack
 
-![cover_oficial](https://github.com/user-attachments/assets/56b5db1c-dc88-448f-bff7-2d1bdabf9ab0)
+⚙️ **Motor:** Ren'Py
+
+⌨️ **Lenguaje de programación:** Python
+
+
+## 📸 Screenshots
+![Visual 1](https://github.com/user-attachments/assets/d37044ad-ab66-4c1c-9e81-79b18df5275c)
+
+![Visual 2](https://github.com/user-attachments/assets/be7dff4c-7fb6-407d-80b2-ed3777fb9aeb)
+
+![Visual 3](https://github.com/user-attachments/assets/63345e35-ba94-4ebd-a884-1d2a7dbe961e)
+
+![Visual 4](https://github.com/user-attachments/assets/9d141b07-1f2f-43d9-be9b-581486c47054)
+
+
+## 🧑‍💻 Website y Descarga Oficial
+
+🌎 [Website](https://schoolidoldiaryvn.blogspot.com/)
+
+⬇️ [Descarga Oficial](https://shiro109.itch.io/love-live-school-idol-diary-visual-novel)
+
+[@S109shiro](https://github.com/S109shiro)
