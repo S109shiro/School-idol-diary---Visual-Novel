@@ -1,32 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 951, in script
-    "Guau, ¡¿pero qué?!" with dashed #revisar
-  File "game/script.rpy", line 951, in <module>
-    "Guau, ¡¿pero qué?!" with dashed #revisar
-NameError: name 'dashed' is not defined
+  File "game/script.rpy", line 198, in script
+    show KotoriM at KotOtoki with dissolve
+  File "game/script.rpy", line 198, in <module>
+    show KotoriM at KotOtoki with dissolve
+NameError: name 'KotOtoki' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 951, in script
-    "Guau, ¡¿pero qué?!" with dashed #revisar
-  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
-    Say.execute(self)
-  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 620, in execute
-    say_menu_with(self.with_, renpy.game.interface.set_transition)
-  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 435, in say_menu_with
-    what = renpy.python.py_eval(expression)
-  File "F:\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
+  File "game/script.rpy", line 198, in script
+    show KotoriM at KotOtoki with dissolve
+  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 1124, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 1083, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 1083, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "F:\renpy-8.3.4-sdk\renpy\python.py", line 1218, in py_eval
     return py_eval_bytecode(code, globals, locals)
-  File "F:\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+  File "F:\renpy-8.3.4-sdk\renpy\python.py", line 1211, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 951, in <module>
-    "Guau, ¡¿pero qué?!" with dashed #revisar
-NameError: name 'dashed' is not defined
+  File "game/script.rpy", line 198, in <module>
+    show KotoriM at KotOtoki with dissolve
+NameError: name 'KotOtoki' is not defined
 
 Windows-10-10.0.26100 AMD64
-Ren'Py 8.3.4.24120703
+Ren'Py 8.3.7.25031702
 School idol diary Visual Novel 0.4
-Tue Jan  7 13:06:35 2025
+Tue Apr 22 22:48:39 2025

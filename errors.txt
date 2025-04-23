@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/character.rpy", line 17: invalid syntax
-    Character("Maestra", color "#ffffff")
-                                ^
+File "game/script.rpy", line 221: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    scene aula with dissolve
+    ^
 
-Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Jan 13 09:22:45 2025
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Tue Apr 22 22:51:10 2025

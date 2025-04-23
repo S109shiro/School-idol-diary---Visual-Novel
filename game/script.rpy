@@ -44,10 +44,10 @@ label start:
     play music SongMenuSelect fadein 0.5 fadeout 0.5
     scene MenuElec with Dissolve(1.5)
     menu:  
-        "QUE RUTA DESEAS LEER?"
+        "SELECCIONA ALGUNA RUTA"
         "School Idol Diary - Honoka Kousaka":
             menu: 
-                "QUE CAPITULO DESEAS"
+                "QUE CAPITULO DESEAS LEER?"
                 "CAPITULO 1 - HONOKA NO SE RENDIRÁ" : 
                     jump cap1Honoka
                 "CAPITULO 2 - CONVIRTÁMONOS EN SCHOOL IDOLS" :
@@ -96,11 +96,12 @@ label cap1Honoka:
     "Este abril, decidí debutar como idol escolar junto a mis amigas. Aunque a decir verdad, creo que somos muy… normales… como para llamarnos \"idols\"." with dissolve 
     "Quiero decir, nos vemos normales, no somos buenas cantando, tampoco tenemos talento en la actuación, y si ves nuestras fotos..." with dissolve 
     scene photo with Fade(.25, 0, .75, color="#fff")
-    "salimos todas nerviosas, con sonrisas falsas, o posamos haciendo el símbolo de la paz, típica pose de chicas de preparatoria." with dissolve
+    "Salimos todas nerviosas, con sonrisas falsas, o posamos haciendo el símbolo de la paz, típica pose de chicas de preparatoria." with dissolve
 
     scene cuarto_Honoka with fade
     "Mmm, pero... un momento, ¿no acabo de decir que las idols no deben de desanimarse? ¡Así es!" with dissolve 
-    "Sí, y por eso nos convertiremos en las brillantes idols con las que todos sueñan, y vamos a esforzarnos mucho, llamaremos la atención de todos y salvaremos nuestra escuela, la {b}preparatoria Otonokizaka{/b}, del cierre. ¡Lo prometo!" with dissolve 
+    "Sí, y por eso nos convertiremos en las brillantes idols con las que todos sueñan, y vamos a esforzarnos mucho, llamaremos la atención de todos y salvaremos nuestra escuela" with dissolve 
+    "La {b}preparatoria Otonokizaka{/b}, del cierre. ¡Lo prometo!" with dissolve 
     "En verdad, en verdad quisiera que todos nos dieran su apoyo. Porque…" with dissolve 
 
     scene otonoki with fade 
@@ -108,10 +109,11 @@ label cap1Honoka:
     "La escuela a la que vamos, la escuela que amamos tanto, a la que siempre quisimos ir desde que éramos pequeñas, ha sido sentenciada a un cruel destino y cerrará dentro de 3 años." with dissolve 
     "Nuestra escuela, Otonokizaka, es una escuela pública que se encuentra en el vecindario donde nacimos." with dissolve 
     "Ah, pero aunque diga \"pública\", en realidad es una escuela \"nacional\", pero está lejos de todas las estaciones de tren, y quizás por eso todas las que asisten son chicas locales," with dissolve 
-    "tampoco tiene algún club sobresaliente ni un nivel alto en educación, es completamente lo opuesto a la elegante y refinada imagen que te viene a la mente cuando escuchas \"escuela nacional\"." with dissolve 
+    "Tampoco tiene algún club sobresaliente ni un nivel alto en educación, es completamente lo opuesto a la elegante y refinada imagen que te viene a la mente cuando escuchas \"escuela nacional\"." with dissolve 
 
     show UmiS at top with dissolve
-    "{color=#6D56FF}Umi-chan{/color}, mi amiga de toda la vida, dice que el gobierno no tiene presupuesto para mantener la escuela, pero sería inconcebible que la cerrasen, dejando una región de la capital sin preparatoria, por eso deberían nombrar la escuela nacional en vez de cerrarla." with dissolve 
+    "{color=#6D56FF}Umi-chan{/color}, mi amiga de toda la vida, dice que el gobierno no tiene presupuesto para mantener la escuela, pero sería inconcebible que la cerrasen." with dissolve 
+    "Dejando una región de la capital sin preparatoria, por eso deberían nombrar la escuela nacional en vez de cerrarla." with dissolve 
     "Sí que es la descendiente de una larga generación de artistas marciales. Sabe de todas esas cosas complicadas, ¿no?" with dissolve 
     hide UmiS with dissolve
     
@@ -119,10 +121,10 @@ label cap1Honoka:
     "Es el corazón de nuestro vecindario." with dissolve 
     "Barrio especial Chiyoda, Tokio. Akihabara, Kanda, Jinbocho y Ochanomizu. En medio de esos lugares, en donde gente de todo Japón se reúne, se encuentra nuestro vecindario, como si fuera un valle marrón rodeado de edificios." with dissolve 
     scene atardecer with fade
-    "Ah, de hecho, quizá no haya tanta tierra como para llamarlo valle marrón, ¿o sí? Pero cuando era niña, no había tantos edificios como ahora. Era un vecindario tan tranquilo, con parques, espacios abiertos y bellos atardeceres." with dissolve 
-    
+    "Ah, de hecho, quizá no haya tanta tierra como para llamarlo valle marrón, ¿o sí?" with dissolve 
+    "Pero cuando era niña, no había tantos edificios como ahora. Era un vecindario tan tranquilo, con parques, espacios abiertos y bellos atardeceres."with dissolve 
     scene cielo with fade
-    "Por supuesto, yo no sé si es verdad, pero mi abuela, que vive conmigo, dice que esta es una de las pocas ciudades que no desapareció con los bombardeos de la {a=https://acortar.link/zgejGa}{color=#E000FF}Guerra del Pacífico{/color}{/a} (¡¿?!)."
+    "Por supuesto, yo no sé si es verdad, pero mi abuela, que vive conmigo, dice que esta es una de las pocas ciudades que no desapareció con los bombardeos de la {a=https://acortar.link/zgejGa}{color=#E000FF}Guerra del Pacífico{/color}{/a}"
     "Es cierto que cuando recorres las calles puedes ver viejos edificios y muchos negocios antiguos." with dissolve 
     "Está el famoso puesto de soba. Y la tienda de dulces estilo occidental que le encanta a mi abuela, y que apareció en los libros de Shotaro Ikenami." with dissolve 
     "El restauran occidental que le gustaba al gran autor que mencionan en los libros de texto, Souseki Natsume. Y el puesto que vende delicioso sushi." with dissolve 
@@ -132,7 +134,7 @@ label cap1Honoka:
     "Así se siente." with dissolve 
     "Cuando piensas en ello, es un lugar un tanto misterioso, ¿no? Pero aquí nací y aquí crecí. Este es el único lugar que conozco perfectamente." with dissolve 
     "Jardín de niños, primaria, secundaria, todas eran escuelas públicas y por supuesto, las únicas clases particulares que tuve fueron clases de piano con una señora que vive cerca de aquí" with dissolve 
-    "(aunque no practicaba y luego luego lo dejé, jejeje ♡)" with dissolve
+    "(Aunque no practicaba y luego luego lo dejé, jejeje ♡)" with dissolve
     "las clases de ábaco en el parque, oh, y las clases de caligrafía con el tío de Umi-chan." with dissolve 
     "¡Ah, y mi clase favorita era la de natación que se daba en la piscina pública! Cuando terminaban las clases, buscábamos donde jugar balón prisionero o a perseguirnos." with dissolve 
     "Subirse al tren era algo que ocurría pocas, muy pocas veces, como cuando le rogabas a tu mamá que fueran al cine durante las vacaciones de verano o primavera." with dissolve 
@@ -157,7 +159,8 @@ label cap1Honoka:
     "aunque está en medio de la ciudad ¿tiene áreas grandes y muchos árboles? Ah, y como no hay muchas estudiantes, también hay mucho espacio. Eso sería todo, creo." with dissolve 
     "Dado que he vivido todo el tiempo aquí, siempre pensé que cuando creciera, ¡usaría el uniforme de Otonoki y me volvería una estudiante de Otonoki!" with dissolve 
     "¿Por qué? No es como que recordase haber tenido algún encuentro fantástico con una de las chicas de Otonoki, o ninguna otra clase de inspiración." with dissolve 
-    "Aún así, mis compañeras de clase tenían hermanas que fueron a Otonoki, las veía andar riendo y divirtiéndose juntas por el vecindario. Verlo era algo tan normal para mí, que simplemente quería ser como ellas." with dissolve 
+    "Aún así, mis compañeras de clase tenían hermanas que fueron a Otonoki, las veía andar riendo y divirtiéndose juntas por el vecindario." with dissolve 
+    "Verlo era algo tan normal para mí, que simplemente quería ser como ellas." with dissolve 
     "¿No les pasa eso a todos?" with dissolve 
     scene otonoki2 with fade
     "Aunque no fuera una escuela especial, aunque fuera fácil entrar, aunque se tratara de una preparatoria pública común y corriente, esa escuela de la que podrías graduarte llevándotela tranquila..." with dissolve 
@@ -170,7 +173,6 @@ label cap1Honoka:
     "Bueno, tal vez yo no me veo como una chica de esa edad. Jejeje." with dissolve 
     "Por eso aún no puedo creerlo." with dissolve 
     "La preparatoria a la que siempre quise ir, Otonokizaka, está a punto de cerrar." with dissolve 
-
     "Todavía lo recuerdo como si hubiera sido ayer." with dissolve 
     stop music fadeout 1.3
     play music PasilloMain loop fadein 1.0 fadeout 0.8
@@ -182,20 +184,22 @@ label cap1Honoka:
     #show KousakaHonoka at top with dissolve
     voice "audio/VoiceHonoka/goodday.mp3"
     K_Honoka "¡Hoy es un gran día!" with dissolve 
-    "Y luego…" with dissolve 
+    "Y luego…" with dissolve
     scene beginner with dissolve
     $ renpy.pause(1.5, hard = True)
     "Con un semblante nervioso, ambas me llevaron al tablón de anuncios, en donde se encontraba la noticia del cierre de la escuela." with dissolve 
     scene beginner2 with dissolve
-    $ renpy.pause(1.5, hard = True)
+    $ renpy.pause(0.5, hard = True)
     "¡Ooohh, vamos!" with hpunch 
     "Me duele el pecho sólo de recordarlo. Hay gente que dice \"Lo veo y no lo creo\" pero... esa vez, eso era lo que me pasaba. Era imposible, era mentira, tenía que ser eso." with dissolve 
     "Todas las ideas y palabras se esfumaron de mi mente, en automático pellizqué mi mejilla. Quizás fue debido a la sorpresa, pero no sentía nada, apenas sentí dolor." with dissolve 
     "Y por eso pensé \"¡Ah, ya sé! ¡Es sólo un sueño!\" Y mi cabeza comenzó a dar vueltas. No estaba segura de qué pasaba, pero luego, estaba sentada en mi pupitre." with dissolve 
     scene aula with dissolve
     "Frente a mí estaban Umi-chan y Kotori-chan, preocupadas." with dissolve 
-    show KotoriM at KotOtoki with dissolve
-    show UmiS at UmiOtoki with dissolve
+    show KotoriM with dissolve:
+        xpos 280 ypos 50 
+    show UmiS with dissolve: 
+        xpos 980 ypos 50
     voice "audio/VoiceKotori/001.mp3"
     M_Kotori " ¿Estás bien, Honoka-chan?" with dissolve 
     "Cuando las vi, con esa preocupación. Por fin me di cuenta. Ah, no fue un sueño." with dissolve 
@@ -209,11 +213,13 @@ label cap1Honoka:
     voice "audio/VoiceKotori/002.mp3" 
     M_Kotori "Parece que no tendrás que preocuparte por eso. La escuela va a cerrar hasta dentro de tres años, cuando se hayan graduado todas las estudiantes." with dissolve 
     "Ah, muy bien." with dissolve 
+    stop music fadeout 1.3
+    scene black 
     "Cansada, me hundí en mi asiento." with dissolve 
     hide UmiS with dissolve
     hide KotoriM with dissolve
     "Pero, al parecer, volví a pensar en voz alta y me levanté de mi lugar." with dissolve 
-    # PENDIENTE
+    scene aula with dissolve
     K_Honoka "¿TRES AÑOS?" with hpunch   
     "Recibir dos noticias así en un solo día drenó toda mi energía." with dissolve 
     scene HonokaSad with dissolve
@@ -254,7 +260,6 @@ label cap1Honoka:
     "Y por eso yo, Honoka, {b}nunca me voy a rendir{/b}." with dissolve 
     "Esto es lo que creo." with dissolve 
     scene otonoki with dissolve
-    stop music fadeout 1.0
     play music Motivation loop fadein 1.0 fadeout 0.8
     "Si es por algo que es importante para ti, alguien importante, algo que en verdad quieres…" with dissolve 
     "Entonces nunca debes rendirte." with dissolve 
@@ -274,8 +279,8 @@ label cap1Honoka:
     "La vida es muy simple." with dissolve 
     "Cuando digo cosas como esas la gente se ríe de mí y me dice que sueno como una porrista." with dissolve 
     "Pero no me voy a unir a ningún club deportivo, ¿entendido?" with dissolve 
-    "No, porque… voy a comenzar el club de idol…" with dissolve 
-    "No, ¡un club de idol escolares!" with dissolve 
+    "No, porque… voy a comenzar el club de idols…" with dissolve 
+    "No, ¡un club de idols escolares!" with dissolve 
     "Cantaré, bailaré, seré linda y brillaré, y llamaré la atención de todos, y entonces, ¡el número de estudiantes en la preparatoria Otonokizaka aumentará!" with dissolve 
     "Un día, cuando en verdad me vuelva una idol famosa, espero que pueda expresar estos sentimientos al público" with dissolve 
     "y que sepan de estos sentimientos que no se pueden transmitir en los conciertos." with dissolve 
@@ -297,9 +302,9 @@ label cap1Honoka:
     #COMENTARIOS FINALES DE KOTORI
     play music coments fadein 0.8 fadeout 0.5
     scene TKotori with dissolve
-    $ renpy.pause(2.0, hard = False) 
+    $ renpy.pause(2.8, hard = True) 
     scene comentarioKotori1 with dissolve
-    $ renpy.pause(9.0, hard = False) 
+    $ renpy.pause(9.0, hard = True) 
     scene black with fade
     stop music fadeout 1.0
     jump cap2Honoka
@@ -511,8 +516,10 @@ label cap2Honoka:
     S_Umi "¿Así que aquí andabas, Honoka?" with dissolve
     voice "audio/VoiceKotori/004.mp3"
     M_Kotori "Ah, qué bien. Fuimos a Homura porque queríamos enseñarte algo, pero no estabas ahí." with dissolve
-    show KotoriM at KotOtoki with dissolve
-    show UmiS at UmiOtoki with dissolve
+    show KotoriM with dissolve:
+        xpos 280 ypos 50 
+    show UmiS with dissolve: 
+        xpos 980 ypos 50
     "De repente aparecieron Umi-chan y Kotori-chan." with dissolve
     "Mis amigas y compañeras de clase." with dissolve
     "Y también son las primeras que se unieron al grupo de μ's." with dissolve
@@ -554,8 +561,10 @@ label cap2Honoka:
     play audio cerrarRevista noloop
     "Umi-chan tomó la revista de las manos de Kotori-chan y la cerró." with dissolve
     scene estacion with dissolve
-    show KotoriM at KotOtoki with dissolve
-    show UmiS at UmiOtoki with dissolve
+    show KotoriM with dissolve:
+        xpos 280 ypos 50 
+    show UmiS with dissolve: 
+        xpos 980 ypos 50
     voice "audio/VoiceKotori/010.mp3"
     M_Kotori "¡Oye, todavía no marcaba la página!" with dissolve
     "Umi-chan me miró a los ojos, ignorando el grito de Kotori-chan." with dissolve
@@ -572,8 +581,10 @@ label cap2Honoka:
     "La imagen de UTX cruzó mi mente, pero ya no tenía miedo." with dissolve
     voice "audio/VoiceHonoka/014.mp3"
     scene estacion with dissolve
-    show KotoriM at KotOtoki with dissolve
-    show UmiS at UmiOtoki with dissolve
+    show KotoriM with dissolve:
+        xpos 280 ypos 50 
+    show UmiS with dissolve: 
+        xpos 980 ypos 50
     K_Honoka "No importa lo que otras escuelas hagan. ¡Nosotras vamos a lograr lo imposible!" with dissolve
     "Pude pronunciar esas palabras cuando vi a Umi-chan y Kotori-chan frente a mí." with dissolve
     "La tímida y débil Honoka había desaparecido antes de que me diera cuenta." with dissolve

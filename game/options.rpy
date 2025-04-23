@@ -21,6 +21,8 @@ define config.name = _("School idol diary Visual Novel")
 
 define gui.show_name = False
 
+# Comentar esto al exportar
+define config.developer = True
 
 ## Versión del juego.
 
