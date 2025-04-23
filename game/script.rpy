@@ -8,14 +8,12 @@ label splashscreen:
     if(now.month == 10 and now.day == 31):  #Halloween
             image movieH = Movie(channel="movie_dp", loop = False, play = "movie/Halloween/IntroH.avi") 
             show movieH with Dissolve(1.0)
-            #$ renpy.movie_cutscene("movie/Intro1.avi", loops=0, stop_music=True)
             $ renpy.pause(90.0, hard= False)
             hide movieH with Dissolve(1.0)
             return
     elif(now.month == 12 and now.day == 24):    #Navidad
             image movieN = Movie(channel="movie_dp", loop = False, play = "movie/Christmas/IntroN.avi") 
             show movieN with Dissolve(1.0)
-            #$ renpy.movie_cutscene("movie/Intro1.avi", loops=0, stop_music=True)
             $ renpy.pause(90.0, hard= False)
             hide movieN with Dissolve(1.0)
             return
@@ -24,14 +22,12 @@ label splashscreen:
         if op == 1:
             image movie1 = Movie(channel="movie_dp", loop = False, play = "movie/Op/Intro1.avi") 
             show movie1 with Dissolve(1.0)
-            #$ renpy.movie_cutscene("movie/Intro1.avi", loops=0, stop_music=True)
             $ renpy.pause(90.0, hard= False)
             hide movie1 with Dissolve(1.0)
             return
         else:
             image movie2 = Movie(channel="movie_dp", loop = False, play = "movie/Op/Intro2.avi")
             show movie2 with Dissolve(1.0)
-            # $ renpy.movie_cutscene("movie/Intro2.avi", loops=0, stop_music=True)
             $ renpy.pause(90.0, hard= False)
             hide movie2 with Dissolve(1.0)
             return    
@@ -301,7 +297,7 @@ label cap1Honoka:
     #COMENTARIOS FINALES DE KOTORI
     play music coments fadein 0.8 fadeout 0.5
     scene TKotori with dissolve
-    $ renpy.pause(2.8, hard = True) 
+    $ renpy.pause(2.5, hard = False) 
     scene comentarioKotori1 with dissolve
     $ renpy.pause(9.0, hard = True) 
     scene black with fade
@@ -1441,6 +1437,6 @@ label cap7Honoka:
 
 
 
-# label UmiSono:
-    # voice "audio/VoiceUmi/001.mp3"
+label UmiSono:
+    voice "audio/VoiceUmi/001.mp3"
    

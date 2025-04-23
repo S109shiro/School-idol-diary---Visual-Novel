@@ -33,12 +33,11 @@ define config.version = "0.4"
 ## comillas triples y deja una línea en blanco entre párrafos.
 
 define gui.about = _p("""
-    Buenas, primero que nada GRACIAS por descargar esta novela visual, un abrazo para todos ustedes quien me han apoyado.\n
-    Ahora si, como ya sabras esta kinetic novel adapta todas las novelas ligeras de School idol diary 
-    de la franquicia de Love Live, todo esto con la intencion de llegar a mas fanaticos que se les hace difícil centrarse en leer un pdf,
-    por lo que la idea que en vez de imaginar todo lo que las novelas nos proporcionan ya se tenga todo a la mano (soundtrack, escenarios, sprites, voces, etc.). \n
-    Sin más te dejo algunos links, gracias y ¡¡¡disfruta de la novela!!!!
-
+    ¡Hola! Primero que nada, ¡GRACIAS por descargar esta novela visual! Un abrazo a todos los que han apoyado este proyecto.
+    Esta novela adapta todas las School Idol Diary con el objetivo de llegar a más fans que se les hace difícil concentrarse leyendo un PDF.
+    La idea es que no tengas que imaginar nada, ya que aquí tendrás todo a la mano: soundtrack, escenarios, sprites, voces y más.
+    Sin más, te dejo algunos links. 
+    ¡Gracias y disfruta de la novela!\n
     {a=https://schoolidoldiaryvn.blogspot.com/}WEB OFICIAL{/a} \n
     {a=https://shiro109.itch.io/love-live-school-idol-diary-visual-novel}ITCH.IO{/a}\n
     {a=https://twitter.com/AkSebas109}MI TWITTER (X){/a} \n
@@ -48,7 +47,7 @@ define gui.about = _p("""
 ## Nombre breve del juego para ejecutables y directorios en la distribución.
 ## Debe contener solo carácteres ASCII, sin espacios, comas o puntos y coma.
 
-define build.name = "SIDVN_Beta4"
+define build.name = "SIDVN_Beta0.4"
 
 
 ## Sonidos y música ############################################################

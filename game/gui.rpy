@@ -66,7 +66,7 @@ define gui.name_text_font = "fonts/GROBOLD.ttf"
 define gui.interface_text_font = "fonts/PassionOne-Regular.ttf"
 
 ## El tamaño normal del texto del diálogo.
-define gui.text_size = 40
+define gui.text_size = 42
 
 ## El tamaño de los nombres de los personajes
 define gui.name_text_size = 50
@@ -98,7 +98,7 @@ define gui.title_text_size = 50
 ## línea cada vez.
 
 ## Altura de la caja de texto que contiene el diálogo.
-define gui.textbox_height = 278
+define gui.textbox_height = 280
 
 ## Colocación vertical de la caja de texto en la pantalla. 0.0 para la parte
 ## superior, 0.5 para el centro y 1.0 para la parte inferior.
@@ -342,11 +342,11 @@ define gui.unscrollable = "hide"
 ## La pantalla de historial muestra diálogo que el jugador ya ha visto.
 
 ## Número de bloques de historial de diálogo que Ren'Py conserva.
-define config.history_length = 250
+define config.history_length = 30
 
 ## Altura de una entrada de la pantalla de historial, o 'None' para altura
 ## variable a costa de rendimiento.
-define gui.history_height = 210
+define gui.history_height = 120
 
 ## Posición, anchura y alineación de la etiqueta con el nombre del personaje
 ## hablante.
