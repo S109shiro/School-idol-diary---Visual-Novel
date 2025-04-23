@@ -44,13 +44,13 @@ label start:
     play music SongMenuSelect fadein 0.5 fadeout 0.5
     scene MenuElec with Dissolve(1.5)
     menu:  
-        "SELECCIONA ALGUNA RUTA"
+        "Selecciona la ruta que gustes."
         "School Idol Diary - Honoka Kousaka":
             menu: 
-                "QUE CAPITULO DESEAS LEER?"
-                "CAPITULO 1 - HONOKA NO SE RENDIRÁ" : 
+                "¿Qué capítulo deseas leer?"
+                "Capítulo 1 - Honoka no se rendirá" : 
                     jump cap1Honoka
-                "CAPITULO 2 - CONVIRTÁMONOS EN SCHOOL IDOLS" :
+                "Capítulo 2: Convirtámonos en school idols." :
                     jump cap2Honoka
                 "CAPITULO 3 - ¡BAILEMOS!":
                     jump cap3Honoka
