@@ -1,32 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 198, in script
-    show KotoriM at KotOtoki with dissolve
-  File "game/script.rpy", line 198, in <module>
-    show KotoriM at KotOtoki with dissolve
-NameError: name 'KotOtoki' is not defined
+  File "game/script.rpy", line 66, in script
+    jump UmiSono
+ScriptError: could not find label 'UmiSono'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 198, in script
-    show KotoriM at KotOtoki with dissolve
-  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 1124, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 1083, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 1083, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "F:\renpy-8.3.4-sdk\renpy\python.py", line 1218, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "F:\renpy-8.3.4-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 198, in <module>
-    show KotoriM at KotOtoki with dissolve
-NameError: name 'KotOtoki' is not defined
+  File "game/script.rpy", line 66, in script
+    jump UmiSono
+  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 1712, in execute
+    rv = renpy.game.script.lookup(target)
+  File "F:\renpy-8.3.4-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'UmiSono'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 School idol diary Visual Novel 0.4
-Tue Apr 22 22:48:39 2025
+Tue Apr 22 23:17:49 2025

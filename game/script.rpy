@@ -52,19 +52,18 @@ label start:
                     jump cap1Honoka
                 "Capítulo 2: Convirtámonos en school idols." :
                     jump cap2Honoka
-                "CAPITULO 3 - ¡BAILEMOS!":
+                "Capítulo 3 - ¡Bailemos!":
                     jump cap3Honoka
-                "CAPITULO 4 - QUIERO UN SALÓN PROPIO":
+                "Capítulo 4 - Quiero un salón propio":
                     jump cap4Honoka
-                "CAPITULO 5 - ¡¿TANTOS PROBLEMAS PARA UN CONCIERTO?!":
+                "Capítulo 5 - ¡¿Tantos problemas para un concierto?!":
                     jump cap5Honoka
-                "CAPITULO 6 - SESIÓN FOTOGRAFICA":
+                "Capítulo 6 - Sesión fotográfica":
                     jump cap6Honoka
-                "CAPITULO 7 - MI FUTURO Y EL DE YUKIHO":
+                "Capítulo 7 - Mi futuro y el de Yukiho.":
                     jump cap7Honoka
-
-        #"Ruta de Umi Sonoda":
-            #jump UmiSono
+        "School Idol Diary - Umi Sonoda":
+            jump UmiSono
     return
 
 #NOVELA DE HONOKA

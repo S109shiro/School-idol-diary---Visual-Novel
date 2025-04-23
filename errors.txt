@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 221: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    scene aula with dissolve
-    ^
+File "game/script.rpy", line 65: choice menuitem expects a non-empty block.
+    "School Idol Diary - Umi Sonoda":
+                                     ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Tue Apr 22 22:51:10 2025
+Tue Apr 22 23:17:19 2025
