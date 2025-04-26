@@ -247,14 +247,14 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Atrás") action Rollback() 
+            #textbutton _("Atrás") action Rollback() 
             textbutton _("Historial") action ShowMenu('history') activate_sound "audio/sfx/enter.mp3"
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True) activate_sound "audio/sfx/enter.mp3"
             textbutton _("Auto") action Preference("auto-forward", "toggle") activate_sound "audio/sfx/enter.mp3"
             textbutton _("Guardar") action ShowMenu('save') activate_sound "audio/sfx/enter.mp3"
-            textbutton _("Guardar R.") action QuickSave() activate_sound "audio/sfx/enter.mp3"
-            textbutton _("Cargar R.") action QuickLoad() activate_sound "audio/sfx/enter.mp3"
-            textbutton _("Ajustes.") action ShowMenu('preferences') activate_sound "audio/sfx/enter.mp3"
+            #textbutton _("Guardar R.") action QuickSave() activate_sound "audio/sfx/enter.mp3"
+            #textbutton _("Cargar R.") action QuickLoad() activate_sound "audio/sfx/enter.mp3"
+            textbutton _("Ajustes") action ShowMenu('preferences') activate_sound "audio/sfx/enter.mp3"
 
 
 ## Este código asegura que la pantalla 'quick_menu' se muestra en el juego,

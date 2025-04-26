@@ -5,28 +5,28 @@ label splashscreen:
         from datetime import datetime
         now = datetime.now()
 
-    if(now.month == 10 and now.day == 31):  #Halloween
-            image movieH = Movie(channel="movie_dp", loop = False, play = "movie/Halloween/IntroH.avi") 
+    if(now.month == 10):  #Halloween
+            image movieH = Movie(size=(1920, 1080), channel="movie_dp", loop = False, play = "movie/Halloween/IntroH.avi") 
             show movieH with Dissolve(1.0)
             $ renpy.pause(90.0, hard= False)
             hide movieH with Dissolve(1.0)
             return
-    elif(now.month == 12 and now.day == 24):    #Navidad
-            image movieN = Movie(channel="movie_dp", loop = False, play = "movie/Christmas/IntroN.avi") 
+    elif(now.month == 12):    #Navidad
+            image movieN = Movie(size=(1920, 1080), channel="movie_dp", loop = False, play = "movie/Christmas/IntroN.avi") 
             show movieN with Dissolve(1.0)
-            $ renpy.pause(90.0, hard= False)
+            $ renpy.pause(185.0, hard= False)
             hide movieN with Dissolve(1.0)
             return
     else:
         $ op = renpy.random.randint(1, 2)
         if op == 1:
-            image movie1 = Movie(channel="movie_dp", loop = False, play = "movie/Op/Intro1.avi") 
+            image movie1 = Movie(size=(1920, 1080),channel="movie_dp", loop = False, play = "movie/Op/Intro1.avi") 
             show movie1 with Dissolve(1.0)
             $ renpy.pause(90.0, hard= False)
             hide movie1 with Dissolve(1.0)
             return
         else:
-            image movie2 = Movie(channel="movie_dp", loop = False, play = "movie/Op/Intro2.avi")
+            image movie2 = Movie(size=(1920, 1080), channel="movie_dp", loop = False, play = "movie/Op/Intro2.avi")
             show movie2 with Dissolve(1.0)
             $ renpy.pause(90.0, hard= False)
             hide movie2 with Dissolve(1.0)
@@ -59,11 +59,14 @@ label start:
                 "Capítulo 7 - Mi futuro y el de Yukiho.":
                     jump cap7Honoka
         "School Idol Diary - Umi Sonoda":
-            jump UmiSono
+            menu:
+                "¿Qué capítulo deseas leer?"
+                "Espera hasta la proxima beta jejeje":
+                    jump cap1Umi
     return
 
-#NOVELA DE HONOKA
-#COMIENZO DEL CAPITULO 1
+# NOVELA DE HONOKA
+# COMIENZO DEL CAPITULO 1
 label cap1Honoka:
     stop music fadeout 0.8
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
@@ -280,7 +283,7 @@ label cap1Honoka:
     "Un día, cuando en verdad me vuelva una idol famosa, espero que pueda expresar estos sentimientos al público" with dissolve 
     "y que sepan de estos sentimientos que no se pueden transmitir en los conciertos." with dissolve 
     scene black with Dissolve(1.3)
-    image mv1 = Movie(channel="movie_dp",loop = False, play = "movie/Escenas/video1.avi", size= (1980, 1080) )
+    image mv1 = Movie(channel="movie_dp",loop = False, play = "movie/Escenas/video1.avi", size= (1980, 1080))
     $ quick_menu = False
     stop music
     show mv1 with Dissolve(1.0) 
@@ -324,7 +327,7 @@ label cap2Honoka:
     "Pues eso es básicamente amor, ¿no?" with dissolve
     "Debí haberme enamorado de las idols escolares." with dissolve
     "No podía quedarme así. Y en lugar de confesar mi amor…" with dissolve
-    "Decidí convertirme en idol escolar también." with dissolve
+    "Decidí convertirme en una idol escolar también." with dissolve
     scene otonoki with Fade(.25, 0, .75, color="#fff")
     "Me volveré una idol y pelearé por el bien de la escuela Otonokizaka." with dissolve
     scene cielo with fade
@@ -332,17 +335,17 @@ label cap2Honoka:
     scene arise1 with dissolve
     "Hay de varios tipos. Algunos clubes son reconocidos formalmente por la escuela" with dissolve  
     scene basic with dissolve
-    "mientras que otros son como la guerrilla, donde las chicas realizan las actividades de forma voluntaria, sin tener relación con los eventos escolares." with dissolve
-    "Chicas que sueñan con ser idols, pero que creen que llegar a ser una de verdad es muy difícil, realizan las actividades idol y la gente viene a verlas," with dissolve
-    "esas son el tipo de cosas que son popular hoy día. En resumen, es como... \"¡Mírenme, soy una idol!\" " with dissolve
+    "Mientras que otros son como la guerrilla, donde las chicas realizan las actividades de forma voluntaria, sin tener relación con los eventos escolares." with dissolve
+    "Chicas que sueñan con ser idols, pero que creen que llegar a ser una de verdad es muy difícil, realizan las actividades idol y la gente viene a verlas." with dissolve
+    "Esas son el tipo de cosas que son popular hoy día. En resumen, es como... \"¡Mírenme, soy una idol!\" " with dissolve
     "Verán, cuando piensan en idols, vienen a la mente estas chicas súper lindas que aparecen en la TV, que son seleccionadas de entre cientos de miles de chicas o que ganan ciertas competencias" with dissolve
     "o que envían sus fotos a revistas o que tienen alguna otra razón para llamar la atención de otras personas." with dissolve
     "Ellas son chicas que considerarías especiales." with dissolve
     scene cielo with fade
-    "Pero aunque no tengas el talento o la suerte o la perfecta ubicación (o sea, si no vives cerca de la gran ciudad, como Tokio, no tienes oportunidad de hacerte famosa, ¿verdad?" with dissolve
-    "Ah, en realidad, nosotras vivimos en la gran ciudad, aunque no parezca. Ajaja) en estos tiempos, puedes aprovechar el internet para volverte idol." with dissolve
+    "Pero aunque no tengas el talento o la suerte o la perfecta ubicación, no tienes oportunidad de hacerte famosa, ¿verdad?" with dissolve
+    "En estos tiempos, puedes aprovechar el internet para volverte idol." with dissolve
     "Esa es la idea detrás de este simple concepto." with dissolve
-    "Mm, sí, a quien se la haya ocurrido esta idea fue un gran genio, ¡¿no?!" with dissolve
+    "A quien se la haya ocurrido esta idea fue un gran genio, ¡¿no?!" with dissolve
     "Yo sí lo creo." with dissolve
     "Las canciones, las coreografías, los trajes no se pueden comparar con las de las profesionales, además, es raro verlas presentarse frente a grandes audiencias." with dissolve
     scene festival with fade 
@@ -359,8 +362,9 @@ label cap2Honoka:
     scene cielo with fade
     "Y por eso pensé ¡Eso es! Me convertiré en una idol escolar y haré que todo el mundo me conozca." with dissolve
     "Entonces, les hablaré sobre la preparatoria Otonokizaka y el cierre... si se interesan en ella, puede que así tengamos más alumnas en el futuro, ¿no?" with dissolve
-    "Si muchas niñas de secundaria de por aquí piensan, \"¿qué hago? Otonoki es muy simple, quizás deba ir a otra escuela\", puede que eso las haga considerarlo." with dissolve
-    "Y hasta chicas de más lejos pueden pensar, \"ya voy en preparatoria, no importa que tome el tren para ir a la escuela Otonokizaka. Y es escuela pública, así que no es tan costosa\"." with dissolve
+    "Si muchas niñas de secundaria de por aquí piensan, \"¿qué hago? Otonoki es muy simple, quizás deba ir a otra escuela\""  with dissolve
+    "Puede que eso las haga considerarlo." with dissolve
+    "Y hasta chicas de más lejos pueden pensar, \"Ya voy en preparatoria, no importa que tome el tren para ir a la escuela Otonokizaka. No es tan costosa\"." with dissolve
     "Sólo soy una chica normal." with dissolve
     "Hasta aquí en la escuela, no destaco en absoluto." with dissolve
     "No importa que no quiera que cierren la escuela, no creo lograrlo tan rápido." with dissolve
@@ -385,7 +389,8 @@ label cap2Honoka:
     scene black with dissolve
     "Una pregunta invadió mi mente." with dissolve
     stop music fadeout 1.3
-    "A todo esto... ¿¿¿qué tipo de actividades realizan las idols escolares???" with vpunch
+    "A todo esto..." with dissolve
+    "¿¿¿Qué tipo de actividades realizan las idols escolares???" with vpunch
     "Mejor ire a casa a investigar un poco más." with dissolve
     play music home fadein 3.0 fadeout 2.5 loop
     scene cuarto_Honoka with dissolve
@@ -402,7 +407,10 @@ label cap2Honoka:
     "Aunque no confío mucho en mis habilidades en el baile, me gusta mucho." with dissolve
     "En mi vida diaria, cuando algo bueno pasa, me dan ganas de bailar y pues... ¡me gusta mover el cuerpo!" with dissolve
     "Y cuando es el festival en verano siempre me gusta andar bailando, me parece muy divertido." with dissolve
-    "También soy muy buena en esos juegos de ritmo y... ¿eh? ¿Qué no es lo mismo? Eh, omitamos eso entonces. ¡Ejem!" with dissolve
+    "También soy muy buena en esos juegos de ritmo y..." with dissolve
+    "¿Eh?" with dissolve
+    "¿Qué no es lo mismo?" with dissolve
+    "Eh, omitamos eso entonces. ¡Ejem!" with dissolve 
     play sound clickMouse noloop
     "El siguiente problema es... ¿componer canciones?" with dissolve
     "Podemos bailar todo lo que queramos, hacer toda la ropa que queramos, pero al final, si no tenemos canciones, nada importa." with dissolve
@@ -410,11 +418,13 @@ label cap2Honoka:
     "Que con tan sólo oírla te haga feliz." with dissolve
     "Mmm..." with dissolve
     "Mmm..." with dissolve
-    "¿Eh? ¿Qué cómo cuándo?" with dissolve
-    "¿Y cómo compones una canción así? ¡¡Alto, nunca antes he compuesto una canción!!" with dissolve
-    "Al toparme con una situación en la que nunca había pensado, entré en pánico y comencé a pensar." with dissolve
-    " “Mm, esto de las idols, sigo creyendo que es una buena idea. Digo, soy una chica. Tengo fe de que mientras siga intentándolo, puedo convertirme en idol ♡”." with dissolve
-    "Pero sí... no había pensado bien en todo eso de la escritura de canciones." with dissolve
+    "¿Eh?" with dissolve
+    "¿Y cómo compones una canción así?" with dissolve
+    "¡¡Alto, nunca antes he compuesto una canción!!" with dissolve
+    "Estoy en una situación en la que nunca había pensado" with dissolve
+    "Mm, esto de las idols, sigo creyendo que es una buena idea. Digo, soy una chica. Tengo fe de que mientras siga intentándolo, puedo convertirme en idol ♡." with dissolve
+    "Pero..." with dissolve
+    "No había pensado bien en todo eso de la escritura de canciones." with dissolve
     voice "audio/VoiceHonoka/004.mp3"
     K_Honoka "Haaa." with dissolve
     "Suspiré sin pensar. ¡Oh no!" with dissolve
@@ -438,17 +448,20 @@ label cap2Honoka:
     scene homura with dissolve
     play sound street_ambient fadein 3.0 fadeout 2.5 loop
     "En cuanto se me ocurrió la idea, me alisté y salí de casa." with dissolve
-    "Luego, caminé por 20 minutos." with dissolve
+    "Caminé por 20 minutos." with dissolve
     scene utx with dissolve
     "Llegué a el teatro de {b}UTX{/b} en Akihabara." with dissolve
     "Ya todos conocen el lugar, ¿no?" with dissolve
-    "Ya he hablado bastante sobre las idols escolares, pero las idols que se presentan aquí, en este teatro, son las verdaderas, únicas y originales idols escolares." with dissolve
+    "Ya he hablado bastante sobre las idols escolares, pero las idols que se presentan aquí, son las verdaderas, únicas y originales idols escolares." with dissolve
     "La escuela UTX, en Akihabara, es un nuevo y gigante rascacielos construido mero en frente de la estación Akihabara, al mismo tiempo que la remodelaban." with dissolve
     "¡Guau! Cuando vi el lugar en persona, el gran tamaño es tan imponente, hasta me dio un cosquilleo en la panza." with dissolve
     "Aunque construyeron esta preparatoria hace poco, llamó la atención de muchas estudiantes con todo su lujo y abundantes recursos y ya ganó bastante renombre como escuela aquí." with dissolve
     "Es el ejemplo del espíritu innovador de Akihabara, con esas enormes pantallas de propaganda frente a los edificios y las estudiantes yendo y viniendo se siente tan... digital." with dissolve
-    "Con tan sólo verlo, uno puede notar el contraste con Otonoki. Todas las chicas en Otonoki son... pues... tranquilas y amables." with dissolve
-    "¿Y cuál es la diferencia? Ah, hay muchas chicas con lentes. ¿Quizás sea eso? ¿O quizás sean esos elegantes uniformes que las hacen lucir tan bien?" with dissolve
+    "Con tan sólo verlo, uno puede notar el contraste con Otonoki." with dissolve
+    "Todas las chicas en Otonoki son... pues... tranquilas y amables." with dissolve
+    "¿Y cuál es la diferencia?" with dissolve
+    "Ah, hay muchas chicas con lentes. ¿Quizás sea eso?" with dissolve
+    "¿O quizás sean esos elegantes uniformes que las hacen lucir tan bien?" with dissolve
     "Traté de olvidarme de esas cosas y seguí caminando." with dissolve
     scene utxCerca with dissolve
     play music A_RISETheme fadein 2.0 fadeout 2.5 loop
@@ -457,7 +470,8 @@ label cap2Honoka:
     "Sobre la entrada, pintada de negro como en las discos, hay un letrero, igual al de los cines. Alumbrado con muchas luces." with dissolve
     voice "audio/VoiceHonoka/007.mp3"
     K_Honoka "Guau..." with dissolve
-    "Un sonido salió de mi boca. Ay, abuelita, ese fue un sonido de admiración, no un suspiro, ¿okey? No voy a rendirme tan fácilmente…" with dissolve
+    "Un sonido salió de mi boca. Ay, abuelita, ese fue un sonido de admiración, no un suspiro, ¿okey?" with dissolve
+    "No voy a rendirme tan fácilmente…" with dissolve
     voice "audio/VoiceHonoka/006.mp3"
     K_Honoka "Sí que es bastante increíble... " with dissolve
     "El tamaño de aquel letrero era imponente." with dissolve
@@ -468,9 +482,10 @@ label cap2Honoka:
     "Se dice que el Departamento de Artes Escénicas es el mayor atractivo de la escuela UTX, pero sólo los que logren pasar las audiciones pueden unirse a A-RISE." with dissolve
     "Este grupo ha ganado dos veces el torneo anual de idol escolares, {color=#E4007F}Love Live!{/color}" with dissolve
     "Apenas y salen en la tele (no sé bien, pero me parece que es parte de una \"estrategia\"...)" with dissolve
-    "sin embargo, las llamativas presentaciones que dan en el teatro, casi diarias, son de lo más impresionantes." with dissolve
+    "Sin embargo, las llamativas presentaciones que dan en el teatro, casi diarias, son de lo más impresionantes." with dissolve
     "Dicen que son más populares y talentosas que muchas idols profesionales." with dissolve
-    "Y bueno, mientras que las integrantes de este grupo idol tienen que lidiar con horarios pesados de ensayos y prácticas todos los días, tampoco hay duda de que una vez que se gradúen podrían triunfar como verdaderas artistas de inmediato." with dissolve
+    "Mientras que las integrantes de este grupo tienen que lidiar con horarios pesados de ensayos y prácticas todos los días" with dissolve
+    "No hay duda de que una vez que se gradúen podrían triunfar como verdaderas artistas de inmediato." with dissolve
     "Ya había escuchado de ellas, pero esa era la primera vez que iba a verlas en persona, lo que veía frente a mí me tenía sorprendida, estaba impactada." with dissolve
     scene utxCerca with dissolve
     "Un teatro bien equipado y carísimo, lleno de fans haciendo fila." with dissolve
@@ -572,10 +587,10 @@ label cap2Honoka:
     voice "audio/VoiceHonoka/013.mp3"
     play music motivationalLL fadein 3.0 fadeout 2.5 loop
     K_Honoka "Es eso... sí. Me rehúso a que este sea nuestro último recuerdo de Otonoki." with dissolve
-    scene utx with dissolve
+    scene utx with recuerdo
     "La imagen de UTX cruzó mi mente, pero ya no tenía miedo." with dissolve
     voice "audio/VoiceHonoka/014.mp3"
-    scene estacion with dissolve
+    scene estacion with recuerdo
     show KotoriM with dissolve:
         xpos 280 ypos 50 
     show UmiS with dissolve: 
@@ -586,9 +601,9 @@ label cap2Honoka:
     "Gracias, chicas. Tener aliadas te hace fuerte, ¿cierto?" with dissolve
     "Y en verdad tengo que devolverle el favor al vecindario y a la preparatoria Otonokizaka por haberme bendecido con tan buenas amigas." with dissolve
     voice "audio/VoiceUmi/005.mp3"
-    S_Umi "Ya que estamos aquí y es fin de semana, ¿qué les parece si tenemos una pequeña asamblea? Hay muchas otras idols escolares en la revista que Kotori compró. Me sorprendió la cantidad." with dissolve
+    S_Umi "Ya que estamos aquí y es fin de semana, ¿qué les parece si tenemos una pequeña asamblea? Hay muchas otras idols escolares en la revista que Kotori compró." with dissolve
     voice "audio/VoiceKotori/011.mp3"
-    M_Kotori "Oh, por favor, Umi-chan, ¿asamblea? Llamemos esto una reunión O últimamente la palabra bureast se ha puesto de moda. Como sea, sería genial si un día apareciéramos en una de esas revistas." with dissolve
+    M_Kotori "Llamemos esto una reunión. Sería genial si un día apareciéramos en una de esas revistas." with dissolve
     voice "audio/VoiceKotori/012.mp3"
     M_Kotori "¿También podríamos anunciarnos como chicas que desean evitar el cierre de su escuela?" with dissolve
     voice "audio/VoiceKotori/013.mp3" 
@@ -620,7 +635,7 @@ label cap2Honoka:
     scene TUmi with dissolve
     $ renpy.pause(2.0, hard = False) 
     scene comentarioUmi1 with dissolve
-    $ renpy.pause(9.0, hard = False) 
+    $ renpy.pause(9.0, hard = True) 
     scene black with fade
     stop music fadeout 1.0
     jump cap3Honoka
@@ -1433,10 +1448,19 @@ label cap7Honoka:
     $ renpy.pause(9.0, hard = False) 
     scene black with fade
     stop music fadeout 1.0
-    jump cap7Honoka
+    
+    # ENDING DE HONOKA
+    image movieEndingH = Movie(size=(1920, 1080), channel="movie_dp", loop = False, play = "movie/Escenas/Honoka/EndingH.avi") 
+    show movieEndingH with Dissolve(1.5)
+    $ renpy.pause(79.0, hard= False)
+    hide movieEndingH with Dissolve(1.0)
+    jump cap1Umi
 
 
 
-label UmiSono:
+
+# NOVELA DE UMI
+# COMIENZO DEL CAPITULO 1
+label cap1Umi:
     voice "audio/VoiceUmi/001.mp3"
    

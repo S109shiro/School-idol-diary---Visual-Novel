@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 65: choice menuitem expects a non-empty block.
-    "School Idol Diary - Umi Sonoda":
-                                     ^
+File "game/efects.rpy", line 1: expected statement.
+    recuerdo = Fade(.25, 0, .25, color="#fff");
+             ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Tue Apr 22 23:17:19 2025
+Sat Apr 26 12:59:29 2025
