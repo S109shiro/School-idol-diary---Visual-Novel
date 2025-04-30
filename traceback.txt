@@ -1,28 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 593, in script
-    scene estacion with recuerdo
-  File "game/script.rpy", line 593, in <module>
-    scene estacion with recuerdo
-NameError: name 'recuerdo' is not defined
+  File "game/script.rpy", line 37, in script
+    show carga() with dissolve
+Exception: Image 'carga' does not accept attributes '()'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 593, in script
-    scene estacion with recuerdo
-  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 1370, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "F:\renpy-8.3.4-sdk\renpy\python.py", line 1218, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "F:\renpy-8.3.4-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 593, in <module>
-    scene estacion with recuerdo
-NameError: name 'recuerdo' is not defined
+  File "game/script.rpy", line 37, in script
+    show carga() with dissolve
+  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 1124, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "F:\renpy-8.3.4-sdk\renpy\ast.py", line 1087, in show_imspec
+    renpy.config.show(name,
+  File "F:\renpy-8.3.4-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "F:\renpy-8.3.4-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "F:\renpy-8.3.4-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "F:\renpy-8.3.4-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'carga' does not accept attributes '()'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 School idol diary Visual Novel 0.4
-Sat Apr 26 12:59:38 2025
+Wed Apr 30 18:21:38 2025

@@ -1,5 +1,4 @@
-﻿# El juego comienza aquí.
-label splashscreen:
+﻿label splashscreen:
     init python:
         from datetime import date
         from datetime import datetime
@@ -34,8 +33,12 @@ label splashscreen:
 
 
 label start:
-    #ELECCION DE RUTAS
     $ quick_menu = False
+    show image cargaP() with dissolve
+    $ renpy.pause(2.8, hard= True)
+       
+
+    #ELECCION DE RUTAS
     stop music fadeout 0.8
     play music SongMenuSelect fadein 0.5 fadeout 0.5
     scene MenuElec with Dissolve(1.5)
@@ -283,13 +286,13 @@ label cap1Honoka:
     "Un día, cuando en verdad me vuelva una idol famosa, espero que pueda expresar estos sentimientos al público" with dissolve 
     "y que sepan de estos sentimientos que no se pueden transmitir en los conciertos." with dissolve 
     scene black with Dissolve(1.3)
-    image mv1 = Movie(channel="movie_dp",loop = False, play = "movie/Escenas/video1.avi", size= (1980, 1080))
+    image mvh1 = Movie(channel="movie_dp",loop = False, play = "movie/Escenas/Honoka/Escena1.avi", size= (1980, 1080))
     $ quick_menu = False
     stop music
-    show mv1 with Dissolve(1.0) 
+    show mvh1 with Dissolve(1.0) 
     $ renpy.pause(123.0, hard= False)
     $ quick_menu = True
-    hide mv1 with Dissolve(1.0)
+    hide mvh1 with Dissolve(1.0)
     "¡Espero que ese día llegue pronto!" with dissolve 
     voice "audio/VoiceHonoka/sleep.mp3"
     "Y con ese deseo, me iré a dormir esta noche." with dissolve 
@@ -1462,5 +1465,5 @@ label cap7Honoka:
 # NOVELA DE UMI
 # COMIENZO DEL CAPITULO 1
 label cap1Umi:
-    voice "audio/VoiceUmi/001.mp3"
+    #voice "audio/VoiceUmi/001.mp3"
    

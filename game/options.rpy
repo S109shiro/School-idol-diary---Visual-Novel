@@ -28,6 +28,7 @@ define config.developer = True
 
 define config.version = "0.4"
 
+define config.minimum_presplash_time = 0.7
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
 ## comillas triples y deja una línea en blanco entre párrafos.

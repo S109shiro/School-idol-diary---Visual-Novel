@@ -79,12 +79,29 @@ image cKotori = "images/Comentarios/Kotori.png"
 image insatisfaccion = "images/Elements/scary.png"
 image arisePoster = "images/Elements/arisePoster.png"
 
+# Pantallas de Carga
+init python:
+    def cargaP():
+        numero = renpy.random.randint(1, 9)
+        carga1 = "images/PantallaCarga/PC0" + str(numero) + ".png"
+        return carga1
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 #Imagenes Galeria
-
 #Background
 image backgroundG = "images/Gallery/Background.png"
 

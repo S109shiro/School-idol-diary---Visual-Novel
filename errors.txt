@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/efects.rpy", line 1: expected statement.
-    recuerdo = Fade(.25, 0, .25, color="#fff");
-             ^
+File "game/back_sprite.rpy", line 86: invalid syntax
+        image carga1 = "images/PantallaCarga/PC0" + str(numero) + ".png"
+               ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat Apr 26 12:59:29 2025
+Wed Apr 30 18:22:45 2025
