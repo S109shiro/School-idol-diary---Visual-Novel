@@ -3,7 +3,7 @@
         from datetime import date
         from datetime import datetime
         now = datetime.now()
-
+        
     if(now.month == 10):  #Halloween
             image movieH = Movie(size=(1920, 1080), channel="movie_dp", loop = False, play = "movie/Halloween/IntroH.avi") 
             show movieH with Dissolve(1.0)
@@ -30,15 +30,17 @@
             $ renpy.pause(90.0, hard= False)
             hide movie2 with Dissolve(1.0)
             return    
-
+   
+    
+        
 
 label start:
+    # Pantalla de carga
     $ quick_menu = False
     show image cargaP() with dissolve
     $ renpy.pause(2.8, hard= True)
-       
 
-    #ELECCION DE RUTAS
+    # Eleccion de Rutas
     stop music fadeout 0.8
     play music SongMenuSelect fadein 0.5 fadeout 0.5
     scene MenuElec with Dissolve(1.5)
@@ -71,6 +73,12 @@ label start:
 # NOVELA DE HONOKA
 # COMIENZO DEL CAPITULO 1
 label cap1Honoka:
+    # Pantalla de carga
+    window hide dissolve
+    $ quick_menu = False
+    show image cargaP() with dissolve
+    $ renpy.pause(2.8, hard= True)
+
     stop music fadeout 0.8
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo1 with fade
@@ -312,6 +320,12 @@ label cap1Honoka:
 
 #COMIENZO DEL CAPITULO 2  
 label cap2Honoka: 
+    # Pantalla de carga
+    window hide dissolve
+    $ quick_menu = False
+    show image cargaP() with dissolve
+    $ renpy.pause(2.8, hard= True)
+
     stop music fadeout 0.8
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo2 with fade
@@ -645,14 +659,20 @@ label cap2Honoka:
 
 #COMIENZO DEL CAPITULO 3
 label cap3Honoka:
+    # Pantalla de carga
+    window hide dissolve
+    $ quick_menu = False
+    show image cargaP() with dissolve
+    $ renpy.pause(2.8, hard= True)
+
     stop music fadeout 0.8
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo3 with fade
     $ renpy.pause(3.0, hard= True)
-    
 
     scene black with dissolve
     $ quick_menu = True
+    window show
     "¡Auch, auch, auch!" with dissolve 
     "¡Ay, ya no puedo seguir!" with dissolve 
     play music home fadein 3.0 fadeout 2.5 loop
@@ -664,8 +684,9 @@ label cap3Honoka:
     show KousakaYukiho at top with dissolve
     K_Yukiho "¡¿Podrías callarte, hermana?!" with dissolve 
     "Mi hermana Yukiho se asomó por el pasillo al oírme gritar." with dissolve  
-    K_Yukiho "¡Si vas a hacer eso, hazlo en tu habitación! Y además, si te duelen los músculos por copiar esos bailes, ¿no significa que te hace falta hacer ejercicio?" with dissolve 
-    K_Yukiho "Si no tienes cuidado puede que termines subiendo de peso. Tenemos una tienda de manjuu, eh, ¡así que siempre hay que comer en esta casa!" with dissolve 
+    K_Yukiho "¡Si vas a hacer eso, hazlo en tu habitación!"with dissolve
+    K_Yukiho "Además, si te duelen los músculos por copiar esos bailes, ¿No significa que te hace falta hacer ejercicio?" with dissolve 
+    K_Yukiho "Tienes que tener cuidado puede que termines subiendo de peso." with dissolve 
     "Yukiho miró la mesa, notando el plato lleno de rebanadas de castella." with dissolve 
     "¡Agh, eran sobras que tomé del mostrador para comerlas después!" with dissolve 
     "Se burló cuando traté de esconderlas y luego regresó a su habitación." with dissolve 
@@ -673,28 +694,32 @@ label cap3Honoka:
     "¡Qué grosera!" with vpunch
     "Dios, y pensar que hace poco era una niñita, siempre me andaba siguiendo, \"hermana, hermana, hermana\"." with dissolve 
     "¿A dónde se fue esa linda Yukiho?" with dissolve 
-    "Sin pensarlo volví a presionar la compresa y... ¡Ay! ¡Todavía arde!" with dissolve 
-    "Jaa. Esto va mal, ¿verdad? ¿Será que pueda participar mañana en la práctica? A pesar de lo que piense Yukiho, no estoy sólo copiando los bailes. La práctica de hoy fue bastante difícil." with dissolve 
+    "Sin pensarlo volví a presionar la compresa." with dissolve   
+    "¡Ay! ¡Todavía arde!" with dissolve 
+    "Esto va mal, ¿verdad? ¿Será que pueda participar mañana en la práctica?" with dissolve 
+    "A pesar de lo que piense Yukiho, no estoy sólo copiando los bailes. La práctica de hoy fue bastante difícil." with dissolve 
     "Siguiendo la sugerencia de Umi-chan, una atlética chica que forma parte del club de kendo y arquería, ayer comenzamos con el ejercicio." with dissolve 
     "4 repeticiones de 20 sentadillas, 4 repeticiones de 10 lagartijas, 50 vueltas corriendo en las escaleras del templo, 100 levantamientos de rodilla y mucho más." with dissolve
     "¡Honestamente, pareciera que somos más bien un club deportivo que uno de idols! Estoy segura de que si no hicimos saltos fue porque a Umi-chan se le olvidó." with dissolve 
     "Cielos, tendré que ingeniármelas para que a Umi-chan no se le ocurra hacerlo mañana." with dissolve 
     "Y así, hoy me di cuenta de que los ensayos de las idols son más difíciles de lo que habíamos imaginado." with dissolve 
     scene miembros2 with dissolve
-    "Primero, sólo éramos mis amigas y compañeras, Kotori-chan y Umi-chan; luego se unieron las chicas de primer año." with dissolve 
+    "Primero, sólo éramos mis amigas y compañeras, Kotori-chan y Umi-chan." with dissolve 
+    "Luego se unieron las chicas de primer año." with dissolve 
     scene miembros5 with dissolve
-    "Hanayo-chan, Maki-chan y Rin-chan (con habilidades para componer música); y después" with dissolve 
+    "Hanayo-chan, Maki-chan y Rin-chan (con habilidades para componer música)" with dissolve 
+    "Y después" with dissolve 
     scene miembros6 with dissolve
-    "Nico-chan también se unió; ¡y muchas cosas más pasaron!" with dissolve 
-    "Pero ahora, siento que µ's comienza a lucir como un verdadero grupo idol." with dissolve 
-    "Después de todo, es mejor que haber empezado ya con un grupo de amigas, si lo hacemos así, obtendremos nuevas y emocionantes experiencias, también aprenderemos de los talentos de Maki en la composición." with dissolve 
-    "Y cuando se trata de grupos de idols, es mucho mejor tener diferentes tipos de chicas que puedan brillar de varias formas, ¿no?" with dissolve 
+    "Nico-chan también se unió" with dissolve 
+    "¡Y muchas cosas más pasaron!" with dissolve 
+    "Ahora siento que µ's comienza a lucir como un verdadero grupo idol." with dissolve 
+    "Cuando se trata de grupos de idols, es mucho mejor tener diferentes tipos de chicas que puedan brillar de varias formas, ¿no?" with dissolve 
     scene HomuraCocina with dissolve
     "¡En lo personal, cuando se trata de pasteles, preferiría comer 10 piezas de 10 pasteles diferentes que un pastel entero de un solo sabor!" with dissolve 
     "De hecho, cuando veo por el aparador de la pastelería, me emociono tanto que no puedo escoger uno." with dissolve 
     "Pastel de fresa es la opción típica, y claro, a todos le gustan los pay de queso y pastel de chocolate, así que también debemos comer de esos, y el mousse de frambuesa, si es temporada, también hay pastel de mango." with dissolve 
-    "Y aunque es simple, el dulce sabor de la tarta de almendra es difícil de resistir, me gustaría un petisú relleno de natilla, y un crujiente milhojas, cielos, babeo sólo de pensarlo." with dissolve 
-    "Nom♡" with dissolve 
+    "Aunque es simple, el dulce sabor de la tarta de almendra es difícil de resistir, me gustaría un petisú relleno de natilla, y un crujiente milhojas" with dissolve 
+    "Cielos, babeo sólo de pensarlo." with dissolve 
     "Por eso quiero que μ's sea un grupo colorido, que esté lleno de tonos y sabores, como una brillante caja de pasteles." with dissolve 
     scene presentacionUmi with dissolve
     "Ahora, el grupo está compuesto por: Umi-chan, con su gran conocimiento en arquería y poesía en la secundaria, se encarga de las letras y el ejercicio." with dissolve 
@@ -718,7 +743,8 @@ label cap3Honoka:
     "Oh, bueno ♡" with dissolve 
     "Quizás cuando me pongo en el medio, las otras resaltan más ♪" with dissolve 
     scene HomuraCocina with dissolve
-    "Después de todo, Maki una vez dijo, \"yo nunca pensé en volverme idol, pero ya que empezaron ustedes, por alguna razón, sentí que también podría hacerlo.\"" with dissolve 
+    "Después de todo, Maki una vez dijo." with dissolve 
+    "\"Yo nunca pensé en volverme idol, pero ya que empezaron ustedes, por alguna razón, sentí que también podría hacerlo.\"" with dissolve 
     "¿No es verdad? ♪ La típica imagen de una idol no es la de una belleza extravagante, como una modelo, sino más bien una chica linda que siempre sonríe e irradia energía, ¿no?" with dissolve 
     "¡Así que hasta una chica normal como yo, podría tratar de lograrlo!" with dissolve 
     "Mm, sí, ¡muy bien! ¡En eso me convertiré, en una idol al alcance de todos! ¡O más bien, una idol que quieras apoyar, como tu compañera de clase!" with dissolve 
@@ -737,40 +763,44 @@ label cap3Honoka:
     "No me importa ser o no el centro, pero cambiar de lugar significa más trabajo para las demás." with dissolve 
     "Todas tienen sus responsabilidades además del ensayo." with dissolve 
     "Ya soy bastante inútil, no puedo causar más problemas y faltar al ensayo por unos simples calambres." with dissolve 
-    "¡Claro que no!" with dissolve 
     "¡Bien, debo esforzarme más!" with dissolve 
-    "Sólo un poquito más y luego descansaré. Y mañana practicaré más. De esa forma, si alguien tiene dudas sobre la coreografía, seré una buena líder y les mostraré cómo se hace." with dissolve 
+    "Sólo un poquito más y luego descansaré. Y mañana practicaré más." with dissolve 
+    "De esa forma, si alguien tiene dudas sobre la coreografía, seré una buena líder y les mostraré cómo se hace." with dissolve 
     "Sí, esa es la tarea de la que va en el centro, ¿no?" with dissolve 
     "Aunque sea temporal, soy el tipo de persona que tiene que esforzarse siempre. ¡Me gusta dar lo mejor!" with dissolve 
     "Ese era mi talento desde pequeña. Mi alegría y energía son mis más grandes virtudes, no importa qué pase, nunca me rindo, nunca me detengo." with dissolve 
-    "La gente dirá que en verdad me gusta esforzarme. Practicaré." with dissolve 
+    "La gente dirá que en verdad me gusta esforzarme." with dissolve 
     "Me aprenderé de memoria la coreografía. Tal como ahora, ¿no?" with dissolve  
-    "Muy bien, ahí voy. Un, dos, tres y cuatro…" with dissolve 
+    "Muy bien, aquí voy." with dissolve 
+    "Uno, dos, tres y cuat…" with dissolve 
     stop music fadeout 0.8
     scene black with fade
     "Después de eso, estaba flotando." with dissolve 
     "Bailaba en un sueño." with dissolve 
-    "Mis adoloridos pies se sentían ligeros, como si tuviera alas y, en mi sueño, mis movimientos eran mucho mejores ♡." with dissolve 
+    "Mis adoloridos pies se sentían ligeros, como si tuviera alas y, en mi sueño, mis movimientos eran mucho mejores." with dissolve 
     "¡Mis giros y saltos eran perfectos!" with dissolve 
     "Guau, ¿todas me dirán que hice un buen trabajo?" with dissolve 
     "¡Oigan, chicas! ¡Yo también me estoy esforzando!" with dissolve 
     $ quick_menu = False
+    window hide dissolve
     scene black with fade 
-    $ renpy.pause(5.0, hard=True)
+    $ renpy.pause(4.0, hard=True)
+   
     
     # SIGUIENTE DIA
     scene cuarto_Honoka with dissolve
     $ quick_menu = True
+    window show dissolve
     "Cuando desperté, mi futón olía a pura compresa fría." with dissolve 
     "Por la ventana entraba la luz de la maña..." with dissolve 
     voice "audio/VoiceHonoka/016.mp3"
     K_Honoka "¡Ay no!" with dissolve 
     "¿Me quedé dormida?" with dissolve 
     "¡No tenía tiempo de ordenar la tienda como cada mañana!" with dissolve 
-    "Esperen un segundo." with dissolve 
+    "Esperen un segundo." with vpunch
+    "Bajé las escaleras y grité" with dissolve 
     scene HomuraInside with dissolve
     play music home fadein 3.0 fadeout 2.5 loop
-    "Bajé las escaleras y grité" with dissolve 
     voice "audio/VoiceHonoka/017.mp3"
     K_Honoka "¡Mamaaaa! ¡¿Por qué estaba durmiendo en mi habitación?! Recuerdo que llegué de la escuela ayer y me puse una compresa fría pero..." with dissolve 
     K_Yukiho "Ah, ya despertaste. ¿No te acuerdas?" with dissolve 
@@ -781,21 +811,23 @@ label cap3Honoka:
     K_Yukiho "¿Sirvió la compresa? Escuché que te dieron calambres, lo más adecuado es esperar a que pase. Dormir fue la mejor opción." with dissolve 
     "¡Oh, tenía razón! ¡Ya me sentía mucho mejor!" with dissolve 
     voice "audio/VoiceHonoka/018.mp3"
-    K_Honoka "Muy bien, ya estoy lista para el ensayo de hoy ♪" with dissolve 
+    K_Honoka "Muy bien, ya estoy lista para el ensayo de hoy. ♪" 
     "Entonces mi estómago gruñó." with dissolve 
-    K_Yukiho "Pfff. Tenía mucho que no actuabas así. Cuando eras más chica, jugabas hasta cansarte y te quedabas dormida en la noche. Cuando te despertabas al día siguiente, hacías un escándalo y te comías un tazón de arroz." with dissolve 
+    K_Yukiho "Pfff. Tenía mucho que no actuabas así. Cuando eras más chica, jugabas hasta cansarte y te quedabas dormida en la noche." 
+    K_Yukiho "Cuando te despertabas al día siguiente, hacías un escándalo y te comías un tazón de arroz." 
     voice "audio/VoiceHonoka/008.mp3"
-    K_Honoka "¿Eh? ¿En serio? Es un poco vergonzoso, ah... jajajaja" with dissolve 
+    K_Honoka "¿Eh? ¿En serio? Es un poco vergonzoso, ah... jajajaja" 
     hide KousakaYukiho with dissolve
     "Haciendo memoria, tenía razón." with dissolve 
     "Apenas y recuerdo." with dissolve 
     "De niña, me sumergía completamente en los juegos." with dissolve 
-    "Corría por ahí hasta que anochecía, sin pararme a comer algo. Me daba hambre hasta que regresaba a casa, pero entonces, estaba tan cansada, que sólo me recostaba en los cojines de los sillones de la sala y ahí me dormía." with dissolve 
+    "Corría por ahí hasta que anochecía, sin pararme a comer algo." with dissolve 
+    "Me daba hambre hasta que regresaba a casa, estaba tan cansada, que sólo me recostaba en los cojines de los sillones de la sala y ahí me dormía." with dissolve 
     "La diferencia es que en aquel entonces, papá me llevaba a mi habitación." with dissolve 
     show KousakaYukiho at top with dissolve
-    K_Yukiho "En verdad estás sumergida en esto de las idols, ¿no?" with dissolve
+    K_Yukiho "En verdad estás sumergida en esto de las idols, ¿no?" 
     voice "audio/VoiceHonoka/011.mp3" 
-    K_Honoka "S-sí, supongo" with dissolve 
+    K_Honoka "S-sí, supongo"  
     "Yukiho me miró con seriedad, como si estuviera sorprendida." with dissolve 
     "Me daba pena. Ah... jajajajaja." with dissolve 
     "¡Ah, rayos, la gente va a empezar a decir otra vez que no saben quién es la hermana mayor!" with dissolve 
@@ -809,6 +841,7 @@ label cap3Honoka:
     "μ's, music... start!" with dissolve
     stop music fadeout 1.3
     $ quick_menu = False 
+    window hide dissolve
     scene black with fade
 
     #COMENTARIOS FINALES DE MAKI
@@ -823,48 +856,68 @@ label cap3Honoka:
 
 #COMIENZO DEL CAPITULO 4
 label cap4Honoka:
+    # Pantalla de carga
+    window hide dissolve
+    $ quick_menu = False
+    show image cargaP() with dissolve
+    $ renpy.pause(2.8, hard= True)
+
     stop music fadeout 0.8
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo4 with fade
     $ renpy.pause(3.0, hard= True)
-
+    scene black with dissolve
     $ quick_menu = True
+    window show
 
-    S_Umi "¿Honoka, tu hombro no se moja?" with dissolve
-    K_Honoka "No, estoy bien... Además, lo más importante es que nuestras cosas no se mojen." with dissolve
+    play music audio.lluvia fadein 1.8 loop volume 0.9
+    
+    S_Umi "¿Honoka, tu hombro no se moja?" 
+    K_Honoka "No, estoy bien... Además, lo más importante es que nuestras cosas no se mojen." 
     "Caminaba bajo el paraguas color aguamarina que Umi-chan sostenía." with dissolve
     "ĺbamos hombro a hombro, sosteniendo la maleta justo frente a mí y asegurándome de que no se empapara." with dissolve
     "Gota, gota." with dissolve
     "Caían una gran cantidad de gotas." with dissolve
     "La mochila era tan grande que no podía sostenerla entre mis brazos, debido a eso se me resbalaba." with dissolve
     "Escuchaba que su contenido se agitaba." with dissolve
-    K_Honoka "¿Segura que esto va a funcionar? La ropa y los pompones no deben mojarse." with dissolve
-    S_Umi "¿Deberíamos correr?" with dissolve
-    K_Honoka "Muy bien" with dissolve
+    K_Honoka "¿Segura que esto va a funcionar? La ropa y los pompones no deben mojarse."
+    S_Umi "¿Deberíamos correr?" 
+    K_Honoka "Muy bien" 
     "Le respondí, y comenzamos a correr." with dissolve
+    play sound audio.pasosAgua fadein 1.0 loop volume 1.0
     "Sólo un poco más y llegamos a la entrada de mi casa, la tienda de dulces Homura." with dissolve
-    S_Umi "Ja... ja... fiu, parece que lo logramos." with dissolve
-    K_Honoka "Sí. Gracias, Umi-chan. La próxima vez, si está nublado, ¡me aseguraré de llevar mi paraguas!" with dissolve
-    S_Umi "Ninguna de nosotras espera que preveas tantas cosas. Estoy segura de que llevas el paraguas un día que no llueve, y luego se te olvida y entonces lo pierdes. Además, ni siquiera ves el estado del tiempo, ¿o sí?" with dissolve
+    stop sound fadeout 0.8
+    S_Umi "Ja... ja... fiu, parece que lo logramos." 
+    K_Honoka "Sí. Gracias, Umi-chan. La próxima vez, si está nublado, ¡me aseguraré de llevar mi paraguas!" 
+    S_Umi "Ninguna de nosotras espera que preveas tantas cosas. Estoy segura de que llevas el paraguas un día que no llueve, y luego se te olvida y entonces lo pierdes." 
+    S_Umi "Además, ni siquiera ves el estado del tiempo, ¿o sí?" 
     "Ay... Tenía razón." with dissolve
-    "Antes de que pudiera contestarle, Umi-chan añadió:" with dissolve 
-    S_Umi "Tu especialidad es tener la fuerza suficiente para llevar esa maleta enorme tú sola. Con esa ayuda tenemos suficiente. Y luego de eso, se fue a casa." with dissolve
+    "Antes de que pudiera contestarle, Umi-chan añadio." with dissolve 
+    S_Umi "Tu especialidad es tener la fuerza suficiente para llevar esa maleta enorme tú sola."
+    S_Umi "Con esa ayuda tenemos suficiente."
+    "Y luego de eso, se fue a casa." with dissolve
+    stop music fadeout 1.0
     "Auch, eso no fue un cumplido, Umi-chan." with dissolve
-    K_Honoka "Ya llegué." with dissolve
+    play music audio.lluvia fadein 0.2 loop volume 0.1
+    K_Honoka "Ya llegué."
+    scene cuarto_Honoka with fade
     "Entré a mi casa y suspiré. Una vez en mi cuarto, me eché un vistazo" with dissolve
     "Rayos, mi uniforme estaba empapado. De prisa, busqué una toalla y sequé mi uniforme y cabello." with dissolve
     "Me quité la ropa rápidamente, que sólo estaba mojada del lado derecho, y la colgué." with dissolve
-    K_Honoka "Ay no, debía asegurarme de que la maleta... ¡fiu!" with dissolve
+    K_Honoka "Ay no, debía asegurarme de que la maleta... ¡fiu!" 
     "¡Los trajes, las cintas brillantes para el decorado del escenario, los pompones y todo lo demás estaban secos!" with dissolve
     "¡Y todo gracias a mí ♡! Ajá. ¿Ya ves, Umi-chan?" with dissolve
     "Tengo algo más que súper fuerza ♪" with dissolve
-    "Pero, ¿quizá pueda secarlos con algo? No están mojados, pero sí se sienten algo húmedos, y no quiero que vayan a oler feo al secarse solos, pensé al momento de sacarlos de la maleta." with dissolve
-    K_Honoka "¡Cielos, hay tantas cosas aquí!" with dissolve
+    "Pero, ¿quizá pueda secarlos con algo?" 
+    "No están mojados, pero sí se sienten algo húmedos, y no quiero que vayan a oler feo al secarse solos." with dissolve
+    K_Honoka "¡Cielos, hay tantas cosas aquí!" 
     "No pude evitar gritar al ver que mi habitación desaparecía con tanta ropa y accesorios." with dissolve
-    K_Honoka "En serio, ¿por qué debemos llevar y traer todas estas cosas de la escuela todo el tiempo? ¡¡Ojala tuviéramos un salón propio!!" with dissolve
+    K_Honoka "En serio, ¿por qué debemos llevar y traer todas estas cosas de la escuela todo el tiempo? ¡¡Ojala tuviéramos un salón propio!!" 
     "Nuestras actividades de hoy duraron sólo como 30 minutos, así que no hay mucho que decir." with dissolve
-    "Hoy, nuestro plan era preparar todo para el concierto que tenemos planeado para justo antes de las vacaciones de verano; revisar los trajes y discutir sobre el escenario y efectos, pero justo cuando teníamos todo nuestro equipo listo, comenzó a llover y todo se fastidió." with dissolve
-    K_Honoka "¡Aah, de prisa! ¡Alcen todo antes de que se moje!" with dissolve
+    "Hoy, nuestro plan era preparar todo para el concierto que tenemos planeado para justo antes de las vacaciones de verano; revisar los trajes y discutir sobre el escenario y efectos." with dissolve
+    "Pero justo cuando teníamos todo nuestro equipo listo, comenzó a llover y todo se fastidió." with dissolve
+    scene black with recuerdo
+    K_Honoka "¡Aah, de prisa! ¡Alcen todo antes de que se moje!" 
     "Cuando le pregunté a Umi-chan quién traía un paraguas, me dijo que el estado del tiempo decía que a lo mejor Ilovía en la tarde, pero yo estaba muy ocupada desayunando y ayudando en la tienda como para enterarme." with dissolve
     "Me sorprendió ver esas gototas caer del cielo tan repentinamente." with dissolve
     "Es cierto que el cielo estaba gris justo cuando terminaba el receso, y que el viento frío insinuaba que se avecinaba una tormenta, pero no pensé que en verdad Ilovería." with dissolve
@@ -913,6 +966,12 @@ label cap4Honoka:
 
 #COMIENZO DEL CAPITULO 5
 label cap5Honoka:
+    # Pantalla de carga
+    window hide dissolve
+    $ quick_menu = False
+    show image cargaP() with dissolve
+    $ renpy.pause(2.8, hard= True)
+
     stop music fadeout 0.8
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo5 with fade
@@ -1083,6 +1142,12 @@ label cap5Honoka:
 
 #COMIENZO DEL CAPITULO 6
 label cap6Honoka:
+    # Pantalla de carga
+    window hide dissolve
+    $ quick_menu = False
+    show image cargaP() with dissolve
+    $ renpy.pause(2.8, hard= True)
+
     stop music fadeout 0.8
     voice "audio/VoiceHonoka/IkkuyoHonoka.mp3"
     scene capitulo6 with fade
@@ -1237,6 +1302,12 @@ label cap6Honoka:
 
 #COMIENZO DEL CAPITULO 7
 label cap7Honoka:
+    # Pantalla de carga
+    window hide dissolve
+    $ quick_menu = False
+    show image cargaP() with dissolve
+    $ renpy.pause(2.8, hard= True)
+
     K_Honoka "¡Ya llegué!"
     "¡Fiu, la práctica de hoy fue larga! ¡Estoy agotada!"
     "Aunque los días son más largos al acercarse el verano, uno se sigue cansando cuando las prácticas terminan hasta tarde."

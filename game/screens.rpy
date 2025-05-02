@@ -343,7 +343,6 @@ style navigation_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
-
     ## Esto asegura que cualquier otra pantalla de menu es remplazada.
     tag menu
 

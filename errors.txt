@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/back_sprite.rpy", line 86: invalid syntax
-        image carga1 = "images/PantallaCarga/PC0" + str(numero) + ".png"
-               ^
+File "game/script.rpy", line 889: expected end of line
+    stop audio.pasosAgua fadeout 0.8
+              ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Wed Apr 30 18:22:45 2025
+Thu May  1 22:29:47 2025
