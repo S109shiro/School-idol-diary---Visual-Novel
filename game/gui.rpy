@@ -50,26 +50,24 @@ define gui.muted_color = '#740341'
 define gui.hover_muted_color = '#2a0017'
 
 ## Colores del texto del diálogo y menú.
-define gui.text_color = '#ffffff'
+define gui.text_color = '#000000'
 define gui.interface_text_color = '#ffffff'
 
 
 ## Tipos y tamaños de letra ####################################################
 
 ## El tipo de letra del texto del juego
-define gui.text_font = "fonts/AlegreyaSans-Regular.ttf"
-
+define gui.text_font = "fonts/MPLUSRounded1c-Regular.ttf"
 ## El tipo de letra de los nombres de personajes
-define gui.name_text_font = "fonts/GROBOLD.ttf"
-
-## El tipo de letra del texto externo al juego.
-define gui.interface_text_font = "fonts/PassionOne-Regular.ttf"
+define gui.name_text_font = "fonts/Maven Pro Bold.otf"
+## El tipo de letra del texto externo al juego
+define gui.interface_text_font = "fonts/LISTFCEB_.TTF"
 
 ## El tamaño normal del texto del diálogo.
-define gui.text_size = 42
+define gui.text_size = 30
 
 ## El tamaño de los nombres de los personajes
-define gui.name_text_size = 50
+define gui.name_text_size = 40
 
 ## El tamaño del texto en la interfaz.
 define gui.interface_text_size = 35
@@ -102,14 +100,14 @@ define gui.textbox_height = 280
 
 ## Colocación vertical de la caja de texto en la pantalla. 0.0 para la parte
 ## superior, 0.5 para el centro y 1.0 para la parte inferior.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 0.99
 
 
 ## Colocación del nombre del personaje hablante, relativa a la caja de texto.
 ## Puede ser el númerode píxels desde la esquina superior izquierda, o 0.5 para
 ## centrar.
-define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_xpos = 400
+define gui.name_ypos = 6
 
 ## La alineación horizontal del nombre del personaje. (0.0 es izquierda, 0.5 es
 ## centro, 1.0 es derecha).
@@ -131,7 +129,7 @@ define gui.namebox_tile = False
 
 ## Colocación del diálogo relativa a la caja de texto. Puede ser el número de
 ## píxels relativos a la esquina superor izquierda o 0.5 para centrar.
-define gui.dialogue_xpos = 402
+define gui.dialogue_xpos = 420
 define gui.dialogue_ypos = 75
 
 ## La anchura máxima del texto del diálogo, en píxels.
@@ -174,7 +172,7 @@ define gui.button_text_insensitive_color = gui.insensitive_color
 
 ## La alineación horizontal del texto del botón. (0.0 es izquierda, 0.5 es
 ## centro, 1.0 es derecha).
-define gui.button_text_xalign = 0.0
+define gui.button_text_xalign = 0.5
 
 
 ## Estas variables invalidan ajustes para diversos tipos de botones. Ver en la

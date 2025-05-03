@@ -78,6 +78,7 @@ image photo = "images/Elements/photo.png"
 image cKotori = "images/Comentarios/Kotori.png"
 image insatisfaccion = "images/Elements/scary.png"
 image arisePoster = "images/Elements/arisePoster.png"
+image logo = "gui/logoTransparent.png"
 
 # Pantallas de Carga
 init python:

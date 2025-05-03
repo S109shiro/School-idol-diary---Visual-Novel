@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 889: expected end of line
-    stop audio.pasosAgua fadeout 0.8
-              ^
+File "game/screens.rpy", line 367: 'with' is not a keyword argument or valid child of the imagebutton statement.
+    hover "/images/JUGAR1.png" with fade
+                                   ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Thu May  1 22:29:47 2025
+Fri May  2 12:37:50 2025

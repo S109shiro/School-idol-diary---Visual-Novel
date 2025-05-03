@@ -42,7 +42,7 @@ label start:
 
     # Eleccion de Rutas
     stop music fadeout 0.8
-    play music SongMenuSelect fadein 0.5 fadeout 0.5
+    play music audio.songMenuSelect fadein 0.5 fadeout 0.5
     scene MenuElec with Dissolve(1.5)
     menu:  
         "Selecciona la ruta que gustes."
@@ -332,6 +332,7 @@ label cap2Honoka:
     $ renpy.pause(3.0, hard= True)
 
     scene cielo with fade
+    window show dissolve
     $ quick_menu = True
     play music motivationalFree fadein 3.0 fadeout 2.5 loop
     "Todavía puedo recordar la emoción que sentí cuando leí las palabras \"idol escolar\" por primera vez." with dissolve
@@ -882,9 +883,9 @@ label cap4Honoka:
     "Escuchaba que su contenido se agitaba." with dissolve
     K_Honoka "¿Segura que esto va a funcionar? La ropa y los pompones no deben mojarse."
     S_Umi "¿Deberíamos correr?" 
+    play sound audio.pasosAgua fadein 1.0 loop volume 1.0
     K_Honoka "Muy bien" 
     "Le respondí, y comenzamos a correr." with dissolve
-    play sound audio.pasosAgua fadein 1.0 loop volume 1.0
     "Sólo un poco más y llegamos a la entrada de mi casa, la tienda de dulces Homura." with dissolve
     stop sound fadeout 0.8
     S_Umi "Ja... ja... fiu, parece que lo logramos." 

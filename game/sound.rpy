@@ -11,6 +11,7 @@ define audio.home = "audio/home.mp3"
 define audio.A_RISETheme = "audio/A-RISETheme.mp3"
 define audio.motivationalLL = "audio/motivationalLL.mp3"
 define audio.coments = "audio/coments.mp3"
+define audio.songMenuSelect = "audio/MenuMain/songMenuSelect.mp3"
 
 # SFX
 define audio.clickMouse = "audio/sfx/clickMouse.mp3" 

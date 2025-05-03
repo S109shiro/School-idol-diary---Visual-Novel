@@ -13,7 +13,7 @@
 ##
 ## El _() que rodea la cadena de texto la señala como traducible.
 
-define config.name = _("School idol diary Visual Novel")
+define config.name = _("School idol diary - Visual Novel")
 
 
 ## Determina si el título dado más arriba se muestra en el menú principal.
@@ -26,7 +26,7 @@ define config.developer = True
 
 ## Versión del juego.
 
-define config.version = "0.4"
+define config.version = "0.5"
 
 define config.minimum_presplash_time = 0.7
 
@@ -188,7 +188,7 @@ default preferences.afm_time = 10
 ## Normalmente, este valor no debe ser modificado. Si lo es, debe ser siempre
 ## una cadena literal y no una expresión.
 
-define config.save_directory = "School_idol_diary_visual_novel-1699805720"
+define config.save_directory = "SIDNV"
 
 
 ## Icono #######################################################################

@@ -134,7 +134,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=0.5, yalign=0.5)
 
 style namebox:
     xpos gui.name_xpos
@@ -244,10 +244,10 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
-            yalign 1.0
+            xalign 0.490
+            yalign 0.99
 
-            #textbutton _("Atrás") action Rollback() 
+            textbutton _("Atrás") action Rollback() 
             textbutton _("Historial") action ShowMenu('history') activate_sound "audio/sfx/enter.mp3"
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True) activate_sound "audio/sfx/enter.mp3"
             textbutton _("Auto") action Preference("auto-forward", "toggle") activate_sound "audio/sfx/enter.mp3"
@@ -358,32 +358,44 @@ screen main_menu():
     #use navigation
     
     # MODIFICACION DEL MENU DE INICIO
-        hbox:
-            xpos 0.9
-            ypos 0.9
-            spacing 60
-            textbutton _("Comenzar") action Start() text_size 40 activate_sound "audio/sfx/enter.mp3"
-            textbutton _("Cargar") action ShowMenu("load") text_size 40 activate_sound "audio/sfx/enter.mp3"
-            textbutton _("Galeria") action ShowMenu("gallery") text_size 40 activate_sound "audio/sfx/enter.mp3"
-            textbutton _("Opciones") action ShowMenu("preferences") text_size 40 activate_sound "audio/sfx/enter.mp3"
-            textbutton _("Acerca") action ShowMenu("about") text_size 40 activate_sound "audio/sfx/enter.mp3"
-            if renpy.variant("pc"):
-                ## El botón de salida está prohibido en iOS y no es necesario en
-                ## Android y Web.
-                textbutton _("Salir") action Quit(confirm=not main_menu) text_size 40 activate_sound "audio/sfx/enter.mp3"
+        vbox:
+            xalign 0.7
+            yalign 0.5
+            spacing 15
+            imagebutton:
+                idle "gui/MenuMain/Icons/inicio.png"
+                hover "gui/MenuMain/Icons/inicioHover.png"
+                action Start() 
+                hover_sound "audio/sfx/enter.mp3"
+            imagebutton:
+                idle "gui/MenuMain/Icons/cargar.png"
+                hover "gui/MenuMain/Icons/cargarHover.png"
+                action ShowMenu("load") 
+                hover_sound "audio/sfx/enter.mp3"    
+            imagebutton:
+                idle "gui/MenuMain/Icons/galeria.png"
+                hover "gui/MenuMain/Icons/galeriaHover.png"
+                action ShowMenu("gallery")
+                hover_sound "audio/sfx/enter.mp3"
+            imagebutton:
+                idle "gui/MenuMain/Icons/opciones.png"
+                hover "gui/MenuMain/Icons/opcionesHover.png"
+                action ShowMenu("preferences") 
+                hover_sound "audio/sfx/enter.mp3"
+            imagebutton:
+                idle "gui/MenuMain/Icons/acerca.png"
+                hover "gui/MenuMain/Icons/acercaHover.png"
+                action ShowMenu("about") 
+                hover_sound "audio/sfx/enter.mp3"
+            imagebutton:
+                idle "gui/MenuMain/Icons/salir.png"
+                hover "gui/MenuMain/Icons/salirHover.png"
+                action Quit(confirm=not main_menu) 
+                hover_sound "audio/sfx/enter.mp3"    
 
         
 
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
+    add "gui/logoTransparent.png" xalign 0.99 yalign 0.99 size(540, 340)
 
 
 style main_menu_frame is empty
@@ -673,7 +685,7 @@ screen file_slots(title):
                     textbutton _("<") action FilePagePrevious() activate_sound "audio/sfx/enter.mp3"
 
                     if config.has_autosave:
-                        textbutton _("{#auto_page}Auto Save") action FilePage("auto") activate_sound "audio/sfx/enter.mp3"
+                        textbutton _("{#auto_page}Auto Guardado") action FilePage("auto") activate_sound "audio/sfx/enter.mp3"
 
                     
                     ## range(1, 10) da los números del 1 al 9.
@@ -682,15 +694,7 @@ screen file_slots(title):
 
                     textbutton _(">") action FilePageNext() activate_sound "audio/sfx/enter.mp3"
 
-                if config.has_sync:
-                    if CurrentScreenName() == "save":
-                        textbutton _("Subir Sync"):
-                            action UploadSync() activate_sound "audio/sfx/enter.mp3"
-                            xalign 0.5
-                    else:
-                        textbutton _("Descargar Sync"):
-                            action DownloadSync() activate_sound "audio/sfx/enter.mp3"
-                            xalign 0.5
+              
 
 
 style page_label is gui_label
