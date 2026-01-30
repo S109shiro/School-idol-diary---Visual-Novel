@@ -619,7 +619,7 @@ screen load():
 
 screen file_slots(title):
 
-    default page_name_value = FilePageNameInputValue(pattern=_("Página {}"), auto=_("Grabación automática"), quick=_("Grabación rápida"))
+    default page_name_value = FilePageNameInputValue(pattern=_("Página {}"), auto=_("Guardado automatico"), quick=_("Guardado rápido"))
 
     use game_menu(title):
 
@@ -685,7 +685,7 @@ screen file_slots(title):
                     textbutton _("<") action FilePagePrevious() activate_sound "audio/sfx/enter.mp3"
 
                     if config.has_autosave:
-                        textbutton _("{#auto_page}Auto Guardado") action FilePage("auto") activate_sound "audio/sfx/enter.mp3"
+                        textbutton _("{#auto_page} Guardado Automatico") action FilePage("auto") activate_sound "audio/sfx/enter.mp3"
 
                     
                     ## range(1, 10) da los números del 1 al 9.
@@ -762,6 +762,11 @@ screen preferences():
                     textbutton _("Tras elecciones") action Preference("after choices", "toggle") activate_sound "audio/sfx/enter.mp3"
                     textbutton _("Transiciones") action InvertSelected(Preference("transitions", "toggle")) activate_sound "audio/sfx/enter.mp3"
 
+                vbox:
+                    label _("Idioma")
+                    textbutton _("Ingles") action Language("English")
+                    textbutton _("Español") action Language(None)
+                    
                 ## Aquí se pueden añadir 'vboxes' adicionales del tipo
                 ## "radio_pref" o "check_pref" para nuevas preferencias.
 
@@ -931,7 +936,7 @@ screen history():
                     substitute False
 
         if not _history_list:
-            label _("El historial está vacío porque no has jugado nada.")
+            label _("El historial está vacío porque no has jugado nada")
 
 
 ## Esto determina qué etiquetas se permiten en la pantalla de historial.

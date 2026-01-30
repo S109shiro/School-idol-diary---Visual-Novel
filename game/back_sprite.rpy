@@ -89,19 +89,6 @@ init python:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Imagenes Galeria
 #Background
 image backgroundG = "images/Gallery/Background.png"

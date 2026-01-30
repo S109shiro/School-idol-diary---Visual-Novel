@@ -13,7 +13,7 @@
 ##
 ## El _() que rodea la cadena de texto la señala como traducible.
 
-define config.name = _("School idol diary - Visual Novel")
+define config.name = _("School idol diary - Novela Visual")
 
 
 ## Determina si el título dado más arriba se muestra en el menú principal.
@@ -26,7 +26,7 @@ define config.developer = True
 
 ## Versión del juego.
 
-define config.version = "0.5"
+define config.version = "0.4.1"
 
 define config.minimum_presplash_time = 0.7
 
@@ -48,7 +48,7 @@ define gui.about = _p("""
 ## Nombre breve del juego para ejecutables y directorios en la distribución.
 ## Debe contener solo carácteres ASCII, sin espacios, comas o puntos y coma.
 
-define build.name = "SIDVN_Beta0.4"
+define build.name = "SIDVN_Beta_0.4.1"
 
 
 ## Sonidos y música ############################################################
