@@ -1,29 +1,41 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-FileNotFoundError: [Errno 2] No such file or directory: 'F:\\renpy-8.3.4-sdk\\tmp\\strings.json'
+While running game code:
+  File "game/script.rpy", line 226, in script
+    scene black fadeout 1.3
+Exception: Image 'black' does not accept attributes 'fadeout 1 .3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "renpy/bootstrap.py", line 401, in bootstrap
-    renpy.main.main()
+  File "game/script.rpy", line 226, in script
+    scene black fadeout 1.3
+  File "renpy/ast.py", line 1480, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 730, in show_imspec
+    renpy.config.show(
+    ~~~~~~~~~~~~~~~~~^
+        name, at_list=at_list, layer=layer, what=expression, zorder=zorder, tag=tag, behind=behind, atl=atl
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "renpy/exports/displayexports.py", line 486, in show
+    if not base.find_target() and renpy.config.missing_show:
+           ~~~~~~~~~~~~~~~~^^                               
+  File "renpy/display/image.py", line 444, in find_target
+    self.target = target._duplicate(a)
+                  ~~~~~~~~~~~~~~~~~^^^
+  File "renpy/display/displayable.py", line 278, in _duplicate
+    args.extraneous()
     ~~~~~~~~~~~~~~~^^
-  File "renpy/main.py", line 591, in main
-    run(restart)
-    ~~~^^^^^^^^^
-  File "renpy/main.py", line 92, in run
-    if not renpy.arguments.post_init():
-           ~~~~~~~~~~~~~~~~~~~~~~~~~^^ 
-  File "renpy/arguments.py", line 355, in post_init
-    return commands[command]()
-           ~~~~~~~~~~~~~~~~~^^
-  File "renpy/translation/merge.py", line 51, in merge_strings
-    with open(args.source, "r", encoding="utf-8") as f:
-         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^      
-FileNotFoundError: [Errno 2] No such file or directory: 'F:\\renpy-8.3.4-sdk\\tmp\\strings.json'
+  File "renpy/display/displayable.py", line 118, in extraneous
+    raise Exception(
+    ...<4 lines>...
+    )
+Exception: Image 'black' does not accept attributes 'fadeout 1 .3'.
 
 Windows-11-10.0.26200-SP0 AMD64
 Ren'Py 8.5.2.26010301
 School idol diary - Novela Visual 0.4.1
-Fri Jan 30 00:13:33 2026
+Mon Feb  2 19:13:18 2026

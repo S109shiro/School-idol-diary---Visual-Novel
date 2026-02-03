@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 367: 'with' is not a keyword argument or valid child of the imagebutton statement.
-    hover "/images/JUGAR1.png" with fade
-                                   ^
+File "game/script.rpy", line 90: invalid syntax
+    quick_menu = True with dissolve
+                            ^^^^
 
-Ren'Py Version: Ren'Py 8.3.7.25031702
-Fri May  2 12:37:50 2025
+Ren'Py Version: Ren'Py 8.5.2.26010301
+Mon Feb  2 18:42:34 2026
